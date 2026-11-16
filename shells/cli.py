@@ -7,6 +7,7 @@
   python shells/cli.py 克萝艾 剑士 --详细
 命令: <角色> <兵种> | <角色> | 推荐 <角色> | 兵种 <兵种> | 详细 | 帮助 | 退出
 """
+import difflib
 import json
 import sys
 from pathlib import Path
@@ -17,6 +18,28 @@ sys.path.insert(0, str(ROOT))
 from engage_core import engine, format  # noqa: E402
 
 DETAIL = False
+
+COMMAND_WORDS = ["推荐", "纹章", "强度", "兵种", "武器", "机制", "帮助", "退出"]
+
+
+def _fmt_cands(text: str, r: dict) -> str:
+    """resolve_name 返回多候选时的展示: 交由用户裁决, 不静默取第一个。"""
+    lines = [f"「{text}」未唯一匹配, 候选:"]
+    for i, c in enumerate(r["candidates"], 1):
+        kind = "角色" if c["kind"] == "character" else "兵种"
+        lines.append(f"  {i}) {c['name_cn']}（{c['name_en']} · {kind} · {c['matched_by']})")
+    lines.append("请用完整名称重试")
+    return "\n".join(lines)
+
+
+def _res(text: str, label: str):
+    """resolve_name 的 CLI 封装: 返回实体dict, 或 str(未识别/多候选提示, 直接作为回复)。"""
+    r = engine.resolve_name(text)
+    if r is None:
+        return f"未识别{label}「{text}」"
+    if "candidates" in r:
+        return _fmt_cands(text, r)
+    return r
 
 HELP = """命令:
   <角色> <兵种>     路线评估 (如: 克萝艾 剑士)
@@ -44,9 +67,11 @@ def handle(parts: list[str]) -> str:
     if parts[0] == "兵种":
         if len(parts) < 2:
             return "用法: 兵种 <兵种名>"
-        r2 = engine.resolve_name(parts[1])
-        if not r2 or r2["kind"] != "class":
-            return f"未识别兵种「{parts[1]}」"
+        r2 = _res(parts[1], "兵种")
+        if isinstance(r2, str):
+            return r2
+        if r2["kind"] != "class":
+            return f"「{parts[1]}」不是兵种（解析为{r2['name_cn']}）"
         return _class_brief(r2["id"])
 
     if parts[0] == "武器":
@@ -66,25 +91,41 @@ def handle(parts: list[str]) -> str:
     if parts[0] == "纹章":
         if len(parts) < 3:
             return "用法: 纹章 <角色> <兵种>"
-        r1, r2 = engine.resolve_name(parts[1]), engine.resolve_name(parts[2])
-        if not r1 or r1["kind"] != "character":
-            return f"未识别角色「{parts[1]}」"
-        if not r2 or r2["kind"] != "class":
-            return f"未识别兵种「{parts[2]}」"
+        r1, r2 = _res(parts[1], "角色"), _res(parts[2], "兵种")
+        if isinstance(r1, str):
+            return r1
+        if isinstance(r2, str):
+            return r2
+        if r1["kind"] != "character":
+            return f"「{parts[1]}」不是角色（解析为{r1['name_cn']}）"
+        if r2["kind"] != "class":
+            return f"「{parts[2]}」不是兵种（解析为{r2['name_cn']}）"
         fit = engine.emblem_fit(r1["id"], r2["id"])
-        lines = [f"## {fit['character']['cn']} · 纹章士适配Top{len(fit['ranking'])}",
-                 f"可用武器集: {', '.join(fit['可用武器集'])}", ""]
+        lines = [f"## {fit['character']['cn']} · {fit['query_class']['cn']}"
+                 f" 纹章士适配({len(fit['ranking'])}个候选, band并列分组)",
+                 f"可用武器集: {', '.join(fit['可用武器集'])}",
+                 f"路线偏好: {', '.join(fit['路线偏好']['效果'])} ({fit['路线偏好']['口径']})", ""]
         for r in fit["ranking"]:
-            lines.append(f"- **{r['cn']}** 武器重合:{'/'.join(r['武器重合']) or '无'} "
-                         f"(牵绊加值合计{r['牵绊加值合计']})")
+            syn = "、".join(f"{h['技能']}({h['类型']})" for h in r["同步技协同"]["命中"])
+            eg = "、".join(r["engage技"]) or "无"
+            lines.append(
+                f"- **{r['cn']}**(band{r['band']}, {r['入手']}) 主武器:{r['主武器']} | "
+                f"精准匹配:{r['精准匹配']['分']}分({r['精准匹配']['依据']}) | "
+                f"额外重合:{'/'.join(r['额外重合']['武器']) or '无'}({r['额外重合']['分']}分) | "
+                f"同步技协同:{syn or '无'}({r['同步技协同']['分']}分) | "
+                f"engage技:{eg}")
+        lines += ["", f"*{fit['band说明']}*",
+                  f"*未建模维度: {', '.join(fit['未建模维度'])}*"]
         return "\n".join(lines)
 
     if parts[0] == "强度":
         if len(parts) < 2:
             return "用法: 强度 <角色>"
-        r2 = engine.resolve_name(parts[1])
-        if not r2 or r2["kind"] != "character":
-            return f"未识别角色「{parts[1]}」"
+        r2 = _res(parts[1], "角色")
+        if isinstance(r2, str):
+            return r2
+        if r2["kind"] != "character":
+            return f"「{parts[1]}」不是角色（解析为{r2['name_cn']}）"
         t = engine.tier_assessment(r2["id"])
         f = t["分项事实"]
         return (f"## {t['character']['cn']} · 分项事实\n"
@@ -110,23 +151,33 @@ def handle(parts: list[str]) -> str:
     if parts[0] == "推荐":
         if len(parts) < 2:
             return "用法: 推荐 <角色>"
-        r2 = engine.resolve_name(parts[1])
-        if not r2 or r2["kind"] != "character":
-            return f"未识别角色「{parts[1]}」"
+        r2 = _res(parts[1], "角色")
+        if isinstance(r2, str):
+            return r2
+        if r2["kind"] != "character":
+            return f"「{parts[1]}」不是角色（解析为{r2['name_cn']}）"
         return format.render_recommend(engine.recommend_builds(r2["id"]))
 
     r = engine.resolve_name(parts[0])
-    if not r:
+    if r is None:
+        # 名称未识别 → 命令词模糊兜底(语音/错别字: "纹张 剑士" → "纹章 剑士")
+        close = difflib.get_close_matches(parts[0], COMMAND_WORDS, n=1, cutoff=0.5)
+        if close:
+            return handle([close[0]] + parts[1:])
         return f"未识别名称「{parts[0]}」，试试: 克萝艾 / 花月 / 剑士 / 狮鹫骑士"
+    if "candidates" in r:
+        return _fmt_cands(parts[0], r)
 
     if r["kind"] == "class":
         return _class_brief(r["id"])
 
     if r["kind"] == "character":
         if len(parts) >= 2:
-            r2 = engine.resolve_name(parts[1])
-            if not r2 or r2["kind"] != "class":
-                return f"未识别兵种「{parts[1]}」"
+            r2 = _res(parts[1], "兵种")
+            if isinstance(r2, str):
+                return r2
+            if r2["kind"] != "class":
+                return f"「{parts[1]}」不是兵种（解析为{r2['name_cn']}）"
             ev = engine.compute_build(r["id"], r2["id"])
             out = format.render_build(ev, detail=DETAIL)
         else:

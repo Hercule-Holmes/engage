@@ -8,6 +8,7 @@ import difflib
 import json
 
 from . import db
+from .textnorm import norm
 
 STAT_KEYS = ["hp", "str", "mag", "dex", "spd", "def", "res", "lck"]
 STAT_CN = {"hp": "HP", "str": "力", "mag": "魔", "dex": "技", "spd": "速",
@@ -33,34 +34,120 @@ def _index(name, key="id"):
     return _cache[f"_idx_{name}"]
 
 
-# ---------- 名称解析 ----------
+# ---------- 名称解析(分层容错) ----------
+# 层序: 规范化精确 → 包含 → 拼音(语音同音字) → 模糊音(方言口音) → 编辑距离(打字手误)。
+# 唯一命中直接返回; 同层多实体命中返回 candidates 交调用方裁决——
+# 宁可多问一句, 不静默错配(错配会把错误实体写进证据卡, 比"未识别"危害大)。
 
-def resolve_name(text: str):
-    """别名 → {kind, id, ...}。精确 → 包含 → difflib 模糊。"""
-    t = text.strip().lower()
-    if not t:
-        return None
-    con = db.connect()
-    row = db.query_one(con, "SELECT * FROM silver_aliases WHERE alias=?", (t,))
-    if not row:
-        rows = db.query(con, "SELECT * FROM silver_aliases WHERE alias LIKE ?", (f"%{t}%",))
-        if len(rows) == 1:
-            row = rows[0]
-        elif rows:
-            row = min(rows, key=lambda r: len(r["alias"]))
-        else:
-            all_a = db.query(con, "SELECT * FROM silver_aliases")
-            names = [r["alias"] for r in all_a]
-            close = difflib.get_close_matches(t, names, n=1, cutoff=0.6)
-            row = next((r for r in all_a if r["alias"] == close[0]), None) if close else None
-    con.close()
-    if not row:
-        return None
-    # kind: character → silver_characters; class → silver_classes
+_LAYERS = (("exact", 1.0), ("contains", 0.9), ("pinyin", 0.85), ("fuzzy_pinyin", 0.7))
+
+
+def _pinyin_map() -> dict:
+    """汉字 → (拼音, 模糊音) 全字映射, 进程内缓存。构建期由 build_silver 用 pypinyin 生成,
+    运行时只查表, 零第三方依赖。"""
+    if "py_map" not in _cache:
+        con = db.connect()
+        rows = con.execute("SELECT char, py, py_fuzzy FROM silver_pinyin_map").fetchall()
+        con.close()
+        _cache["py_map"] = {r[0]: (r[1], r[2]) for r in rows}
+    return _cache["py_map"]
+
+
+def _to_pinyin(text: str, fuzzy: bool = False) -> str:
+    pm = _pinyin_map()
+    out = []
+    for ch in text:
+        if ch in pm:
+            out.append(pm[ch][1] if fuzzy else pm[ch][0])
+        elif ch.isascii() and ch.isalnum():
+            out.append(ch.lower())
+    return "".join(out)
+
+
+def _aliases() -> list[dict]:
+    """别名 + 规范化列 + 派生拼音, 进程内缓存(数据冻结无需失效)。"""
+    if "aliases_v2" not in _cache:
+        con = db.connect()
+        rows = db.query(con, "SELECT * FROM silver_aliases")
+        con.close()
+        for r in rows:
+            r["norm"] = r["alias_norm"] or norm(r["alias"])
+            r["py"] = _to_pinyin(r["norm"])
+            r["py_f"] = _to_pinyin(r["norm"], fuzzy=True)
+        _cache["aliases_v2"] = rows
+    return _cache["aliases_v2"]
+
+
+def _dedup_entities(hits: list[dict]) -> list[dict]:
+    """同一实体(kind, ref_id)的多个别名变体折叠为一条(如 chloé/chloe)。"""
+    seen, out = set(), []
+    for a in hits:
+        key = (a["kind"], a["ref_id"])
+        if key not in seen:
+            seen.add(key)
+            out.append(a)
+    return out
+
+
+def _entry(score: float, row: dict, matched_by: str) -> dict:
     table = "characters" if row["kind"] == "character" else "classes"
     rec = _index(table).get(row["ref_id"], {})
     return {"kind": row["kind"], "id": row["ref_id"],
-            "name_cn": rec.get("name_cn"), "name_en": rec.get("name_en")}
+            "name_cn": rec.get("name_cn"), "name_en": rec.get("name_en"),
+            "matched_by": matched_by, "score": round(score, 3)}
+
+
+def resolve_name(text: str):
+    """别名 → 实体。规范化→精确→包含→拼音→模糊音→编辑距离, 五层依次兜底。
+
+    返回:
+      唯一命中  {kind, id, name_cn, name_en, matched_by, score}
+      多候选    {query, candidates: [上型 ≤5]}  ——调用方须结合上下文选择或向用户确认
+      无命中    None
+    """
+    t = (text or "").strip()
+    q = norm(t)
+    if not q:
+        return None
+    als = _aliases()
+    has_cjk = any(0x3400 <= ord(c) <= 0x9FFF for c in q)
+    q_py = _to_pinyin(q) if has_cjk else ""
+    q_pyf = _to_pinyin(q, fuzzy=True) if has_cjk else ""
+
+    found = None  # (matched_by, [(score, row)])
+    for name, base in _LAYERS:
+        if name == "exact":
+            rows = [a for a in als if a["norm"] == q]
+        elif name == "contains":
+            rows = [a for a in als if q in a["norm"]]
+        elif name == "pinyin":
+            rows = [a for a in als if a["py"] == q_py] if q_py else []
+        else:
+            rows = [a for a in als if a["py_f"] == q_pyf] if q_pyf else []
+        rows = _dedup_entities(rows)
+        if rows:
+            found = (name, [(base, r) for r in rows])
+            break
+
+    if found is None:
+        scored = sorted(((difflib.SequenceMatcher(None, q, a["norm"]).ratio(), a)
+                         for a in als), key=lambda x: (-x[0], x[1]["ref_id"]))
+        best = {}
+        for s, a in scored:
+            if s < 0.6:
+                break
+            k = (a["kind"], a["ref_id"])
+            if k not in best:
+                best[k] = (s, a)
+        found = ("edit", sorted(best.values(), key=lambda x: (-x[0], x[1]["ref_id"]))[:5])
+
+    matched_by, items = found
+    entries = [_entry(s, r, matched_by) for s, r in items]
+    if not entries:
+        return None
+    if len(entries) == 1:
+        return entries[0]
+    return {"query": t, "candidates": entries[:5]}
 
 
 # ---------- 卡片 ----------
@@ -326,16 +413,17 @@ def combat_evidence(char_id: str, class_id: str, level: int = 20) -> dict:
     }
 
 
-def emblem_fit(char_id: str, class_id: str, top_n: int = 3) -> dict:
-    """纹章士适配 v2: 组件化输出(精准匹配/额外重合/同步技协同), 排序仅作参考。
-    组件是事实; 哪个纹章士"最好"由 LLM 结合组件自行判断。"""
+def emblem_fit(char_id: str, class_id: str, top_n: int | None = None) -> dict:
+    """纹章士适配 v3: 组件化输出(精准匹配/额外重合/同步技协同) + band并列分组。
+    组件是事实; band=组件合计相同的并列组, 不构成推荐;
+    哪个纹章士"更好"由调用方结合组件与未建模维度自行判断。"""
     c, k = _index("characters").get(char_id), _index("classes").get(class_id)
     if not (c and k):
         return {"error": "未知角色或兵种"}
     innate = {p["weapon"] for p in json.loads(c["proficiencies"]) if p["innate"]}
     mine = innate | {k["primary_weapon"]} | set(json.loads(k["primary_weapon_alt"] or "[]"))
 
-    # 路线偏好: 由兵种移动类型/主武器决定(口径草案)
+    # 路线偏好: 由兵种移动类型/主武器决定(口径: 移动类型启发式, 未校准)
     if k["movement_type"] == "Covert":
         pref = {"avoid", "crit"}
     elif k["primary_weapon"] == "staff":
@@ -352,6 +440,11 @@ def emblem_fit(char_id: str, class_id: str, top_n: int = 3) -> dict:
     con.close()
 
     ranked = []
+
+    def _rng_txt(w):
+        return (f"{w['rng_min']}" if w["rng_min"] == w["rng_max"]
+                else f"{w['rng_min']}-{w['rng_max']}")
+
     for e in emblems:
         ws = json.loads(e["weapons"])
         primary = ws[0] if ws else None
@@ -364,36 +457,97 @@ def emblem_fit(char_id: str, class_id: str, top_n: int = 3) -> dict:
             precise, precise_why = 0, "无精准匹配"
         extra = sorted((set(ws) - {primary}) & mine)
         extra_pts = len(extra) * 5
-        # 同步技协同: 该纹章士技能语义的效果类型 ∩ 路线偏好
+        # 同步技协同: 仅同步技(type=Sync*)的语义效果 ∩ 路线偏好; Engage技/奥义/可继承技不计入该组件
         con = db.connect()
+        sync_names = {r["name"] for r in db.query(
+            con, "SELECT name FROM silver_emblem_skills "
+                 "WHERE emblem_id=? AND type LIKE 'Sync Skill%'", (e["id"],))}
         sems = db.query(con, "SELECT name, semantic FROM silver_skills_semantic "
                              "WHERE source_kind='emblem' AND source_id=?", (e["id"],))
+        eg_skills = db.query(con, "SELECT name, bond_unlock FROM silver_emblem_skills "
+                                  "WHERE emblem_id=? AND (type LIKE 'Engage Skill%' "
+                                  "OR type LIKE 'Engage Attack%') ORDER BY bond_unlock, name",
+                             (e["id"],))
+        eg_weapons = db.query(con, "SELECT name_en, mt, hit, rng_min, rng_max "
+                                   "FROM silver_emblem_weapons "
+                                   "WHERE emblem=? AND name_en NOT LIKE '% (Normal)' "
+                                   "ORDER BY name_en", (e["id"],))
         con.close()
         hits = []
         for srow in sems:
+            if srow["name"] not in sync_names:
+                continue
             sem = json.loads(srow["semantic"])
             for et in sem.get("effect_types", []):
                 if et in pref and srow["name"] not in {h[0] for h in hits}:
                     hits.append((srow["name"], et))
         synergy = min(len(hits) * 6, 12)
-        ref_score = precise + extra_pts + synergy
+        if e["is_dlc"]:
+            join_txt = "DLC"
+        elif e["chapter"] is not None:
+            join_txt = f"第{e['chapter']}章" + ("(剧透)" if e["spoiler"] else "")
+        else:
+            join_txt = "未知"
         ranked.append({
             "emblem_id": e["id"], "cn": e["name_cn"], "主武器": WEAPON_CN.get(primary, primary),
+            "入手": join_txt,
             "精准匹配": {"分": precise, "依据": precise_why},
             "额外重合": {"武器": [WEAPON_CN.get(w, w) for w in extra], "分": extra_pts},
             "同步技协同": {"命中": [{"技能": n, "类型": WEAPON_CN.get(t, t) if t in WEAPON_CN else t}
                                     for n, t in hits[:4]], "分": synergy},
-            "排序参考": ref_score,
+            "engage技": [f"{r['name']}(牵绊{r['bond_unlock']})" for r in eg_skills],
+            "engage武器": [f"{w['name_en']}(mt{w['mt']} 命中{w['hit']} 射程{_rng_txt(w)})"
+                           for w in eg_weapons],
+            "_total": precise + extra_pts + synergy,
         })
-    ranked.sort(key=lambda x: (-x["排序参考"], x["emblem_id"]))
+    ranked.sort(key=lambda x: (-x["_total"], x["emblem_id"]))
+    # band: 同组件合计=同并列组, 组号从1起连续递增; 组内按id稳定排序, 无语义
+    totals = [x["_total"] for x in ranked]
+    band_no = 1
+    for i, item in enumerate(ranked):
+        if i and totals[i] != totals[i - 1]:
+            band_no += 1
+        item["band"] = band_no
+        del item["_total"]
+    # top_n: 默认全量; 传入时按band整组截断, 保证并列组完整呈现
+    if top_n is not None and top_n > 0 and ranked:
+        last_band = ranked[min(top_n, len(ranked)) - 1]["band"]
+        ranked = [x for x in ranked if x["band"] <= last_band]
     return {
         "character": {"id": char_id, "cn": c["name_cn"]},
         "query_class": {"id": class_id, "cn": k["name_cn"], "移动类型": k["movement_type"]},
         "可用武器集": [WEAPON_CN.get(w, w) for w in sorted(mine)],
-        "路线偏好效果": sorted(pref),
-        "ranking": ranked[:top_n],
-        "说明": "排序参考=组件简单相加,仅便于浏览;哪个纹章士更好请结合组件自行判断",
-        "_assumption": "纹章士主武器映射与路线偏好均为口径草稿(weapons_unverified项待校对)",
+        "路线偏好": {"效果": sorted(pref), "口径": "按移动类型/主武器启发式,未校准"},
+        "band说明": "band=组件合计相同的并列组; 组内顺序按id稳定排序,无含义; band不构成推荐",
+        "详情工具": "engage_detail(emblem_id) 返回engage技完整描述与engage武器全参数(含效果注记)",
+        "未建模维度": ["engage技/engage武器的强度评分(事实已入卡,未计入band)", "牵绊升级成本"],
+        "ranking": ranked,
+        "_assumption": "纹章士主武器映射为口径草稿(weapons_unverified项待校对)",
+    }
+
+
+def emblem_engage_detail(emblem_id: str) -> dict:
+    """Engage技/奥义完整事实卡(按需详情): 技能名/解锁牵绊/完整描述 + Engage武器全参数(含效果注记)。
+    emblem_fit 默认只列要点(名+解锁牵绊), 完整描述用本工具按需取。"""
+    con = db.connect()
+    sk = db.query(con, "SELECT name, bond_unlock, type, desc FROM silver_emblem_skills "
+                       "WHERE emblem_id=? AND (type LIKE 'Engage Skill%' "
+                       "OR type LIKE 'Engage Attack%') ORDER BY bond_unlock, name", (emblem_id,))
+    wp = db.query(con, "SELECT name_en, type, mt, hit, crit, wt, rng_min, rng_max, notes "
+                       "FROM silver_emblem_weapons "
+                       "WHERE emblem=? AND name_en NOT LIKE '% (Normal)' ORDER BY name_en",
+                  (emblem_id,))
+    con.close()
+    if not sk and not wp:
+        return {"error": f"未知纹章士: {emblem_id}"}
+    return {
+        "emblem_id": emblem_id,
+        "engage技": [{"名称": r["name"], "解锁牵绊": r["bond_unlock"], "类型": r["type"],
+                     "描述": r["desc"]} for r in sk],
+        "engage武器": [{"名称": r["name_en"], "类型": WEAPON_CN.get(r["type"], r["type"]),
+                       "mt": r["mt"], "命中": r["hit"], "必杀": r["crit"], "重量": r["wt"],
+                       "射程": f"{r['rng_min']}-{r['rng_max']}", "效果注记": r["notes"]}
+                      for r in wp],
     }
 
 

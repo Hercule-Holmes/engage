@@ -46,9 +46,22 @@ def test_pattern_bow_counter_safe():
 
 
 def test_emblem_fit_shape():
+    """v3契约: 无复合分, band并列分组, 默认全量; top_n按band整组截断"""
     fit = engine.emblem_fit("alear", "sword_fighter")
-    assert fit["ranking"] and "排序参考" in fit["ranking"][0]
-    assert all("精准匹配" in r and "同步技协同" in r for r in fit["ranking"])
+    assert fit["ranking"]
+    assert all("排序参考" not in r for r in fit["ranking"])
+    assert all("精准匹配" in r and "同步技协同" in r and "band" in r for r in fit["ranking"])
+    bands = [r["band"] for r in fit["ranking"]]
+    assert bands[0] == 1 and bands == sorted(bands)
+    # 默认全量 + band1并列组完整(≥2家同band)
+    assert len([r for r in fit["ranking"] if r["band"] == 1]) >= 2
+    # top_n整组截断: 末band组与全量一致, 不出现同band一半在卷内
+    cut = engine.emblem_fit("alear", "sword_fighter", top_n=3)
+    assert 0 < len(cut["ranking"]) < len(fit["ranking"])
+    last_band = cut["ranking"][-1]["band"]
+    n_full_last = len([r for r in fit["ranking"] if r["band"] == last_band])
+    n_cut_last = len([r for r in cut["ranking"] if r["band"] == last_band])
+    assert n_full_last == n_cut_last
 
 
 def test_weapons_real_values():
