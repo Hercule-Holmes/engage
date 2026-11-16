@@ -1,0 +1,32 @@
+﻿Icon,Name,Mt,Hit,Crit,Wt,Rng,Lvl,Price,Notes/Description
+,Dragon Fang,20,100,0,7,1,D,100,Skill wielded by Emblem Corrin.
+,Eternal Claw,10,90,30,8,1,D,100,Claw attack used by Emblem Tiki. Easily inflicts fatal wounds.
+,Eternal Claw (FX6),10,90,30,8,1,D,100,Claw attack used by Emblem Tiki. Easily inflicts fatal wounds.
+,Eternal Claw (Normal),10,90,30,8,1,D,100,Claw attack used by Emblem Tiki. Easily inflicts fatal wounds.
+,Eternal Claw (Weakest),3,60,15,13,1,D,100,Claw attack used by Emblem Tiki. Easily inflicts fatal wounds.
+,Eternal Claw (Weak),5,70,20,10,1,D,100,Claw attack used by Emblem Tiki. Easily inflicts fatal wounds.
+,Eternal Claw (Mid),8,80,25,9,1,D,100,Claw attack used by Emblem Tiki. Easily inflicts fatal wounds.
+,Eternal Claw (Strong),13,100,30,8,1,D,100,Claw attack used by Emblem Tiki. Easily inflicts fatal wounds.
+,Eternal Claw (Strongest),18,100,30,8,1,D,100,Claw attack used by Emblem Tiki. Easily inflicts fatal wounds.
+,Tail Smash,22,85,0,13,1,D,100,"Smash attack used by Emblem Tiki. Smashes foes. Cannot follow up, or strike first if initiating combat."
+,Tail Smash (FX6),22,85,0,13,1,D,100,"Smash attack used by Emblem Tiki. Smashes foes. Cannot follow up, or strike first if initiating combat."
+,Tail Smash (Normal),22,85,0,13,1,D,100,"Smash attack used by Emblem Tiki. Smashes foes. Cannot follow up, or strike first if initiating combat."
+Icon,Name,Mt,Hit,Crit,Wt,Rng,Lvl,Price,Notes/Description
+,Tail Smash (Weakest),14,85,0,13,1,D,100,"Smash attack used by Emblem Tiki. Smashes foes. Cannot follow up, or strike first if initiating combat."
+,Tail Smash (Weak),17,85,0,13,1,D,100,"Smash attack used by Emblem Tiki. Smashes foes. Cannot follow up, or strike first if initiating combat."
+,Tail Smash (Mid),27,85,0,13,1,D,100,"Smash attack used by Emblem Tiki. Smashes foes. Cannot follow up, or strike first if initiating combat."
+,Tail Smash (Strong),32,85,0,13,1,D,100,"Smash attack used by Emblem Tiki. Smashes foes. Cannot follow up, or strike first if initiating combat."
+,Tail Smash (Strongest),35,85,0,13,1,D,100,"Smash attack used by Emblem Tiki. Smashes foes. Cannot follow up, or strike first if initiating combat."
+,Fire Breath,10,75,0,15,1,D,100,"Strikes foes in area at half Def. Sets area on fire. Cannot follow up, or strike first if initiating combat."
+,Fog Breath,10,75,0,15,1,D,100,"Strikes foes in area at half Def. Eff: Dragon. Creates fog. Cannot follow up, or strike first if initiating combat."
+,Ice Breath,10,75,0,15,1,D,100,"Strikes foes in area at half Def. Freezes foes. Cannot follow up, or strike first if initiating combat."
+,Flame Breath,10,75,0,15,1,D,100,"Sets area on fire. Strikes foes at 70% damage and half Def. Cannot follow up, or strike first if initiating combat."
+,Dark Breath,10,75,0,15,1,D,100,"Magically strikes foes in area at half Res. Cannot follow up, or strike first if initiating combat."
+,Fire Breath (FX1),14,75,0,15,1,D,100,"Strikes foes in area at half Def. Sets area on fire. Cannot follow up, or strike first if initiating combat."
+,Fire Breath (FX6),10,75,0,15,1,D,100,"Strikes foes in area at half Def. Sets area on fire. Cannot follow up, or strike first if initiating combat."
+Icon,Name,Mt,Hit,Crit,Wt,Rng,Lvl,Price,Notes/Description
+,Fog Breath (Normal),10,75,0,15,1,D,100,"Strikes foes in area at half Def. Eff: Dragon. Creates fog. Cannot follow up, or strike first if initiating combat."
+,Fog Breath (Weakest),2,75,0,15,1,D,100,"Strikes foes in area at half Def. Eff: Dragon. Creates fog. Cannot follow up, or strike first if initiating combat."
+,Fog Breath (Weak),7,75,0,15,1,D,100,"Strikes foes in area at half Def. Eff: Dragon. Creates fog. Cannot follow up, or strike first if initiating combat."
+,Fog Breath (Strong),13,75,0,15,1,D,100,"Strikes foes in area at half Def. Eff: Dragon. Creates fog. Cannot follow up, or strike first if initiating combat."
+,Fog Breath (Strongest),16,75,0,15,1,D,100,"Strikes foes in area at half Def. Eff: Dragon. Creates fog. Cannot follow up, or strike first if initiating combat."

@@ -1,0 +1,41 @@
+﻿Name,Rank,Stat Boost,Skill
+Chrom,C,HP +2,—
+B,"HP +2, Dex +1",—
+A,"HP +2, Dex +1, Spd +1",—
+S,"HP +5, Dex +1, Spd +1",Rightful Ruler [Adds +5% to trigger rate for all skills with trigger rates.]
+Lissa,C,Lck +1,—
+B,"Mag +1, Lck +1",—
+A,"Mag +1, Res +1, Lck +1",—
+S,"Mag +1, Res +1, Lck +2","Healtouch [When unit heals an ally with a staff, restores +5 HP to target.]"
+Gaius,C,Spd +1,—
+B,"Dex +1, Spd +1",—
+A,"Str +1, Dex +1, Spd +1",—
+S,"Str +1, Dex +1, Spd +2",—
+Cordelia,C,Str +1,—
+B,"Str +1, Lck +1",—
+A,"Str +1, Def +1, Lck +1",—
+S,"Str +2, Def +1, Lck +1",—
+Nowi,C,Lck +1,—
+B,"Def +1, Lck +1",—
+A,"Str +1, Def +1, Lck +1",—
+S,"Str +1, Def +1, Lck +2",—
+Tharja,C,Spd +1,—
+B,"Mag +1, Spd +1",—
+A,"Mag +1, Spd +1, Def +1",—
+S,"Mag +1, Spd +2, Def +1",—
+Owain,C,HP +2,—
+B,"HP +2, Mag +1",—
+A,"HP +2, Mag +1, Spd +1",—
+S,"HP +5, Mag +1, Spd +1",—
+Inigo,C,Lck +1,—
+B,"Spd +1, Lck +1",—
+A,"Dex +1, Spd +1, Lck +1",—
+S,"Dex +1, Spd +1, Lck +2",—
+Severa,C,Str +1,—
+B,"Str +1, Spd +1",—
+A,"Str +1, Spd +1, Def +1",—
+S,"Str +2, Spd +1, Def +1",—
+Morgan,C,Mag +1,—
+B,"Mag +1, Res +1",—
+A,"Mag +1, Res +1, Lck +1",—
+S,"Mag +2, Res +1, Lck +1",—

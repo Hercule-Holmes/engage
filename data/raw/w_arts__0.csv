@@ -1,0 +1,9 @@
+﻿Icon,Name,Mt,Hit,Crit,Wt,Rng,Lvl,Price,Notes/Description
+,Initiate Art,5,95,0,5,1,D,500,"Ddg+30, A scroll of a fundamental martial skill. As a basic text, it does not attack twice."
+,Iron-Body Art,2,90,0,3,1,D,1000,"A scroll of a basic martial skill. If user initiates combat, attacks twice."
+,Steel-Hand Art,5,70,5,5,1,C,2000,"A scroll of a standard martial skill. If user initiates combat, attacks twice."
+,Silver-Spirit Art,8,80,0,7,1,B,4000,"A scroll of a highly polished martial skill. If user initiates combat, attacks twice."
+,Shielding Art,4,70,0,8,1,C,2500,A scroll of a defensive martial skill. Grants Def+5.
+,Flashing Fist Art,9,80,0,9,1,A,6000,"A scroll of brash martial skill. Grants Spd+5, but user takes +5 damage. If user initiates combat, attacks twice."
+,Divine Fist Art,11,75,10,12,1,S,10000,"A scroll of a legendary martial skill. If user initiates combat, attacks twice."
+,Scrollcake,3,90,0,4,1,D,500,"Ddg+10, A martial skill scroll with a sweet scent. Disappears when consumed as an item, but recovers user’s HP."

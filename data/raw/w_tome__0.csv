@@ -1,0 +1,21 @@
+﻿Icon,Name,Mt,Hit,Crit,Wt,Rng,Lvl,Price,Notes/Description
+,Surge,7,255,0,5,1,D,1500,A basic attack tome that can only be used in close combat.
+,Fire,5,95,0,4,1~2,D,1000,A standard tome of fire magic.
+,Thunder,5,80,0,10,1~3,D,1000,A standard tome of thunder magic. Cannot follow up.
+,Wind,4,90,0,4,1~2,C,1000,A standard tome of wind magic. Effective: Flying.
+,Elsurge,13,255,10,7,1,C,2500,An advanced attack tome that can only be used in close combat.
+,Elfire,11,90,0,7,1~2,C,2000,An advanced fire tome.
+,Elthunder,11,75,0,13,1~3,B,2000,An advanced thunder tome. Cannot follow up.
+,Elwind,7,85,0,6,1~2,B,2000,An advanced wind tome. Effective: Flying.
+,Bolganone,16,85,0,11,1~2,A,4000,A truly mighty fire tome.
+,Thoron,18,70,0,16,1~3,A,4000,A truly mighty thunder tome. Cannot follow up.
+,Thoron (Zephia),18,70,0,16,1~3,A,100,A truly mighty thunder tome. Cannot follow up.
+,Excalibur,10,80,5,9,1~2,A,4000,A truly mighty wind tome. Effective: Flying.
+Icon,Name,Mt,Hit,Crit,Wt,Rng,Lvl,Price,Notes/Description
+,Excalibur (Griss),10,80,0,9,1~2,A,100,A truly mighty wind tome. Effective: Flying.
+,Nova,5,75,0,14,1~2,S,10000,"An extremely potent tome. If user initiates combat, attacks twice."
+,Meteor,13,80,0,20,3~7,A,100,A tome of long-range attack magic. Cannot be used at shorter ranges.
+,Meteor (DP4),10,70,0,20,3~7,A,100,A tome of long-range attack magic. Cannot be used at shorter ranges.
+,Obscurité,14,80,10,12,1~2,D,8000,Fell Dragon only. Truly mighty dark magic.
+,Obscurité (Prologue),14,90,0,12,1,D,100,Fell Dragon only. Truly mighty dark magic.
+,Tiramistorm,8,85,0,6,1~2,D,500,"Ddg+10, A tome with a sweet scent. Disappears when consumed as an item, but recovers user’s HP."

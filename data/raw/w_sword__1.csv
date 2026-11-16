@@ -1,0 +1,79 @@
+﻿Icon,Name,Mt,Hit,Crit,Wt,Rng,Lvl,Price,Notes/Description
+,Rapier,7,95,0,3,1,D,100,"Avo+20, Sword wielded by Emblem Marth. Effective: Cavalry, Armored."
+,Rapier (Normal),12,95,0,3,1,D,100,"Avo+20, Sword wielded by Emblem Marth. Effective: Cavalry, Armored."
+,Mercurius,12,80,0,7,1,D,100,Sword wielded by Emblem Marth. Doubles user’s earned experience.
+,Mercurius (Normal),18,80,0,7,1,D,100,Sword wielded by Emblem Marth. Doubles user’s earned experience.
+,Falchion,12,100,0,10,1,D,100,Sacred sword wielded by Emblem Marth. Effective: Dragon.
+,Falchion (Normal),12,100,0,10,1,D,100,Sacred sword wielded by Emblem Marth. Effective: Dragon.
+,Falchion (Prologue),12,100,0,10,1,D,100,An exalted legendary weapon. Effective: Dragon.
+,Tyrfing,15,80,0,7,1,D,100,Sword wielded by Emblem Sigurd. Grants Res+5.
+,Tyrfing (Normal),12,80,0,7,1,D,100,Sword wielded by Emblem Sigurd.
+,Lancereaver,9,80,5,9,1,D,100,Unusual sword wielded by Emblem Roy. Grants advantage vs. lances but disadvantage vs. axes.
+,Lancereaver (Normal),9,80,5,9,1,D,100,Unusual sword wielded by Emblem Roy. Grants advantage vs. lances but disadvantage vs. axes.
+,Wyrmslayer,10,70,0,5,1,D,100,Sword wielded by Emblem Roy. Effective: Dragon.
+Icon,Name,Mt,Hit,Crit,Wt,Rng,Lvl,Price,Notes/Description
+,Wyrmslayer (Normal),10,70,0,5,1,D,100,Sword wielded by Emblem Roy. Effective: Dragon.
+,Binding Blade,14,95,10,8,1~2,D,100,Famous sword wielded by Emblem Roy. Grants Def/Res+5. Can strike close or at range.
+,Binding Blade (Normal),14,95,10,8,1~2,D,100,Famous sword wielded by Emblem Roy. Grants Def/Res+5. Can strike close or at range.
+,Light Brand,15,75,20,6,1~2,D,100,Magical sword wielded by Emblem Leif. Grants Lck+10. Can strike close or at range.
+,Light Brand (Normal),15,75,20,6,1~2,D,100,Magical sword wielded by Emblem Leif. Grants Lck+10. Can strike close or at range.
+,Noble Rapier,8,85,10,8,1,D,100,"Sword wielded by Emblem Lucina. Effective: Cavalry, Armored."
+,Noble Rapier (Normal),8,85,10,8,1,D,100,"Sword wielded by Emblem Lucina. Effective: Cavalry, Armored."
+,Noble Rapier (Ch 7),8,85,10,8,1,D,100,"An Emblem’s sword. Effective: Cavalry, Armored."
+,Parallel Falchion,10,80,5,10,1,D,100,Sacred sword wielded by Emblem Lucina. Effective: Dragon.
+,Parallel Falchion (Normal),10,80,5,10,1,D,100,Sacred sword wielded by Emblem Lucina. Effective: Dragon.
+,Mani Katti,6,80,20,5,1,D,100,"Divine sword wielded by Emblem Lyn. Effective: Cavalry, Armored."
+,Mani Katti (Normal),6,80,0,5,1,D,100,"Divine sword wielded by Emblem Lyn. Effective: Cavalry, Armored."
+,Mani Katti (Ch 10),6,80,5,5,1,D,100,"Divine sword wielded by Emblem Lyn. Effective: Cavalry, Armored."
+Icon,Name,Mt,Hit,Crit,Wt,Rng,Lvl,Price,Notes/Description
+,Mani Katti (Doubles),6,80,20,5,1,D,100,"Divine sword wielded by Emblem Lyn. Effective: Cavalry, Armored."
+,Ragnell,16,80,5,15,1~2,D,100,Sacred sword wielded by Emblem Ike. Grants Def+5. Can strike close or at range.
+,Ragnell (Normal),16,80,5,15,1~2,D,100,Sacred sword wielded by Emblem Ike. Grants Def+5. Can strike close or at range.
+,Blutgang,8,80,0,7,1,D,100,"Magical sword wielded by Emblem Byleth. Effective: Dragon, Cavalry."
+,Blutgang (Normal),8,80,0,7,1,D,100,"Magical sword wielded by Emblem Byleth. Effective: Dragon, Cavalry."
+,Sword of the Creator,11,90,10,7,1~2,D,100,Sword of Emblem Byleth. Raises damage with user’s Mag. Can strike close or at range. Effective: Dragon [+1 damage for every 3 Mag.]
+,Sword of the Creator (Normal),11,90,10,7,1~2,D,100,Sword of Emblem Byleth. Raises damage with user’s Mag. Can strike close or at range. Effective: Dragon [+1 damage for every 3 Mag.]
+,Sword of the Creator (Ch 14),11,90,10,7,1~2,D,100,An Emblem’s sword. Raises damage with user’s Mag. Can strike close or at range. Effective: Dragon [+1 damage for every 3 Mag.]
+,Dual Katana,8,75,5,7,1,D,100,Unusual sword wielded by Emblem Corrin. Grants advantage vs. lances but disadvantage vs. axes.
+,Dual Katana (Normal),8,75,5,7,1,D,100,Unusual sword wielded by Emblem Corrin. Grants advantage vs. lances but disadvantage vs. axes.
+,Wakizashi,10,75,0,10,2,D,100,"Avo-10, Throwing sword wielded by Emblem Corrin. Can only strike at range, not close up."
+,Wakizashi (Normal),10,75,0,10,2,D,100,"Avo-10, Throwing sword wielded by Emblem Corrin. Can only strike at range, not close up."
+,Yato,16,85,10,9,1,D,100,"Avo+10, Ddg+10, Sacred sword wielded by Emblem Corrin."
+Icon,Name,Mt,Hit,Crit,Wt,Rng,Lvl,Price,Notes/Description
+,Yato (Normal),16,85,10,9,1,D,100,"Avo+10, Ddg+10, Sacred sword wielded by Emblem Corrin."
+,Rapier,7,95,10,5,1,D,100,"Sword wielded by Emblem Eirika. Effective: Cavalry, Armored."
+,Rapier (Normal),7,95,10,5,1,D,100,"Sword wielded by Emblem Eirika. Effective: Cavalry, Armored."
+,Wind Sword,10,70,0,9,1~2,D,100,Magical sword wielded by Emblem Eirika. Can strike close or at range. Effective: Flying.
+,Wind Sword (Normal),10,70,0,9,1~2,D,100,Magical sword wielded by Emblem Eirika. Can strike close or at range. Effective: Flying.
+,Sieglinde,12,90,0,9,1,D,100,Paired sword wielded by Emblem Eirika. Effective: Corrupted.
+,Sieglinde (Normal),12,90,0,9,1,D,100,Paired sword wielded by Emblem Eirika. Effective: Corrupted.
+,Oligoludia,8,90,0,7,1,D,100,Sword wielded by Emblem Alear . Effective: Corrupted.
+,Oligoludia (Normal),8,90,0,7,1,D,100,Sword wielded by Emblem Alear . Effective: Corrupted.
+,Lyrátion,15,90,10,10,1,D,100,"Sword of Emblem Alear . If user defeats foe in player phase, fills adjacent allies’ engage meters by 1."
+,Lyrátion (Normal),15,90,10,10,1,D,100,"Sword of Emblem Alear . If user defeats foe in player phase, fills adjacent allies’ engage meters by 1."
+,Runesword,12,65,0,11,1~2,D,100,Magic sword of Emblem Hector. Can strike close or at range. Restore HP equal to 50% of damage dealt.
+Icon,Name,Mt,Hit,Crit,Wt,Rng,Lvl,Price,Notes/Description
+,Runesword (Normal),12,65,0,11,1~2,D,100,Magic sword of Emblem Hector. Can strike close or at range. Restore HP equal to 50% of damage dealt.
+,Runesword (DP2 Weakest),7,65,0,11,1~2,D,100,Magic sword of Emblem Hector. Can strike close or at range. Restore HP equal to 50% of damage dealt.
+,Runesword (DP2 Weak),10,65,0,11,1~2,D,100,Magic sword of Emblem Hector. Can strike close or at range. Restore HP equal to 50% of damage dealt.
+,Runesword (DP2 Strong),15,65,0,11,1~2,D,100,Magic sword of Emblem Hector. Can strike close or at range. Restore HP equal to 50% of damage dealt.
+,Runesword (DP2 Strongest),18,65,0,11,1~2,D,100,Magic sword of Emblem Hector. Can strike close or at range. Restore HP equal to 50% of damage dealt.
+,Runesword (Dark),16,65,0,11,1~2,D,100,Magic sword of Emblem Hector. Can strike close or at range. Restore HP equal to 50% of damage dealt.
+,Levin Sword,10,80,0,8,1~2,D,100,Magic sword wielded by Emblem Robin. Can hit foes with magic lightning from a distance.
+,Levin Sword (Normal),10,80,0,8,1~2,D,100,Magic sword wielded by Emblem Robin. Can hit foes with magic lightning from a distance.
+,Levin Sword (DP5 Weak),10,80,0,11,1~2,D,100,Magic sword wielded by Emblem Robin. Can hit foes with magic lightning from a distance.
+,Levin Sword (DP5 Weakest),2,80,0,13,1~2,D,100,Magic sword wielded by Emblem Robin. Can hit foes with magic lightning from a distance.
+,Falchion,13,80,10,12,1,D,100,A legendary sword wielded by Emblem Chrom. Effective: Dragon.
+,Falchion (Normal),13,80,10,12,1,D,100,A legendary sword wielded by Emblem Chrom. Effective: Dragon.
+Icon,Name,Mt,Hit,Crit,Wt,Rng,Lvl,Price,Notes/Description
+,Falchion (DP6 Weakish),10,80,10,10,1,D,100,A legendary sword wielded by Emblem Chrom. Effective: Dragon.
+,Falchion (DP6 Weak),7,80,10,8,1,D,100,A legendary sword wielded by Emblem Chrom. Effective: Dragon.
+,Falchion (DP6 Weakest),4,80,10,12,1,D,100,A legendary sword wielded by Emblem Chrom. Effective: Dragon.
+,Light Brand (+),17,80,20,6,1~2,D,100,Magical sword wielded by Emblem Leif. Grants Lck+10. Can strike close or at range.
+,Light Brand (++),19,85,20,6,1~2,D,100,Magical sword wielded by Emblem Leif. Grants Lck+10. Can strike close or at range.
+,Parallel Falchion (+),12,85,10,10,1,D,100,Sacred sword wielded by Emblem Lucina. Effective: Dragon.
+,Mani Katti (+),8,85,0,5,1,D,100,"Avo+5, Divine sword wielded by Emblem Lyn. Effective: Cavalry, Armored."
+,Mani Katti (++),10,90,5,5,1,D,100,"Avo+10, Divine sword wielded by Emblem Lyn. Effective: Cavalry, Armored."
+,Blutgang (+),10,85,0,7,1,D,100,"Magical sword wielded by Emblem Byleth. Effective: Dragon, Cavalry."
+,Runesword (+),14,70,0,11,1~2,D,100,Magic sword of Emblem Hector. Can strike close or at range. Restore HP equal to 50% of damage dealt.
+,Levin Sword (+),12,80,0,8,1~2,D,100,Magic sword wielded by Emblem Robin. Can hit foes with magic lightning from a distance.

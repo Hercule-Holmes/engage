@@ -1,0 +1,25 @@
+﻿Icon,Name,Rng,Lvl,Uses,Price,EXP,Notes/Description
+,Heal,1,D,25,500,25,"Pow: 10, A staff imbued with healing magic. Recovers an ally’s HP."
+,Mend,1,D,20,1000,30,"Pow: 20, A staff imbued with healing magic. Recovers a great deal of an ally’s HP."
+,Physic,1~5,C,10,3000,35,"Pow: 8, A staff imbued with healing magic. Can recover an ally’s HP at a distance."
+,Physic (DP4),1~10,C,10,3000,35,"Pow: 8, A staff imbued with healing magic. Can recover an ally’s HP at a distance."
+,Recover,1,B,10,3000,40,"Pow: 40, A staff imbued with healing magic. Recovers vast amounts of an ally’s HP."
+,Fortify,1~5,A,5,5000,25,"Pow: 7, A staff imbued with healing magic. Recovers HP for all allies within a 5-space radius."
+,Restore,1~3,C,10,500,30,A staff that removes status effects on an ally.
+,Warp,1,B,5,2000,35,A staff imbued with space-warping magic. Teleports an adjacent ally up to 5 spaces away.
+,Rewarp,—,C,5,1200,35,A staff imbued with space-warping magic. Teleports the user up to 5 spaces away.
+,Rescue,1~8,B,5,2000,35,A staff imbued with space-warping magic. Teleports a faraway ally to an adjacent space.
+,Rescue (Chapter 19),1~5,B,1,100,35,A staff imbued with space-warping magic. Teleports a faraway ally to an adjacent space.
+,Entrap,1~6,A,3,4000,35,"Hit: 50, A staff imbued with space-warping magic. Teleports a faraway foe to an adjacent space."
+Icon,Name,Rng,Lvl,Uses,Price,EXP,Notes/Description
+,Illume,—,D,5,500,30,A staff that magically shines through darkness. Illuminates a 7-space radius (shrinks one space per turn).
+,Freeze,1~6,C,5,1500,35,"Hit: 70, A staff that prevents foes from moving for 1 turn."
+,Freeze (Paralogue 10),1~15,C,3,100,35,A staff that prevents foes from moving for 1 turn.
+,Silence,1~6,C,5,1500,35,"Hit: 70, A staff that prevents foes from using tomes or staves for 1 turn."
+,Silence (Paralogue 10),1~15,C,3,100,35,A staff that prevents foes from using tomes or staves for 1 turn.
+,Obstruct,1~8,D,10,500,30,A staff that conjures a mass of ice that makes one space impassable for 1 turn.
+,Fracture,1~10,B,10,1200,30,"Hit: 70, A staff imbued with magic that can break foes."
+,Fracture (Chapter 14),1~10,B,3,100,35,"Hit: 70, A staff imbued with magic that can break foes."
+,Fracture (Paralogue 10),1~15,B,3,100,35,A staff imbued with magic that can break foes.
+,Nodus,Inf,S,1,6000,30,"Pow: 20, A staff imbued with mysterious magic that sets all allies’ engage meters to max."
+,Treat,1,D,20,500,25,"Pow: 15, A staff with a sweet scent. Recovers an ally’s HP."

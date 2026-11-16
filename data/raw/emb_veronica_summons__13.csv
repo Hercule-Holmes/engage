@@ -1,0 +1,11 @@
+﻿Name,Class,Weapons,Weight
+Fabrication,Archer,"Iron Bow, Steel Bow, Silver Bow",17
+Fabrication,Archer,"Iron Bow, Longbow, Silver Bow",8
+Fabrication,Mage,"Fire, Elfire, Elfire",13
+Fabrication,Mage,"Wind, Elwind, Elwind",6
+Fabrication,Mage,"Thunder, Elthunder, Elthunder",6
+Fabrication,Martial Monk,"Heal, Mend, Physic",17
+Fabrication,Martial Monk,"Freeze, Obstruct, Rescue",4
+Fabrication,Martial Monk,"Iron-Body Art, Steel-Hand Art, Steel-Hand Art",4
+Fabrication,Thief,"Iron Dagger, Steel Dagger, Silver Dagger",21
+Fabrication,Thief,"Kard, Stiletto, Peshkatz",4

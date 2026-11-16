@@ -1,0 +1,23 @@
+﻿Bond,Name,Description,Type,SP
+1,Dexterity +1,Grants Dex+1.,Inheritable Skill,100
+1,Dual Strike,Unit participates in chain attacks as if it were a backup unit.,Sync Skill (Cannot Inherit),—
+1,Bonded Shield,Use to prevent first attacks on adjacent allies until your next turn. Trigger %=80. [Dragon] +10% to trigger rate. [Cavalry] Trigger %=100 for cavalry allies. [Armored] Trigger %=100 for armored allies. [Flying] Trigger %=100 for flying allies. [Qi Adept] Trigger %=100.,Engage Skill,—
+1,All For One,Use to make a sword attack against an adjacent foe. All allies within 2 spaces chain attack. [Dragon] Ally chain attacks are guaranteed to hit. [Backup] Range +1.,Engage Attack,—
+1,Noble Rapier,"Sword wielded by Emblem Lucina. Effective: Cavalry, Armored.",Engage Weapon,—
+2,Dexterity +2,Grants Dex+2.,Inheritable Skill,300
+3,Dual Assist,"If unit is able to chain attack, unit will do so when allies attack foes unit could reach by moving. Trigger %=35.",Sync Skill (Can Inherit),1000
+4,Bow Agility 1,Grants Avo+10 at a cost of Crit-10 when using a bow.,Inheritable Skill,500
+5,Skill Inheritance,Unit can inherit this Emblem’s skills.,Unlock,—
+6,Sword Prof.,Proficiency with swords. Required for promotion to certain classes.,Unlock,—
+7,Bow Agility 2,Grants Avo+15 at a cost of Crit-10 when using a bow.,Inheritable Skill,1000
+8,Bow Prof.,Proficiency with bows. Required for promotion to certain classes.,Unlock,—
+9,Dexterity +3,Grants Dex+3.,Inheritable Skill,500
+10,Parthia,Bow wielded by Emblem Lucina. Doubles user’s earned experience. Grants Res+5. Effective: Flying.,Engage Weapon,—
+12,Bow Agility 3,Grants Avo+20 at a cost of Crit-10 when using a bow.,Inheritable Skill,2000
+13,Dual Support,"Grants a bonus to Avo that increases with unit’s support level with adjacent allies. (Max +90) [+5 Avoid for each support level. None = 1, C = 2, B = 3, A = 4, S = 6.]",Sync Skill (Can Inherit),2000
+14,Bow Agility 4,Grants Avo+25 at a cost of Crit-10 when using a bow.,Inheritable Skill,3000
+15,Parallel Falchion,Sacred sword wielded by Emblem Lucina. Effective: Dragon.,Engage Weapon,—
+16,Dexterity +4,Grants Dex+4.,Inheritable Skill,1000
+17,Bow Agility 5,Grants Avo+30 at a cost of Crit-10 when using a bow.,Inheritable Skill,4000
+18,Dual Assist+,"If unit is able to chain attack, unit will do so when allies attack foes unit could reach by moving. Trigger %=70.",Sync Skill (Can Inherit),2000
+19,Dexterity +5,Grants Dex+5.,Inheritable Skill,2000

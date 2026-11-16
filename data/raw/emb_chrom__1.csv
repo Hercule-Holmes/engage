@@ -1,0 +1,25 @@
+﻿Bond,Name,Description,Type,SP
+1,Surprise Attack,"If unit initiates combat from terrain that provides an Avo bonus, foe cannot counterattack.",Sync Skill (Can Inherit),3000
+1,Other Half,"If unit initiates combat, Robin chain attacks. Grants Mag+10 while engaged. [Dragon] Robin chain attacks 2 times. [Backup] Guaranteed hit with chain attack. [Covert] Grants Mov+1 while engaged.",Engage Skill,—
+1,Giga Levin Sword,Use to attack with a magic sword. Magic attack that uses physical attack power. Swords only. [Dragon] Deals extra damage = half of Str. [Flying] Deals extra damage = Bld. [Mystical] Deals extra damage = half of Mag.,Engage Attack,—
+1,Giga Levin Sword+,Use to attack with a magic sword. Magic attack that uses physical attack power. Swords only. Adjacent allies chain attack. [Dragon] Deals extra damage = half of Str. [Flying] Deals extra damage = Bld. [Mystical] Deals extra damage = half of Mag.,Engage Attack (requires adjacent Lucina),—
+1,Levin Sword (Robin),Magic sword wielded by Emblem Robin. Can hit foes with magic lightning from a distance.,Engage Weapon,—
+2,Spd/Dex +1,Grants Spd+1 and Dex+1.,Inheritable Skill,250
+3,Sword Guard 1,"If foe is equipped with a sword, unit takes 1 less damage during combat.",Inheritable Skill,200
+4,Rally Spectrum,Use to grant adjacent allies +3 to all seven basic stats for 1 turn.,Sync Skill (Can Inherit),1500
+5,Skill Inheritance,Unit can inherit this Emblem’s skills.,Unlock,—
+6,Sword Prof.,Proficiency with swords. Required for promotion to certain classes.,Unlock,—
+7,Spd/Dex +2,Grants Spd+2 and Dex+2.,Inheritable Skill,700
+8,Brute Force,"While making a physical attack, critical hits deal increased damage. [Damage increased by one third.]",Sync Skill (Can Inherit),1500
+9,Sword Guard 2,"If foe is equipped with a sword, unit takes 2 less damage during combat.",Inheritable Skill,400
+10,Thoron (Robin),Powerful lightning magic wielded by Emblem Robin.,Engage Weapon,—
+12,Spd/Dex +3,Grants Spd+3 and Dex+3.,Inheritable Skill,1200
+13,Charm,"If unit’s attack triggers a chain attack, increases chain attack accuracy to 90%.",Sync Skill (Can Inherit),800
+13,Sword Guard 3,"If foe is equipped with a sword, unit takes 3 less damage during combat.",Inheritable Skill,600
+14,Spd/Dex +4,Grants Spd+4 and Dex+4.,Inheritable Skill,2400
+15,Falchion (Chrom),A legendary sword wielded by Emblem Chrom. Effective: Dragon.,Engage Weapon,—
+16,Tome Prof.,Proficiency with tomes. Required for promotion to certain classes.,Unlock,—
+17,Sword Guard 4,"If foe is equipped with a sword, unit takes 4 less damage during combat.",Inheritable Skill,800
+18,Rally Spectrum+,Use to grant allies within 2 spaces +3 to all seven basic stats for 1 turn.,Sync Skill (Can Inherit),2000
+18,Spd/Dex +5,Grants Spd+5 and Dex+5.,Inheritable Skill,4800
+19,Sword Guard 5,"If foe is equipped with a sword, unit takes 5 less damage during combat.",Inheritable Skill,1000

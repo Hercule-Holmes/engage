@@ -1,0 +1,33 @@
+﻿Bond,Name,Description,Type,SP
+1,Gambit,Effects change based on synced Emblem.,Sync Skill (Cannot Inherit),—
+1,Flame Gambit,"Use when synced with Edelgard to attack a foe, then set the target foe’s space and nearby spaces on fire.",Command Skill,—
+1,Shield Gambit,Use when synced with Dimitri to negate damage from first attacks of ranged foes targeting unit in next enemy phase.,Command Skill,—
+1,Poison Gambit,"Use when synced with Claude to attack a foe, then poison target and all foes adjacent to it after combat.",Command Skill,—
+1,Friendly Rivalry,"At start of player phase, the Emblem will randomly switch to Edelgard, Dimitri, or Claude.",Sync Skill (Cannot Inherit),—
+1,Combat Arts,"Enables use of Edelgard, Dimitri, or Claude’s Combat Art. Spends some remaining engage turns. [Dragon] +10% damage. [Covert] Avo+20.",Engage Skill,—
+1,Raging Storm,"After combat, take another action. (Spend 3 turns.)",Command Skill,—
+1,Atrocity,Attack at double weapon’s Mt. (Spend 1 turn.),Command Skill,—
+1,Fallen Star,Avoid foe’s attacks during next combat. (Spend 1 turn.),Command Skill,—
+1,Houses Unite,"Use to attack with Aymr, Areadbhar, and Failnaught at 50% damage. [Dragon] +10% damage. [Cavalry] +10% damage with Areadbhar. [Covert] +10% damage with Failnaught. [Armored] +10% damage with Aymr. [Qi Adept] Breaks foe.",Engage Attack,—
+1,Houses Unite+,"Use to attack with Aymr, Areadbhar, and Failnaught at 50% damage. After combat, take another action. [Dragon] +10% damage. [Cavalry] +10% damage with Areadbhar. [Covert] +10% damage with Failnaught. [Armored] +10% damage with Aymr. [Qi Adept] Breaks foe.",Engage Attack (Requires adjacent Byleth),—
+1,Aymr (Edelgard),"Axe of Emblem Edelgard. Smashes foes. Cannot follow up, or strike first if initiating combat. Eff: Dragon.",Engage Weapon,—
+2,Assembly Gambit,"Use to attack an adjacent foe, then move 1 space away after combat. Target foe moves to unit’s previous space.",Inheritable Skill,1500
+3,Str/Dex +1,Grants Str+1 and Dex+1.,Inheritable Skill,700
+3,Lineage,Increases unit’s earned experience by 20%.,Sync Skill (Can Inherit),150
+4,Bow Guard 1,"If foe is equipped with a bow, unit takes 1 less damage during combat.",Inheritable Skill,200
+5,Skill Inheritance,Unit can inherit this Emblem’s skills.,Unlock,—
+6,Axe Prof.,Proficiency with axes. Required for promotion to certain classes.,Unlock,—
+7,Str/Dex +2,Grants Str+2 and Dex+2.,Inheritable Skill,1600
+8,Bow Guard 2,"If foe is equipped with a bow, unit takes 2 less damage during combat.",Inheritable Skill,400
+9,Lance Prof.,Proficiency with lances. Required for promotion to certain classes.,Unlock,—
+10,Areadbhar (Dimitri),"Lance wielded by Emblem Dimitri. If user initiates combat, grants Mt+50%.",Engage Weapon,—
+12,Weapon Sync,"If unit initiates combat using same weapon type as the synced Emblem, grants Atk+5. If engaged, grants Atk+5 regardless of weapon type. [See note above.]",Sync Skill (Can Inherit),3000
+12,Str/Dex +3,Grants Str+3 and Dex+3.,Inheritable Skill,4200
+13,Bow Prof.,Proficiency with bows. Required for promotion to certain classes.,Unlock,—
+14,Bow Guard 3,"If foe is equipped with a bow, unit takes 3 less damage during combat.",Inheritable Skill,600
+15,Failnaught (Claude),"Bow wielded by Emblem Claude. If user initiates combat, grants Avo+20. Effective: Dragon, Flying.",Engage Weapon,—
+16,Str/Dex +4,Grants Str+4 and Dex+4.,Inheritable Skill,6000
+17,Weapon Sync+,"If unit initiates combat using same weapon type as the synced Emblem, grants Atk+7. If engaged, grants Atk+7 regardless of weapon type. [See note above.]",Sync Skill (Can Inherit),5000
+17,Bow Guard 4,"If foe is equipped with a bow, unit takes 4 less damage during combat.",Inheritable Skill,800
+18,Str/Dex +5,Grants Str+5 and Dex+5.,Inheritable Skill,8400
+19,Bow Guard 5,"If foe is equipped with a bow, unit takes 5 less damage during combat.",Inheritable Skill,1000

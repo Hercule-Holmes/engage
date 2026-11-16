@@ -1,0 +1,24 @@
+﻿Bond,Name,Description,Type,SP
+1,Strength +1,Grants Str+1.,Inheritable Skill,500
+1,Hold Out,"If unit had 30% HP or more at start of combat, unit always survives combat with at least 1 HP.",Sync Skill (Can Inherit),2000
+1,Rise Above,Grants Lvl+5. [Dragon] Additional Lvl+1. [Cavalry] Mov+1. [Armored] Max HP+5.,Engage Skill,—
+1,Blazing Lion,Use to attack adjacent foe and an area 3 spaces wide. Target area and the 2 rows beyond it are set on fire. Sword only. [Dragon] Expands attack area. [Mystical] Expands flame area.,Engage Attack,—
+1,Lancereaver,Unusual sword wielded by Emblem Roy. Grants advantage vs. lances but disadvantage vs. axes.,Engage Weapon,—
+2,Strength +2,Grants Str+2.,Inheritable Skill,1000
+3,Advance,Use to move 1 space toward a foe that is 2 spaces away and attack.,Sync Skill (Can Inherit),500
+4,Sword Power 1,Grants Atk+2 at a cost of Avo-10 when using a sword.,Inheritable Skill,1000
+5,Skill Inheritance,Unit can inherit this Emblem’s skills.,Unlock,—
+6,Sword Prof.,Proficiency with swords. Required for promotion to certain classes.,Unlock,—
+7,Sword Power 2,Grants Atk+4 at a cost of Avo-10 when using a sword.,Inheritable Skill,2000
+8,Hold Out+,"If unit had 20% HP or more at start of combat, unit always survives combat with at least 1 HP.",Sync Skill (Can Inherit),3000
+9,Strength +3,Grants Str+3.,Inheritable Skill,3000
+9,Sword Power 3,Grants Atk+6 at a cost of Avo-10 when using a sword.,Inheritable Skill,3000
+10,Wyrmslayer (Roy),Sword wielded by Emblem Roy. Effective: Dragon.,Engage Weapon,—
+12,Sword Power 4,Grants Atk+8 at a cost of Avo-10 when using a sword.,Inheritable Skill,4000
+13,Hold Out++,"If unit had 10% HP or more at start of combat, unit always survives combat with at least 1 HP.",Sync Skill (Can Inherit),4000
+14,Strength +4,Grants Str+4.,Inheritable Skill,4000
+15,Binding Blade,Famous sword wielded by Emblem Roy. Grants Def/Res+5. Can strike close or at range.,Engage Weapon,—
+16,Sword Power 5,Grants Atk+10 at a cost of Avo-10 when using a sword.,Inheritable Skill,5000
+17,Strength +5,Grants Str+5.,Inheritable Skill,5000
+18,Hold Out+++,"If unit had 2 HP or more at start of combat, unit always survives combat with at least 1 HP.",Sync Skill (Can Inherit),5000
+19,Strength +6,Grants Str+6.,Inheritable Skill,6000

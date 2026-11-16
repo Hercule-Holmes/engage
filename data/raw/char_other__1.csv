@@ -1,0 +1,42 @@
+﻿Name,Age,Gender,Birthday,Proficiency,SP
+Alear,17,Male,(custom),"Sword (Innate), Arts",300
+Vander,45,Male,November 26,Axe (Innate),500
+Clanne,16,Male,March 10,"Tome (Innate), Sword",300
+Framme,16,Female,March 10,"Arts (Innate), Staff",300
+Alfred,21,Male,August 8,"Lance (Innate), Sword",300
+Etie,17,Female,October 1,Bow (Innate),300
+Boucheron,23,Male,May 11,Axe (Innate),300
+Céline,17,Female,December 18,"Tome (Innate), Sword, Staff",300
+Chloé,18,Female,April 27,"Lance (Innate), Staff",300
+Louis,22,Male,November 4,Lance (Innate),300
+Yunaka,22,Female,July 28,Knife (Innate),500
+Alcryst,17,Male,October 15,Bow (Innate),500
+Citrinne,17,Female,November 9,"Tome (Innate), Staff",500
+Lapis,18,Female,May 25,Sword (Innate),500
+Diamant,25,Male,April 6,"Sword (Innate), Axe",800
+Amber,24,Male,February 3,Lance (Innate),800
+Jade,22,Female,December 7,Axe (Innate),800
+Ivy,20,Female,November 17,"Tome (Innate), Staff",1000
+Kagetsu,26,Male,December 22,Sword (Innate),1000
+Zelkov,28,Male,August 2,Knife (Innate),1000
+Fogado,17,Male,February 14,"Bow (Innate), Sword",1200
+Pandreo,20,Male,January 6,"Staff (Innate), Tome, Arts",1200
+Bunet,23,Male,May 30,"Sword (Innate), Axe",1200
+Timerra,18,Female,August 29,Lance (Innate),1500
+Panette,18,Female,October 23,"Knife (Innate), Axe",1500
+Merrin,19,Female,September 24,"Knife (Innate), Sword",1500
+Hortensia,14,Female,June 3,"Staff (Innate), Tome",1500
+Seadall,23,Male,April 21,Arts (Innate),1500
+Rosado,17,Male,January 19,"Axe (Innate), Lance",1800
+Goldmary,19,Female,July 18,"Lance (Innate), Sword",1800
+Lindon,60,Male,June 29,"Staff (Innate), Tome",2000
+Saphir,35,Female,January 17,"Axe (Innate), Bow",2000
+Veyle,16,Female,September 12,"Tome (Innate), Knife",2500
+Mauvier,31,Male,September 13,"Staff (Innate), Lance",2500
+Anna,11,Female,June 8,"Bow (Innate), Axe",300
+Jean,10,Male,March 31,"Arts (Innate), Tome, Staff",300
+Nel,?,Female,February 24,Lance (innate),2000
+Rafal,?,Male,December 31,Axe (innate),2000
+Zelestia,2500,Female,November 21,Sword (innate),2000
+Gregory,27,Male,September 17,Staff (innate),2000
+Madeline,16,Female,April 4,Axe (innate),2000

@@ -1,0 +1,24 @@
+﻿Bond,Name,Description,Type,SP
+1,Reprisal,"If unit’s HP is not full, adds 30% of lost HP to Atk.",Sync Skill (Can Inherit),5000
+1,Contract,Use to grant another action to an adjacent ally who has already acted. (Ally cannot move.) [Dragon] Grants Str/Mag/Def/Res+2 to ally during action. [Backup] Unit participates in chain attack during ally action. [Covert] Grants Hit/Avo+30 to ally during action.,Engage Skill,—
+1,Summon Hero,Use to summon a random unit . [Dragon] Summons a powerful unit. [Removes 3-stars from pool. The 3-star rate is added to 4-star rate.] [Backup] Summoned unit has the “Dual Strike” skill. [Cavalry] Summoned unit gets Mov+1.,Engage Attack,—
+1,Hliðskjálf,"A staff wielded by Emblem Veronica. If user initiates combat, foe cannot counterattack.",Engage Weapon,—
+2,Mag/Dex +1,Grants Mag+1 and Dex+1.,Inheritable Skill,700
+3,Book of Worlds,"Book of Worlds advances 1 stage (to max 5) for each consecutive round that unit uses Wait. Reverts to base stage if unit triggers the effect. [Book I: Seal] If unit initiates combat, freezes foe after combat. [Book II: Flame] If unit initiates combat, freezes foe and sets foe’s space on fire after combat. [Book III: Death] If unit initiates combat, deals 10 damage, freezes foe, and sets foe’s space on fire after combat. [Book IV: Dream] If unit initiates combat, restores HP equal to damage dealt during combat, then deals 10 damage, freezes foe, and sets foe’s space on fire after combat. [Book V: Science] If unit initiates combat, restores HP to self and adjacent allies equal to damage dealt during combat, then deals 10 damage, freezes foe, and sets foe’s space on fire after combat.",Sync Skill (Can Inherit),300
+4,Knife Guard 1,"If foe is equipped with a knife, unit takes 1 less damage during combat.",Inheritable Skill,200
+5,Skill Inheritance,Unit can inherit this Emblem’s skills.,Unlock,—
+6,Staff Prof.,Proficiency with staves. Required for promotion to certain classes.,Unlock,—
+7,Mag/Dex +2,Grants Mag+2 and Dex+2.,Inheritable Skill,1600
+8,Level Boost,"When unit defeats a foe of a higher level, grants Lvl+1 until the end of battle. (Max +3)",Sync Skill (Can Inherit),300
+9,Knife Guard 2,"If foe is equipped with a knife, unit takes 2 less damage during combat.",Inheritable Skill,400
+10,Fortify+,A staff wielded by Emblem Veronica. Heals HP and status effects for all allies within a 7-space radius.,Engage Weapon,—
+12,Mag/Dex +3,Grants Mag+3 and Dex+3.,Inheritable Skill,4200
+13,SP Conversion,Grants +20 SP for each defeated foe. Triggers even without a ring or bracelet equipped.,Sync Skill (Can Inherit),300
+13,Knife Guard 3,"If foe is equipped with a knife, unit takes 3 less damage during combat.",Inheritable Skill,600
+14,Mag/Dex +4,Grants Mag+4 and Dex+4.,Inheritable Skill,6000
+15,Élivágar,Powerful magic wielded by Emblem Veronica. Nullifies basic stat bonuses on target for 1 turn after combat.,Engage Weapon,—
+16,Tome Prof.,Proficiency with tomes. Required for promotion to certain classes.,Unlock,—
+17,Knife Guard 4,"If foe is equipped with a knife, unit takes 4 less damage during combat.",Inheritable Skill,800
+18,Reprisal+,"If unit’s HP is not full, adds 50% of lost HP to Atk.",Sync Skill (Can Inherit),6000
+18,Mag/Dex +5,Grants Mag+5 and Dex+5.,Inheritable Skill,8400
+19,Knife Guard 5,"If foe is equipped with a knife, unit takes 5 less damage during combat.",Inheritable Skill,1000

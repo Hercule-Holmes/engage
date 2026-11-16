@@ -1,0 +1,37 @@
+﻿Icon,Name,Description,Obtain
+,Divinely Inspiring,Adjacent allies deal +3 damage and take 1 less damage.,Alear
+,Alabaster Duty,"If unit is adjacent to the Divine Dragon, grants Crit+5 during combat to both of them.",Vander
+,Verdant Faith,"If unit is adjacent to the Divine Dragon, grants Hit+10 during combat to both of them.",Clanne
+,Crimson Cheer,"If unit is adjacent to the Divine Dragon, grants Avo+10 during combat to both of them.",Framme
+,Self-Improver,"If unit uses Wait without attacking or using items, grants Str+2 for 1 turn.",Alfred
+,Energized,"When unit recovers HP using an item, grants Str+2 for 1 turn.",Etie
+,Moved to Tears,"When an ally joins a chain attack in this unit’s combat, unit deals +2 damage.",Boucheron
+,Gentle Flower,Recovery items used by allies within 2 spaces heal +50% HP.,Céline
+,Fairy-Tale Folk,"If a male and a female ally are adjacent within 2 spaces, unit deals +2 damage during combat.",Chloé
+,Admiration,"If two female allies are adjacent within 2 spaces, this unit takes 2 less damage during combat.",Louis
+,Trained to Kill,"While unit occupies terrain that provides an Avo bonus, grants Crit+15.",Yunaka
+,Get Behind Me!,"When an ally within 2 spaces is attacked, grants Str+3 to unit for 1 turn.",Alcryst
+,Generosity,"When this unit uses a healing item, adjacent allies also recover the same amount of HP.",Citrinne
+,Share Spoils,"If there is an ally within 1 space, grants Hit/Avo+10 at a cost of Crit-10 to unit.",Lapis
+,Fair Fight,"If unit initiates combat, grants Hit+15 to unit and foe if foe is able to counterattack.",Diamant
+,Aspiring Hero,"If no other units are within 1 space of unit or foe, grants Hit+20 at a cost of Avo-10 during combat.",Amber
+,Meditation,"If unit uses Wait without attacking or using items, grants Res+2 for 1 turn.",Jade
+,Single-Minded,"During combat with a foe who was also unit’s most recent opponent, grants Hit+20.",Ivy
+,Blinding Flash,"If unit initiates combat, inflicts Avo-10 on foe during combat.",Kagetsu
+,Not *Quite*,"If foe initiates combat, inflicts Hit-10 on that foe during combat.",Zelkov
+,Charmer,"During combat with a foe who was also unit’s most recent opponent, inflicts Crit-10 on that foe.",Fogado
+,Party Animal,Grants a bonus to Hit and Avo equal to 3× the number of allies and foes within 2 spaces.,Pandreo
+,Seconds?,"On eating a packed lunch, unit may obtain another of the same item. Trigger %=Lck.",Bunet
+,Racket of Solm,Inflicts Crit-5 on foes within 3 spaces.,Timerra
+,Blood Fury,"If unit’s HP is not at max after combat, grants Crit+10 as long as unit’s HP stays below max.",Panette
+,Knightly Escort,"When 2 or more female allies are within 2 spaces, grants Hit/Avo+5 to unit and those allies.",Merrin
+,Big Personality,"When unit uses a healing staff, grants range +1.",Hortensia
+,Curious Dance,"At start of turn, allies within 2 spaces of unit recover 10% of their max HP.",Seadall
+,Stunning Smile,"If foe is male, inflicts Avo-20 on that foe during combat.",Rosado
+,Disarming Sigh,"If foe is male, inflicts Hit-20 on that foe during combat.",Goldmary
+,Weapon Insight,"If unit is equipped with a weapon of lower level than foe’s, grants Crit+20 during combat.",Lindon
+,Will to Win,"If unit’s HP is 50% or less at start of combat, grants Hit/Avo+20 during combat.",Saphir
+,Fell Protection,Adjacent allies deal +1 damage and take 3 less damage.,Veyle
+,Contemplative,"If unit uses Wait without attacking or using items, grants Def+2 for 1 turn.",Mauvier
+,Make a Killing,May obtain 500G when unit defeats a foe. Trigger %=Lck.,Anna
+,Expertise,Grants unit enhanced stat growth when leveling up. [Doubles class growths .],Jean

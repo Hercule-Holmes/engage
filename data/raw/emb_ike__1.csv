@@ -1,0 +1,24 @@
+﻿Bond,Name,Description,Type,SP
+1,Defense +1,Grants Def+1.,Inheritable Skill,100
+1,Demolish,Break destructible terrain in a single blow when using Destroy.,Sync Skill (Can Inherit),200
+1,Resolve,"If unit’s HP is 75% or less after combat, grants Def/Res+5 as long as unit’s HP stays below 75%.",Sync Skill (Can Inherit),1000
+1,Laguz Friend,"Unit takes 50% less damage, but sets unit’s Avo to 0. [Dragon] Extra -10% to damage.",Engage Skill,—
+1,Great Aether,"Use to grant Def/Res+5, but unit can’t counter for 1 turn. Next turn, attack a 2-space area, heal HP=30% of damage dealt. Sword/axe only. [Dragon] +1 damage per hit taken. [Armored] Grants an extra Def+5. [Flying] Grants an extra Res+5.",Engage Attack,—
+1,Hammer (Ike),"Hammer of Emblem Ike. Smashes foes. Cannot follow up, or strike first if initiating combat. Eff: Armored.",Engage Weapon,—
+2,Defense +2,Grants Def+2.,Inheritable Skill,300
+3,Reposition,Use to move an adjacent ally to the opposite side of unit.,Sync Skill (Can Inherit),200
+4,Axe Power 1,Grants Atk+2 at a cost of Avo-10 when using an axe.,Inheritable Skill,1000
+5,Skill Inheritance,Unit can inherit this Emblem’s skills.,Unlock,—
+6,Axe Prof.,Proficiency with axes. Required for promotion to certain classes.,Unlock,—
+7,Axe Power 2,Grants Atk+4 at a cost of Avo-10 when using an axe.,Inheritable Skill,2000
+8,Defense +3,Grants Def+3.,Inheritable Skill,500
+9,Sword Prof.,Proficiency with swords. Required for promotion to certain classes.,Unlock,—
+10,Urvan,Heirloom axe wielded by Emblem Ike. Grants Res+3.,Engage Weapon,—
+12,Axe Power 3,Grants Atk+6 at a cost of Avo-10 when using an axe.,Inheritable Skill,3000
+13,Wrath,"At start of combat, for each HP the unit has lost, grants Crit+1 during combat. (Max +30)",Sync Skill (Can Inherit),2000
+14,Axe Power 4,Grants Atk+8 at a cost of Avo-10 when using an axe.,Inheritable Skill,4000
+15,Ragnell,Sacred sword wielded by Emblem Ike. Grants Def+5. Can strike close or at range.,Engage Weapon,—
+16,Defense +4,Grants Def+4.,Inheritable Skill,1000
+17,Axe Power 5,Grants Atk+10 at a cost of Avo-10 when using an axe.,Inheritable Skill,5000
+18,Resolve+,"If unit’s HP is 75% or less after combat, grants Def/Res+7 as long as unit’s HP stays below 75%.",Sync Skill (Can Inherit),2000
+19,Defense +5,Grants Def+5.,Inheritable Skill,2000

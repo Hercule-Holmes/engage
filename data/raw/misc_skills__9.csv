@@ -1,0 +1,16 @@
+﻿Icon,Name,Description,Obtain
+,Protective,"If foe initiates combat against Nil/Rafal, grants Crit+10 to unit for 1 turn.",Nel
+,Protective (Null),"If foe initiates combat against Nil, grants Crit+10 to unit for 1 turn.",Nel (FX5 and 6)
+,Rivalry,"When an ally within 2 spaces defeats a foe, grants Crit+10 to unit for 1 turn.",Rafal
+,Wounded Pride,"When an ally within 2 spaces defeats a foe, grants Crit+10 to unit for 1 turn.",Nil
+,Friendly Boost,"When unit defeats a foe, grants Hit+20 to allies within 2 spaces for 1 turn.",Zelestia
+,Survival Plan,"When there are more foes than allies within 3 spaces, grants Avo+20.",Gregory
+,Knightly Code,"If foe initiates combat and unit is adjacent to an ally, unit takes 2 less damage.",Madeline
+,Self-Defense,"If unit uses Wait without attacking or using items, grants Str+2 for 1 turn.",Alfred (foe)
+,Fierce Bloom,Recovery items used by allies within 2 spaces heal +50% HP.,Celine (foe)
+,This Ends Here,"If unit initiates combat, grants Hit+15 to unit and foe if foe is able to counterattack.",Diamant (foe)
+,Show-Off,"When an ally within 2 spaces is attacked, grants Str+3 to unit for 1 turn.",Alcryst (foe)
+,Final Say,"During combat with a foe who was also unit’s most recent opponent, grants Hit+20.",Ivy (foe)
+,Stealth Assist,"When unit uses a healing staff, grants range +1.",Hortensia (foe)
+,Dignity of Solm,Inflicts Crit-5 on foes within 3 spaces.,Timerra (foe)
+,Wear Down,"During combat with a foe who was also unit’s most recent opponent, inflicts Crit-10 on that foe.",Fogado (foe)

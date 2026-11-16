@@ -1,0 +1,71 @@
+﻿Icon,Name,Uses,Price,Notes/Description
+,Vulnerary,3,300,Drink to recover 15 HP.
+,Antitoxin,3,400,Drink to recover 15 HP and cure poison.
+,Elixir,3,800,Drink to recover 30 HP.
+,Pure Water,3,600,Drink to grant Res+7 to user (bonus shrinks by 1 each turn).
+,Torch,3,300,Burn to illuminate a 7-space radius (shrinks one space per turn).
+,Seraph Robe,1,2500,Expend to grant max HP+5 to user permanently.
+,Energy Drop,1,2500,Expend to grant Str+2 to user permanently.
+,Spirit Dust,1,2500,Expend to grant Mag+2 to user permanently.
+,Secret Book,1,2500,Expend to grant Dex+2 to user permanently.
+,Speedwing,1,2500,Expend to grant Spd+2 to user permanently.
+,Goddess Icon,1,2500,Expend to grant Lck+2 to user permanently.
+,Dracoshield,1,2500,Expend to grant Def+2 to user permanently.
+,Talisman,1,2500,Expend to grant Res+2 to user permanently.
+,Boots,1,2500,Expend to grant Mov+1 to user permanently.
+,Novice Book,1,400,Book that teaches basic skills. Grants 100 SP.
+,Adept Book,1,1000,Book that teaches advanced skills. Grants 500 SP.
+,Expert Book,1,2000,"Book that unlocks the true secrets of skills. Grants 1,000 SP."
+,HP Tonic,1,150,Drink to grant max HP+5 for the duration of a battle.
+,Strength Tonic,1,150,Drink to grant Str+2 for the duration of a battle.
+,Dexterity Tonic,1,150,Drink to grant Dex+2 for the duration of a battle.
+,Speed Tonic,1,150,Drink to grant Spd+2 for the duration of a battle.
+,Luck Tonic,1,150,Drink to grant Lck+2 for the duration of a battle.
+,Defense Tonic,1,150,Drink to grant Def+2 for the duration of a battle.
+,Magic Tonic,1,150,Drink to grant Mag+2 for the duration of a battle.
+,Resistance Tonic,1,150,Drink to grant Res+2 for the duration of a battle.
+,Master Seal,1,2500,Expend to change user to an advanced class.
+,Second Seal,1,2500,"Expend to change user to a different class in the same tier, or to set level in the current class from max to 1."
+,Mystic Satchel,1,40000,Expend to change user to the enchanter class.
+,Mage Cannon,1,90000,Expend to change user to the mage cannoneer class.
+,Pact Ring,—,100,Ring used to increase the support level with one ally from A to S.
+,Vander’s Meal,1,100,Leftovers tidily packed by Vander. Eat to recover 20 HP.
+,Clanne’s Meal,1,100,Leftovers eagerly packed by Clanne. Eat to recover 20 HP.
+,Framme’s Meal,1,100,Leftovers enthusiastically packed by Framme. Eat to recover 20 HP.
+,Alfred’s Meal,1,100,Leftovers fiercely packed by Alfred. Eat to recover 20 HP.
+,Boucheron’s Meal,1,100,Leftovers idly packed by Boucheron. Eat to recover 20 HP.
+,Etie’s Meal,1,100,Leftovers tightly packed by Etie. Eat to recover 20 HP.
+,Céline’s Meal,1,100,Leftovers elegantly packed by Céline. Eat to recover 20 HP.
+,Louis’s Meal,1,100,Leftovers helpfully packed by Louis. Eat to recover 20 HP.
+,Chloé’s Meal,1,100,Leftovers motheringly packed by Chloé. Eat to recover 20 HP.
+,Diamant’s Meal,1,100,Leftovers flawlessly packed by Diamant. Eat to recover 20 HP.
+,Amber’s Meal,1,100,Leftovers clumsily packed by Amber. Eat to recover 20 HP.
+,Jade’s Meal,1,100,Leftovers cleanly packed by Jade. Eat to recover 20 HP.
+,Alcryst’s Meal,1,100,Leftovers skillfully packed by Alcryst. Eat to recover 20 HP.
+,Lapis’s Meal,1,100,Leftovers modestly packed by Lapis. Eat to recover 20 HP.
+,Citrinne’s Meal,1,100,Leftovers lavishly packed by Citrinne. Eat to recover 20 HP.
+,Ivy’s Meal,1,100,Leftovers thoughtfully packed by Ivy. Eat to recover 20 HP.
+,Zelkov’s Meal,1,100,Leftovers *artfully* packed by Zelkov. Eat to recover 20 HP.
+,Kagetsu’s Meal,1,100,Leftovers earnestly packed by Kagetsu. Eat to recover 20 HP.
+,Hortensia’s Meal,1,100,Leftovers haphazardly packed by Hortensia. Eat to recover 20 HP.
+,Rosado’s Meal,1,100,Leftovers cutely packed by Rosado. Eat to recover 20 HP.
+,Goldmary’s Meal,1,100,Leftovers immaculately packed by Goldmary. Eat to recover 20 HP.
+,Timerra’s Meal,1,100,Leftovers discordantly packed by Timerra. Eat to recover 20 HP.
+,Merrin’s Meal,1,100,Leftovers coolly packed by Merrin. Eat to recover 20 HP.
+,Panette’s Meal,1,100,Leftovers oddly packed by Panette. Eat to recover 20 HP.
+,Fogado’s Meal,1,100,Leftovers nonchalantly packed by Fogado. Eat to recover 20 HP.
+,Pandreo’s Meal,1,100,Leftovers affably packed by Pandreo. Eat to recover 20 HP.
+,Bunet’s Meal,1,100,Leftovers expertly packed by Bunet. Eat to recover 20 HP.
+,Anna’s Meal,1,100,Leftovers economically packed by Anna. Eat to recover 20 HP.
+,Jean’s Meal,1,100,Leftovers thoroughly packed by Jean. Eat to recover 20 HP.
+,Yunaka’s Meal,1,100,Leftovers carefully packed by Yunaka. Eat to recover 20 HP.
+,Seadall’s Meal,1,100,Leftovers prophetically packed by Seadall. Eat to recover 20 HP.
+,Lindon’s Meal,1,100,Leftovers creatively packed by Lindon. Eat to recover 20 HP.
+,Saphir’s Meal,1,100,Leftovers neatly packed by Saphir. Eat to recover 20 HP.
+,Veyle’s Meal,1,100,Leftovers lovingly packed by Veyle . Eat to recover 20 HP.
+,Mauvier’s Meal,1,100,Leftovers meticulously packed by Mauvier . Eat to recover 20 HP.
+,Nel’s Meal,1,100,Leftovers efficiently packed by Nel. Eat to recover 20 HP.
+,Rafal’s Meal,1,100,Leftovers confidently packed by Rafal. Eat to recover 20 HP.
+,Zelestia’s Meal,1,100,Leftovers fondly packed by Zelestia. Eat to recover 20 HP.
+,Gregory’s Meal,1,100,Leftovers cautiously packed by Gregory. Eat to recover 20 HP.
+,Madeline’s Meal,1,100,Leftovers proudly packed by Madeline. Eat to recover 20 HP.

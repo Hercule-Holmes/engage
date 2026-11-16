@@ -1,0 +1,41 @@
+﻿Name,Rank,Stat Boost,Skill
+Alm,C,Str +1,—
+B,"Str +1, Dex +1",—
+A,"Str +1, Dex +1, Def +1",—
+S,"Str +2, Dex +1, Def +1","Windsweep [If unit initiates combat with a sword, foe may not counterattack. Trigger %=Lck.]"
+Faye,C,Mag +1,—
+B,"Mag +1, Lck +1",—
+A,"HP +2, Mag +1, Lck +1",—
+S,"HP +2, Mag +2, Lck +1",—
+Lukas,C,Def +1,—
+B,"HP +2, Def +1",—
+A,"HP +2, Str +1, Def +1",—
+S,"HP +2, Str +1, Def +2",—
+Silque,C,Lck +1,—
+B,"Mag +1, Lck +1",—
+A,"Mag +1, Dex +1, Lck +1",—
+S,"Mag +1, Dex +1, Lck +2",—
+Delthea,C,Mag +1,—
+B,"Mag +1, Res +1",—
+A,"Mag +1, Spd +1, Res +1",—
+S,"Mag +2, Spd +1, Res +1",—
+Mae,C,Mag +1,—
+B,"Mag +1, Spd +1",—
+A,"Mag +1, Spd +1, Res +1",—
+S,"Mag +2, Spd +1, Res +1","Great Thunder [If unit uses Thunder, Elthunder, or Thoron, deals +20% damage.]"
+Genny,C,Res +1,—
+B,"Mag +1, Res +1",—
+A,"Mag +1, Res +1, Lck +1",—
+S,"Mag +1, Res +2, Lck +1",—
+Saber,C,Spd +1,—
+B,"Dex +1, Spd +1",—
+A,"Dex +1, Spd +1, Res +1",—
+S,"Dex +1, Spd +2, Res +1",—
+Valbar,C,HP +2,—
+B,"HP +2, Def +1",—
+A,"HP +2, Str +1, Def +1",—
+S,"HP +5, Str +1, Def +1",—
+Conrad,C,Dex +1,—
+B,"Dex +1, Def +1",—
+A,"HP +2, Dex +1, Def +1",—
+S,"HP +2, Dex +2, Def +1",—

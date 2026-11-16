@@ -1,0 +1,14 @@
+﻿Icon,Name,Mt,Hit,Crit,Wt,Rng,Lvl,Price,Notes/Description
+,Master Bow,6,65,0,14,1~2,D,100,(Used during Emblem Leif’s Engage attack)
+,Parthia,17,95,5,14,2,D,100,Bow wielded by Emblem Lucina. Doubles user’s earned experience. Grants Res+5. Effective: Flying.
+,Parthia (Normal),17,95,5,14,2,D,100,Bow wielded by Emblem Lucina. Doubles user’s earned experience. Grants Res+5. Effective: Flying.
+,Killer Bow,9,75,30,7,2,D,100,Bow wielded by Emblem Lyn. Easily inflicts fatal wounds. Effective: Flying.
+,Killer Bow (Normal),7,75,0,7,2,D,100,Bow wielded by Emblem Lyn. Effective: Flying.
+,Killer Bow (Ch 10),9,75,10,7,2,D,100,An Emblem’s bow. Easy to inflict a fatal wound with. Effective: Flying.
+,Mulagir,16,80,0,9,2,D,100,"Mighty bow wielded by Emblem Lyn. Grants Spd+5. Effective: Flying, Dragon."
+,Mulagir (Normal),16,80,0,9,2,D,100,"Mighty bow wielded by Emblem Lyn. Grants Spd+5. Effective: Flying, Dragon."
+,Failnaught,13,75,20,9,2~3,D,100,"Bow wielded by Emblem Byleth. If user initiates combat, grants Avo+20. Effective: Dragon, Flying."
+,Failnaught,13,75,20,9,2~3,D,100,"Bow wielded by Emblem Claude. If user initiates combat, grants Avo+20. Effective: Dragon, Flying."
+,Failnaught (Normal),13,75,20,9,2~3,D,100,"Bow wielded by Emblem Claude. If user initiates combat, grants Avo+20. Effective: Dragon, Flying."
+,Killer Bow (+),9,75,30,7,2,D,100,Bow wielded by Emblem Lyn. Easily inflicts fatal wounds. Effective: Flying.
+,Killer Bow (++),11,75,35,7,2,D,100,Bow wielded by Emblem Lyn. Easily inflicts fatal wounds. Effective: Flying.

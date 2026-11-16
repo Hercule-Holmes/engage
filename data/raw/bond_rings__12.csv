@@ -1,0 +1,4 @@
+﻿Name,Rank,Stat Boost,Skill
+Alfonse,S,"HP +2, Str +2, Def +1",Spur Attack [Grants Atk+2 to adjacent allies.]
+Sharena,S,"HP +2, Spd +1, Def +2",Fortify Def [Grants Def+2 to adjacent allies for 1 turn at start of player phase.]
+Anna,S,"HP +2, Spd +2, Res +1",Spur Res [Grants Res+2 to adjacent allies.]

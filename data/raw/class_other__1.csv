@@ -1,0 +1,61 @@
+﻿Name,Weak,Type,Weapons,Level 5 Skill,Maddening Skill
+Dragon Child,,Dragon,B*,—,—
+Divine Dragon,,Dragon,A B,Divine Spirit,—
+Fell Child (Veyle),,Dragon,B S,Fell Spirit*,—
+Noble (Alfred),,Cavalry,B,—,—
+Avenir,,Cavalry,B A,Golden Lotus,—
+Noble (Céline),—,Mystical,B B,—,—
+Vidame,—,Mystical,B A B,Ignis,—
+Lord (Diamant),—,Backup,B,—,—
+Successeur,—,Backup,S A,Sol,—
+Lord (Alcryst),—,Covert,B,—,—
+Tireur d’élite,—,Covert,S,Luna,—
+Wing Tamer (Ivy),,Flying,B B,—,—
+Lindwurm,,Flying,S B,Grasping Void,—
+Wing Tamer (Hort.),,Flying,B B,—,—
+Sleipnir Rider,,Flying,B S,World Tree,—
+Sentinel (Timerra),—,Backup,B,—,—
+Picket,—,Backup,S,Sandstorm,—
+Sentinel (Fogado),,Cavalry,B,—,—
+Cupido,,Cavalry,B A,Back at You,—
+Sword Fighter,—,Backup,B,—,—
+Swordmaster,—,Backup,S,Run Through,Death Blow
+Hero,—,Backup,A C^ A C^,Brave Assist,Triangle Adept
+Lance Fighter,—,Backup,B,—,—
+Halberdier,—,Backup,S,Pincer Attack,Seal Speed
+Royal Knight,,Cavalry,A C^,Reforge,Darting Stance
+Axe Fighter,—,Backup,B,—,—
+Berserker,—,Backup,S,Smash+,Cornered Beast
+Warrior,—,Backup,A C^,Merciless,Fierce Stance
+Archer,—,Covert,B,—,—
+Sniper,—,Covert,S,No Distractions,Seal Defense
+Bow Knight,,Cavalry,C^ A C^ A C^ A,Careful Aim,Seal Strength
+Sword Armor,,Armor,B,—,—
+Lance Armor,,Armor,B,—,—
+Axe Armor,,Armor,B,—,—
+General,,Armor,A^ A^ A^,Swap,Steady Stance
+Great Knight,,Cavalry,B^ B^ B^ B^ B^ B^,Allied Defense,Warding Stance
+Sword Cavalier,,Cavalry,B,—,—
+Lance Cavalier,,Cavalry,B,—,—
+Axe Cavalier,,Cavalry,B,—,—
+Paladin,,Cavalry,A^ A^ A^,Pivot,Swordbreaker
+Wolf Knight,,Cavalry,B^ A^ B^ A^ B^ A^,Hobble,Poison Strike
+Mage,—,Mystical,B,—,—
+Sage,—,Mystical,S B^,Spell Harmony,Seal Resistance
+Mage Knight,,Cavalry,B^ A B^ A B^ A,Chaos Style,Seal Magic
+Martial Monk,—,Qi Adept,B C,—,—
+Martial Master,—,Qi Adept,A S,Diffuse Healer,Self-Destruct
+High Priest,—,Mystical,B^ S C^,Self-Healing,Warding Blow
+Sword Flier,,Flying,B,—,—
+Lance Flier,,Flying,B,—,—
+Axe Flier,,Flying,B,—,—
+Griffin Knight,,Flying,A^ C^ A^ C^ A^ C^,Clear the Way,Darting Blow
+Wyvern Knight,,Flying,B^ B^ B^ B^ B^ B^,Air Raid,Certain Blow
+Thief,—,Covert,S,Pass,Savage Blow
+Dancer,—,Qi Adept,A,Special Dance,—
+Fell Child (Nel),,Dragon,A S,Resist Emblems,—
+Fell Child (Rafal),,Dragon,A S,Spur Emblems,—
+Fell Child (Nil),,Dragon,A,Spur Emblems,—
+Melusine (Zelestia),,Flying,A S,Soulblade,—
+Enchanter,—,Qi Adept,B^ B^,Convoy,Self-Destruct
+Mage Cannoneer,,Armor,S,Let Fly,Steady Stance

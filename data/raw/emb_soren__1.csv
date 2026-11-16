@@ -1,0 +1,26 @@
+﻿Bond,Name,Description,Type,SP
+1,Assign Decoy,Use to make one chosen ally more likely to be targeted by enemies for 1 turn. Effect is removed after ally is targeted by or otherwise damaged by foes 3 times.,Sync Skill (Can Inherit),1500
+1,Flare,"When attacking with tomes, inflicts Res-20% on foe, and unit recovers 50% of damage dealt. [Dragon] Critical rate is doubled. [Mystical] Extra -10% to foe’s Res. [Qi Adept] Unit recovers 100% of damage dealt instead.",Engage Skill,—
+1,Cataclysm,"Use to attack foes in an area with fire, thunder and wind magic at 40% damage. Wind is effective: Flying. [Dragon] Sets terrain on fire. [Mystical] +10% damage. [Qi Adept] 20% chance of breaking target.",Engage Attack,—
+1,Cataclysm+,"Use to attack foes in an area with fire, thunder and wind magic at 40% damage. Wind is effective: Flying. [Dragon] Sets terrain on fire. [Mystical] +10% damage. [Qi Adept] 20% chance of breaking target.",Engage Attack (Requires adjacent Ike),—
+1,Bolting,Long-range thunder magic wielded by Emblem Soren. Cannot follow up.,Engage Weapon,—
+2,Mag/Res +1,Grants Mag+1 and Res+1.,Inheritable Skill,700
+3,Magic Guard 1,"If foe is equipped with a tome, unit takes 1 less damage during combat.",Inheritable Skill,200
+4,Anima Focus,"When using tomes, unit inflicts Def-3 with fire, Hit-20 with thunder, or Mov-2 with wind magic for 1 turn.",Sync Skill (Can Inherit),800
+5,Skill Inheritance,Unit can inherit this Emblem’s skills.,Unlock,—
+6,Knife Prof.,Proficiency with knives. Required for promotion to certain classes.,Unlock,—
+7,Mag/Res +2,Grants Mag+2 and Res+2.,Inheritable Skill,1600
+8,Magic Guard 2,"If foe is equipped with a tome, unit takes 2 less damage during combat.",Inheritable Skill,400
+9,Keen Insight,"When unit deals Effective damage, deal +5 damage.",Sync Skill (Can Inherit),1500
+10,Reflect,Staff of Emblem Soren. Allies within 2 spaces gain “deals 50% of magic damage taken back to foe” for 1 turn.,Engage Weapon,—
+12,Mag/Res +3,Grants Mag+3 and Res+3.,Inheritable Skill,4200
+12,Staff Prof.,Proficiency with staves. Required for promotion to certain classes.,Unlock,—
+13,Block Recovery,"When attacking a broken foe with a tome, grants a chance the foe will remain broken. Chance increases with high Spd. [Trigger% = (Spd – foe’s Spd) x 5, max 50]",Sync Skill (Can Inherit),1500
+13,Magic Guard 3,"If foe is equipped with a tome, unit takes 3 less damage during combat.",Inheritable Skill,600
+14,Mag/Res +4,Grants Mag+4 and Res+4.,Inheritable Skill,6000
+15,Rexcalibur,Powerful wind magic wielded by Emblem Soren. Effective: Flying.,Engage Weapon,—
+16,Tome Prof.,Proficiency with tomes. Required for promotion to certain classes.,Unlock,—
+17,Magic Guard 4,"If foe is equipped with a tome, unit takes 4 less damage during combat.",Inheritable Skill,800
+18,Keen Insight+,"When unit deals Effective damage, deal +7 damage.",Sync Skill (Can Inherit),3000
+18,Mag/Res +5,Grants Mag+5 and Res+5.,Inheritable Skill,8400
+19,Magic Guard 5,"If foe is equipped with a tome, unit takes 5 less damage during combat.",Inheritable Skill,1000

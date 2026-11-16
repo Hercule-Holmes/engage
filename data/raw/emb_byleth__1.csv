@@ -1,0 +1,31 @@
+﻿Bond,Name,Description,Type,SP
+1,Luck +2,Grants Lck+2.,Inheritable Skill,100
+1,Divine Pulse,May turn a missed attack into a hit. Trigger %=30. Chance increases with high Lck. [+1% for every 1 Luck.],Sync Skill (Can Inherit),250
+1,Instruct,Use to grant allies within 2 spaces a stat bonus based on user’s type. Bonus lasts for 1 turn. [Dragon] All seven basic stats +3. [Backup] Str+4. [Cavalry] Dex+10. [Covert] Spd+5. [Armored] Def+5. [Flying] Res+5. [Mystical] Mag+4. [Qi Adept] Lck+10.,Engage Skill,—
+1,Goddess Dance,Use to grant another action to all adjacent allies. [Dragon] Grants +3 to all targets’ basic stats for 1 turn. [Backup] Grants Str+4 to targets for 1 turn. [Cavalry] Grants Dex+10 to targets for 1 turn. [Covert] Grants Spd+5 to targets for 1 turn. [Armored] Grants Def+5 to targets for 1 turn. [Flying] Grants Res+5 to targets for 1 turn. [Mystical] Grants Mag+4 to targets for 1 turn. [Qi Adept] Grants Lck+10 to targets for 1 turn.,Engage Attack,—
+1,Blutgang,"Magical sword wielded by Emblem Byleth. Effective: Dragon, Cavalry.",Engage Weapon (Backup),—
+1,Areadbhar,"Lance wielded by Emblem Byleth. If user initiates combat, grants Mt+50%.",Engage Weapon (Cavalry),—
+1,Failnaught,"Bow wielded by Emblem Byleth. If user initiates combat, grants Avo+20. Effective: Dragon, Flying.",Engage Weapon (Covert),—
+1,Aegis Shield,Shield wielded by Emblem Byleth. Grants Def+6 and Res+3. May halve damage if carried. Trigger %=Dex.,Engage Weapon (Armor),—
+1,Lúin,Lance wielded by Emblem Byleth. Raises damage based on user’s Spd. Effective: Dragon. [+1 damage for every 3 Spd.],Engage Weapon (Flying),—
+1,Thyrsus,Staff wielded by Emblem Byleth. Grants magic range +2. May halve damage if carried. [Trigger %=Dex.],Engage Weapon (Mystical),—
+1,Rafail Gem,Relic gem of Emblem Byleth. User is immune to Effective and critical hits. May halve damage if carried. [Trigger %=Dex.],Engage Weapon (Qi Adept),—
+1,Aymr,"Axe of Emblem Byleth. Smashes foes. Cannot follow up, or strike first if initiating combat. Eff: Dragon.",Engage Weapon (Dragon),—
+2,Luck +4,Grants Lck+4.,Inheritable Skill,300
+3,Mentorship,Grants 1.2× EXP modifier to unit and adjacent allies.,Sync Skill (Can Inherit),250
+4,Art Focus 1,Grants Hit+10 at a cost of Ddg-10 when using an art.,Inheritable Skill,100
+5,Skill Inheritance,Unit can inherit this Emblem’s skills.,Unlock,—
+6,Art Focus 2,Grants Hit+15 at a cost of Ddg-10 when using an art.,Inheritable Skill,300
+6,Arts Prof.,Proficiency with arts. Required for promotion to certain classes.,Unlock,—
+7,Art Focus 3,Grants Hit+20 at a cost of Ddg-10 when using an art.,Inheritable Skill,500
+8,Luck +6,Grants Lck+6.,Inheritable Skill,500
+9,Sword Prof.,Proficiency with swords. Required for promotion to certain classes.,Unlock,—
+10,Vajra-Mushti,"Gauntlets wielded by Emblem Byleth. If user initiates combat, attacks twice. Uses lowest of foe’s Def/Res.",Engage Weapon,—
+12,Art Focus 4,Grants Hit+25 at a cost of Ddg-10 when using an art.,Inheritable Skill,700
+13,Lost & Found,"If unit finishes an action or waits next to an ally, may find an item and increase support with that ally. Trigger %=Lck.",Sync Skill (Can Inherit),250
+14,Art Focus 5,Grants Hit+30 at a cost of Ddg-10 when using an art.,Inheritable Skill,1000
+15,Sword of the Creator,Sword of Emblem Byleth. Raises damage with user’s Mag. Can strike close or at range. Effective: Dragon [+1 damage for every 3 Mag.],Engage Weapon,—
+16,Luck +8,Grants Lck+8.,Inheritable Skill,1000
+17,Luck +10,Grants Lck+10.,Inheritable Skill,2000
+18,Divine Pulse+,May turn a missed attack into a hit. Trigger %=50. Chance increases with high Lck. [+1% for every 1 Luck.],Sync Skill (Can Inherit),500
+19,Luck +12,Grants Lck+12.,Inheritable Skill,3000

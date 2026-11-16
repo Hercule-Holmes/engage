@@ -1,0 +1,12 @@
+﻿Icon,Name,Mt,Hit,Crit,Wt,Rng,Lvl,Price,Notes/Description
+,Short Knife,3,110,0,2,1~2,D,500,"Ddg+20, An easy-to-use throwing knife. Poisons hit foes."
+,Iron Dagger,5,100,0,3,1~2,D,1000,A standard throwing knife. Poisons hit foes.
+,Steel Dagger,7,80,5,5,1~2,C,2000,A throwing knife made of steel. Poisons hit foes.
+,Silver Dagger,10,90,0,7,1~2,B,4000,A throwing knife made of rare metals. Poisons hit foes.
+,Kard,5,95,10,5,1,C,1000,A fighting knife intended for close combat. Poisons hit foes.
+,Stiletto,9,75,15,7,1,B,2000,A fighting knife intended for close combat. Poisons hit foes.
+,Peshkatz,12,85,20,9,1,A,4000,A fighting knife intended for close combat. Poisons hit foes.
+,Misericorde,7,90,0,6,1~2,D,8000,Veyle only. An enchanted throwing knife that inflicts magic damage and poisons hit foes.
+,Cinquedea,13,85,10,8,1~2,S,10000,A legendary throwing knife that poisons hit foes.
+,Carnwenhan,28,80,0,13,1,S,10000,"A legendary short sword. Smashes and poisons hit foes. Cannot follow up, or strike first if initiating combat."
+,Confectioknife,6,100,0,3,1~2,D,500,"Ddg+10, A knife with a sweet scent. Disappears when consumed as an item, but recovers user’s HP."

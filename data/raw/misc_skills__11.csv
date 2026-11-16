@@ -1,0 +1,11 @@
+﻿Icon,Name,Description,Obtain
+,Ignore Chain,"Max HP+2/4/6/8, negate foe chain attacks for 1 turn.",Item Surge: HP Tonic
+,Wt -50%,"Weapon weight -50%, Str+1/2/3/4 for 1 turn.",Item Surge: Str Tonic
+,Ignore Silence,"Immunity to silence, Mag+1/2/3/4 for 1 turn.",Item Surge: Mag Tonic
+,Reflect Phys.,Reflect physical damage taken for 1 turn.,Item Surge: Def Tonic
+,Reflect Magic,Reflect magic damage taken for 1 turn.,Item Surge: Res Tonic
+,Ignore Break,"Immunity to break, Dex+2/4/6/8 for 1 turn.",Item Surge: Dex Tonic
+,Ignore Freeze,"Immunity to freeze, Spd+1/2/3/4 for 1 turn.",Item Surge: Spd Tonic
+,Ignore Damage,30% chance to ignore damage for 1 turn.,Item Surge: Lck Tonic
+,Eff: Corrupted,Effective: Corrupted for 1 turn.,Item Surge: Pure Water
+,Survival,Guarantee survival if HP is 2 or more (once).,Item Surge: ___’s Meal

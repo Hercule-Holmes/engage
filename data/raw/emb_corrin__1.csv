@@ -1,0 +1,23 @@
+﻿Bond,Name,Description,Type,SP
+1,HP +5,Grants max HP+5.,Inheritable Skill,300
+1,Dragon Vein,Use to add a special effect to certain spaces. [Dragon] Choose any Vein effect. [Backup] Creates stone pillars that increase Def/Res. [Cavalry] Creates water that decreases Avo. [Covert] Creates fog that increases Avo. [Armored] Creates vines that grant immunity to break. [Flying] Creates healing glow that restores HP. [Mystical] Creates flames that inflict damage. [Qi Adept] Creates ice pillars that hinder movement.,Sync Skill (Cannot Inherit),—
+1,Dreadful Aura,"If unit initiates combat, target foe and all foes within 1 space of it cannot move for 1 turn after combat. [Covert] Also Avo-20 on target.",Engage Skill,—
+1,Torrential Roar,"Use to attack 3 spaces in a line, turning those spaces into water terrain. [Dragon] Range +1.",Engage Attack,—
+1,Dual Katana,Unusual sword wielded by Emblem Corrin. Grants advantage vs. lances but disadvantage vs. axes.,Engage Weapon,—
+2,HP +7,Grants max HP+7.,Inheritable Skill,500
+3,Quality Time,"After unit acts or waits, restores 5 HP to adjacent allies and slightly increases support with them.",Sync Skill (Can Inherit),250
+4,Sword Focus 1,Grants Hit+10 at a cost of Ddg-10 when using a sword.,Inheritable Skill,100
+5,Skill Inheritance,Unit can inherit this Emblem’s skills.,Unlock,—
+6,Sword Prof.,Proficiency with swords. Required for promotion to certain classes.,Unlock,—
+7,Sword Focus 2,Grants Hit+15 at a cost of Ddg-10 when using a sword.,Inheritable Skill,300
+8,Draconic Hex,"If unit initiates combat, inflicts -4 to all of foe’s basic stats after combat. (Penalties shrink by 1 each turn.)",Sync Skill (Can Inherit),2000
+9,HP +10,Grants max HP+10.,Inheritable Skill,1000
+10,Wakizashi,"Throwing sword wielded by Emblem Corrin. Can only strike at range, not close up.",Engage Weapon,—
+12,Sword Focus 3,Grants Hit+20 at a cost of Ddg-10 when using a sword.,Inheritable Skill,500
+13,Pair Up,Prevents damage from foes’ chain attacks against unit.,Sync Skill (Can Inherit),2000
+14,Sword Focus 4,Grants Hit+25 at a cost of Ddg-10 when using a sword.,Inheritable Skill,700
+15,Yato,Sacred sword wielded by Emblem Corrin.,Engage Weapon,—
+16,HP +12,Grants max HP+12.,Inheritable Skill,2000
+17,Sword Focus 5,Grants Hit+30 at a cost of Ddg-10 when using a sword.,Inheritable Skill,1000
+18,Quality Time+,"After unit acts or waits, restores 10 HP to adjacent allies and slightly increases support with them.",Sync Skill (Can Inherit),500
+19,HP +15,Grants max HP+15.,Inheritable Skill,3000

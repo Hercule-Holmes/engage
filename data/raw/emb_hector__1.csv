@@ -1,0 +1,24 @@
+﻿Bond,Name,Description,Type,SP
+1,Quick Riposte,"If unit’s HP is 80% or more and foe initiates combat, unit will always follow up (if weapon allows).",Sync Skill (Can Inherit),2000
+1,Impenetrable,"If foe initiates combat, grants Def/Res+30% during combat. [Dragon] Ddg+50%. [Cavalry] Grants immunity to freeze. [Armored] Grants Def+50% instead of +30%. [Flying] Grants Res+50% instead of +30%.",Engage Skill,—
+1,Storm’s Eye,Grants immunity to break. Foe cannot follow up. Unit follows up. Lasts 1 turn. Sword/axe only. [Dragon] Prevent one critical hit. [Backup] Crit+20. [Covert] Avo+30.,Engage Attack,—
+1,Storm’s Eye+,Grants immunity to break. Foe cannot follow up. Unit counters before foe’s first attack and follows up. Lasts 1 turn. Sword/axe only. [Dragon] Prevent one critical hit. [Backup] Crit+20. [Covert] Avo+30.,Engage Attack (Requires adjacent Lyn),—
+1,Wolf Beil,"Axe wielded by Emblem Hector. Effective: Cavalry, Armored.",Engage Weapon,—
+2,Str/Def +1,Grants Str+1 and Def+1.,Inheritable Skill,700
+3,Adaptability,"When hit by a foe’s attack, grants Def+2 for a physical attack or Res+2 for a magical attack after combat. Lasts until end of battle, or until activated again.",Sync Skill (Can Inherit),350
+4,Axe Guard 1,"If foe is equipped with an axe, unit takes 1 less damage during combat.",Inheritable Skill,200
+6,Axe Prof.,Proficiency with axes. Required for promotion to certain classes.,Unlock,—
+7,Str/Def +2,Grants Str+2 and Def+2.,Inheritable Skill,1600
+8,Heavy Attack,"When making a physical attack, if an equipped weapon’s Wt exceeds unit’s Bld, adds excess as damage. (Max +5)",Sync Skill (Can Inherit),3000
+9,Axe Guard 2,"If foe is equipped with an axe, unit takes 2 less damage during combat.",Inheritable Skill,400
+10,Runesword,Magic sword of Emblem Hector. Can strike close or at range. Restore HP equal to 50% of damage dealt.,Engage Weapon,—
+12,Str/Def +3,Grants Str+3 and Def+3.,Inheritable Skill,4200
+12,Piercing Glare,Use when HP is full to consume 20% of max HP and prevent foes from entering the 4 spaces diagonally adjacent to unit for 1 turn.,Sync Skill (Cannot Inherit),—
+13,Axe Guard 3,"If foe is equipped with an axe, unit takes 3 less damage during combat.",Inheritable Skill,600
+14,Str/Def +4,Grants Str+4 and Def+4.,Inheritable Skill,6000
+15,Armads,Lightning-charged axe wielded by Emblem Hector. Grants Def+5. Effective: Dragon.,Engage Weapon,—
+16,Quick Riposte+,"If unit’s HP is 60% or more and foe initiates combat, unit will always follow up (if weapon allows).",Sync Skill (Can Inherit),3000
+17,Axe Guard 4,"If foe is equipped with an axe, unit takes 4 less damage during combat.",Inheritable Skill,800
+18,Str/Def +5,Grants Str+5 and Def+5.,Inheritable Skill,8400
+19,Adaptability+,"When hit by a foe’s attack, grants Def+3 for a physical attack or Res+3 for a magical attack after combat. Lasts until end of battle, or until activated again.",Sync Skill (Can Inherit),700
+19,Axe Guard 5,"If foe is equipped with an axe, unit takes 5 less damage during combat.",Inheritable Skill,1000

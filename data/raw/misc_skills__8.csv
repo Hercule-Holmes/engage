@@ -1,0 +1,71 @@
+﻿Icon,Name,Description,SP,Obtain
+,Str/Dex +1,Grants Str+1 and Dex+1.,700,Edelgard Bond Lv 3
+,Str/Dex +2,Grants Str+2 and Dex+2.,1600,Edelgard Bond Lv 7
+,Str/Dex +3,Grants Str+3 and Dex+3.,4200,Edelgard Bond Lv 12
+,Str/Dex +4,Grants Str+4 and Dex+4.,6000,Edelgard Bond Lv 16
+,Str/Dex +5,Grants Str+5 and Dex+5.,8400,Edelgard Bond Lv 18
+,HP/Lck +2,Grants HP+2 and Lck+2.,200,Tiki Bond Lv 2
+,HP/Lck +4,Grants HP+4 and Lck+4.,600,Tiki Bond Lv 7
+,HP/Lck +6,Grants HP+6 and Lck+6.,1100,Tiki Bond Lv 12
+,HP/Lck +8,Grants HP+8 and Lck+8.,1900,Tiki Bond Lv 15
+,HP/Lck +10,Grants HP+10 and Lck+10.,3600,Tiki Bond Lv 18
+,Str/Def +1,Grants Str+1 and Def+1.,700,Hector Bond Lv 2
+,Str/Def +2,Grants Str+2 and Def+2.,1600,Hector Bond Lv 7
+,Str/Def +3,Grants Str+3 and Def+3.,4200,Hector Bond Lv 12
+,Str/Def +4,Grants Str+4 and Def+4.,6000,Hector Bond Lv 14
+,Str/Def +5,Grants Str+5 and Def+5.,8400,Hector Bond Lv 18
+,Mag/Dex +1,Grants Mag+1 and Dex+1.,700,Veronica Bond Lv 2
+,Mag/Dex +2,Grants Mag+2 and Dex+2.,1600,Veronica Bond Lv 7
+,Mag/Dex +3,Grants Mag+3 and Dex+3.,4200,Veronica Bond Lv 12
+,Mag/Dex +4,Grants Mag+4 and Dex+4.,6000,Veronica Bond Lv 14
+,Mag/Dex +5,Grants Mag+5 and Dex+5.,8400,Veronica Bond Lv 18
+,Mag/Res +1,Grants Mag+1 and Res+1.,700,Soren Bond Lv 1
+,Mag/Res +2,Grants Mag+2 and Res+2.,1600,Soren Bond Lv 7
+,Mag/Res +3,Grants Mag+3 and Res+3.,4200,Soren Bond Lv 12
+,Mag/Res +4,Grants Mag+4 and Res+4.,6000,Soren Bond Lv 14
+,Mag/Res +5,Grants Mag+5 and Res+5.,8400,Soren Bond Lv 18
+,Spd/Res +1,Grants Spd+1 and Res+1.,250,Camilla Bond Lv 1
+,Spd/Res +2,Grants Spd+2 and Res+2.,700,Camilla Bond Lv 3
+,Spd/Res +3,Grants Spd+3 and Res+3.,1200,Camilla Bond Lv 9
+,Spd/Res +4,Grants Spd+4 and Res+4.,2400,Camilla Bond Lv 14
+,Spd/Res +5,Grants Spd+5 and Res+5.,4800,Camilla Bond Lv 18
+,Spd/Dex +1,Grants Spd+1 and Dex+1.,250,Chrom Bond Lv 2
+,Spd/Dex +2,Grants Spd+2 and Dex+2.,700,Chrom Bond Lv 7
+,Spd/Dex +3,Grants Spd+3 and Dex+3.,1200,Chrom Bond Lv 12
+,Spd/Dex +4,Grants Spd+4 and Dex+4.,2400,Chrom Bond Lv 14
+,Spd/Dex +5,Grants Spd+5 and Dex+5.,4800,Chrom Bond Lv 18
+,Bow Guard 1,"If foe is equipped with a bow, unit takes 1 less damage during combat.",200,Edelgard Bond Lv 4
+,Bow Guard 2,"If foe is equipped with a bow, unit takes 2 less damage during combat.",400,Edelgard Bond Lv 8
+,Bow Guard 3,"If foe is equipped with a bow, unit takes 3 less damage during combat.",600,Edelgard Bond Lv 14
+,Bow Guard 4,"If foe is equipped with a bow, unit takes 4 less damage during combat.",800,Edelgard Bond Lv 17
+,Bow Guard 5,"If foe is equipped with a bow, unit takes 5 less damage during combat.",1000,Edelgard Bond Lv 19
+,Special Guard 1,"If foe is equipped with a special attack, unit takes 1 less damage during combat.",200,Tiki Bond Lv 4
+,Special Guard 2,"If foe is equipped with a special attack, unit takes 2 less damage during combat.",400,Tiki Bond Lv 9
+,Special Guard 3,"If foe is equipped with a special attack, unit takes 3 less damage during combat.",600,Tiki Bond Lv 13
+,Special Guard 4,"If foe is equipped with a special attack, unit takes 4 less damage during combat.",800,Tiki Bond Lv 17
+,Special Guard 5,"If foe is equipped with a special attack, unit takes 5 less damage during combat.",1000,Tiki Bond Lv 19
+,Axe Guard 1,"If foe is equipped with an axe, unit takes 1 less damage during combat.",200,Hector Bond Lv 4
+,Axe Guard 2,"If foe is equipped with an axe, unit takes 2 less damage during combat.",400,Hector Bond Lv 9
+,Axe Guard 3,"If foe is equipped with an axe, unit takes 3 less damage during combat.",600,Hector Bond Lv 13
+,Axe Guard 4,"If foe is equipped with an axe, unit takes 4 less damage during combat.",800,Hector Bond Lv 17
+,Axe Guard 5,"If foe is equipped with an axe, unit takes 5 less damage during combat.",1000,Hector Bond Lv 19
+,Knife Guard 1,"If foe is equipped with a knife, unit takes 1 less damage during combat.",200,Veronica Bond Lv 4
+,Knife Guard 2,"If foe is equipped with a knife, unit takes 2 less damage during combat.",400,Veronica Bond Lv 9
+,Knife Guard 3,"If foe is equipped with a knife, unit takes 3 less damage during combat.",600,Veronica Bond Lv 13
+,Knife Guard 4,"If foe is equipped with a knife, unit takes 4 less damage during combat.",800,Veronica Bond Lv 17
+,Knife Guard 5,"If foe is equipped with a knife, unit takes 5 less damage during combat.",1000,Veronica Bond Lv 19
+,Magic Guard 1,"If foe is equipped with a tome, unit takes 1 less damage during combat.",200,Soren Bond Lv 3
+,Magic Guard 2,"If foe is equipped with a tome, unit takes 2 less damage during combat.",400,Soren Bond Lv 8
+,Magic Guard 3,"If foe is equipped with a tome, unit takes 3 less damage during combat.",600,Soren Bond Lv 13
+,Magic Guard 4,"If foe is equipped with a tome, unit takes 4 less damage during combat.",800,Soren Bond Lv 17
+,Magic Guard 5,"If foe is equipped with a tome, unit takes 5 less damage during combat.",1000,Soren Bond Lv 19
+,Lance Guard 1,"If foe is equipped with a lance, unit takes 1 less damage during combat.",200,Camilla Bond Lv 2
+,Lance Guard 2,"If foe is equipped with a lance, unit takes 2 less damage during combat.",400,Camilla Bond Lv 7
+,Lance Guard 3,"If foe is equipped with a lance, unit takes 3 less damage during combat.",600,Camilla Bond Lv 13
+,Lance Guard 4,"If foe is equipped with a lance, unit takes 4 less damage during combat.",800,Camilla Bond Lv 16
+,Lance Guard 5,"If foe is equipped with a lance, unit takes 5 less damage during combat.",1000,Camilla Bond Lv 19
+,Sword Guard 1,"If foe is equipped with a sword, unit takes 1 less damage during combat.",200,Chrom Bond Lv 3
+,Sword Guard 2,"If foe is equipped with a sword, unit takes 2 less damage during combat.",400,Chrom Bond Lv 9
+,Sword Guard 3,"If foe is equipped with a sword, unit takes 3 less damage during combat.",600,Chrom Bond Lv 13
+,Sword Guard 4,"If foe is equipped with a sword, unit takes 4 less damage during combat.",800,Chrom Bond Lv 17
+,Sword Guard 5,"If foe is equipped with a sword, unit takes 5 less damage during combat.",1000,Chrom Bond Lv 19

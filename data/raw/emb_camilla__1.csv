@@ -1,0 +1,25 @@
+﻿Bond,Name,Description,Type,SP
+1,Spd/Res +1,Grants Spd+1 and Res+1.,Inheritable Skill,250
+1,Dragon Vein,Use to add a special effect to certain spaces. [Dragon] Choose any Vein effect. [Backup] Creates stone pillars that increase Def/Res. [Cavalry] Creates water that decreases Avo. [Covert] Creates smoke that decreases Def/Avo. [Armored] Creates vines that grant immunity to break. [Flying] Creates healing glow that restores HP. [Mystical] Creates flames that inflict damage. [Qi Adept] Creates ice floor that increases movement.,Sync Skill (Cannot Inherit),—
+1,Soar,"Grants Mov+2. Unit can cross terrain as if flying. [Dragon] If unit initiates combat, deals damage to foes within 2 spaces equal to 10% of their max HP after combat. [Cavalry] Grants an extra Mov+2. [Flying] Grants an extra Mov+1.",Engage Skill,—
+1,Dark Inferno,Use to deal damage to foes on certain spaces near unit and set those spaces on fire. [Dragon] Increases area of effect. [Mystical] +20% damage. [Qi Adept] Adds Glow to adjacent spaces.,Engage Attack,—
+1,Dark Inferno+,Use to deal damage to foes on certain spaces near unit and set those spaces on fire. [Dragon] Increases area of effect. [Mystical] +20% damage. [Qi Adept] Adds Glow to adjacent spaces.,Engage Attack (Requires adjacent Corrin),—
+1,Bolt Axe,Magic axe wielded by Emblem Camilla. Can strike close or at range.,Engage Weapon,—
+2,Lance Guard 1,"If foe is equipped with a lance, unit takes 1 less damage during combat.",Inheritable Skill,200
+3,Spd/Res +2,Grants Spd+2 and Res+2.,Inheritable Skill,700
+4,Decisive Strike,"If unit initiates combat and lands a critical, deals 5 damage to foe after combat.",Sync Skill (Can Inherit),500
+5,Skill Inheritance,Unit can inherit this Emblem’s skills.,Unlock,—
+6,Axe Prof.,Proficiency with axes. Required for promotion to certain classes.,Unlock,—
+7,Lance Guard 2,"If foe is equipped with a lance, unit takes 2 less damage during combat.",Inheritable Skill,400
+8,Detoxify,Cures poison at start of turn.,Sync Skill (Can Inherit),250
+9,Spd/Res +3,Grants Spd+3 and Res+3.,Inheritable Skill,1200
+10,Lightning,"Magic wielded by Emblem Camilla. If user initiates combat, attacks twice.",Engage Weapon,—
+12,Groundswell,"After unit acts or waits in flames, miasma, or similar terrain effect, unit clears effect and recovers 10 HP.",Sync Skill (Can Inherit),500
+13,Lance Guard 3,"If foe is equipped with a lance, unit takes 3 less damage during combat.",Inheritable Skill,600
+14,Spd/Res +4,Grants Spd+4 and Res+4.,Inheritable Skill,2400
+15,Camilla’s Axe,Axe wielded by Emblem Camilla. Grants Res+10 and deals extra damage = foe’s Res-Def.,Engage Weapon,—
+16,Lance Guard 4,"If foe is equipped with a lance, unit takes 4 less damage during combat.",Inheritable Skill,800
+17,Tome Prof.,Proficiency with tomes. Required for promotion to certain classes.,Unlock,—
+18,Decisive Strike+,"If unit initiates combat and lands a critical, deals 10 damage to foe after combat.",Sync Skill (Can Inherit),1000
+18,Spd/Res +5,Grants Spd+5 and Res+5.,Inheritable Skill,4800
+19,Lance Guard 5,"If foe is equipped with a lance, unit takes 5 less damage during combat.",Inheritable Skill,1000

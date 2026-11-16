@@ -1,0 +1,19 @@
+﻿Name,Class,Weapons,Weight
+Fabrication,Halberdier,"Iron Lance, Steel Lance, Silver Lance",19
+Fabrication,Halberdier,"Iron Greatlance, Steel Greatlance, Silver Greatlance",5
+Fabrication,Halberdier,"Javelin, Steel Lance, Spear",5
+Fabrication,Royal Knight,"Iron Lance, Steel Lance, Silver Lance",19
+Fabrication,Royal Knight,"Javelin, Steel Lance, Spear",5
+Fabrication,General,"Iron Lance, Iron Greatlance, Steel Greatlance",6
+Fabrication,General,"Javelin, Steel Lance, Spear",4
+Fabrication,Great Knight,"Iron Lance, Steel Lance, Silver Lance",6
+Fabrication,Great Knight,"Iron Greatlance, Steel Greatlance, Silver Greatlance",2
+Fabrication,Great Knight,"Javelin, Steel Lance, Spear",2
+Fabrication,Paladin,"Iron Lance, Steel Lance, Silver Lance",6
+Fabrication,Paladin,"Iron Greatlance, Steel Greatlance, Silver Greatlance",2
+Fabrication,Paladin,"Javelin, Steel Lance, Spear",2
+Fabrication,Griffin Knight,"Iron Lance, Steel Lance, Silver Lance",7
+Fabrication,Griffin Knight,"Javelin, Steel Lance, Spear",3
+Fabrication,Wyvern Knight,"Iron Lance, Steel Lance, Silver Lance",6
+Fabrication,Wyvern Knight,"Iron Greatlance, Steel Greatlance, Silver Greatlance",2
+Fabrication,Wyvern Knight,"Javelin, Steel Lance, Spear",2

@@ -1,0 +1,40 @@
+﻿Icon,Name,Description,Class
+,Divine Spirit,Unit’s engage meter is shortened one step.,Divine Dragon
+,Dark Spirit,Inflicts -1 to the engage meters of foes within 2 spaces at the start of the turn.,"Fell Child (Enemy), Fell Monarch, Great Fell Dragon"
+,Fell Spirit,"At the start of each turn, unit’s engage meter is filled by 1.",Fell Child
+,Golden Lotus,"During combat, may prevent 50% of physical damage taken. Trigger %=Dex.",Avenir
+,Ignis,"During combat, may add half of Str to magic damage or half of Mag to all other damage. Trigger %=Dex.",Vidame
+,Sol,Unit may recover HP=50% damage dealt. Trigger %=Dex.,Successeur
+,Luna,"While making an attack, may ignore half of foe’s Def/Res. Trigger %=Dex.",Tireur d’élite
+,Grasping Void,"When attacking with a tome, unit may deal extra damage = half of foe’s Mag. Trigger %=Dex.",Lindwurm
+,World Tree,"When unit uses a staff, may not consume a use. Trigger %=Dex.",Sleipnir Rider
+,Sandstorm,"While making a physical attack, may calculate damage with 150% of Def instead of Str. Trigger %=Dex.",Picket
+,Back at You,"When countering, unit may deal extra damage = half of damage taken. Trigger %=Dex.",Cupido
+,Soulblade,"When attacking with a sword, damage is calculated using average of foe’s Def and Res.",Melusine
+,Run Through,"Use to attack an adjacent foe, then move to the space opposite that foe.",Swordmaster
+,Brave Assist,"If unit’s HP is at max while unit makes a chain attack, unit attacks twice.",Hero
+,Pincer Attack,"If unit initiates combat while an ally is on the opposite side of the foe, always follow up (if weapon allows).",Halberdier
+,Reforge,"If unit’s HP is 11 or more and an adjacent ally is broken after combat, sacrifices 10 HP and removes the break status from that ally.",Royal Knight
+,Smash+,"When making a smash attack, push the target 2 spaces instead of 1.",Berserker
+,Merciless,Unit deals +50% damage against broken foes.,Warrior
+,No Distractions,Grants Crit+10 during combat with a foe that can’t counter.,Sniper
+,Careful Aim,"If unit initiates combat without moving first, grants Hit+40 during combat.",Bow Knight
+,Swap,Use to switch places with an adjacent ally.,General
+,Allied Defense,"If unit is between an ally and a foe, reduces damage to unit by 3 during combat with that foe.",Great Knight
+,Pivot,Use to move to the opposite side of an adjacent ally.,Paladin
+,Hobble,"If unit initiates combat with a knife, inflicts Mov-2 on foe for 1 turn.",Wolf Knight
+,Spell Harmony,"If unit initiates combat with a tome, grants Atk equal to the number of adjacent allies with tomes.",Sage
+,Chaos Style,"If unit initiates combat with a physical attack against a foe armed with magic or vice versa, grants Spd+3 during combat.",Mage Knight
+,Diffuse Healer,"When unit is healed by a staff, all adjacent allies also recover 50% of the HP that the unit recovered.",Martial Master
+,Self-Healing,Unit can target itself with healing staves.,High Priest
+,Clear the Way,Unit’s space and adjacent spaces have a movement cost of 1 for allies.,Griffin Knight
+,Air Raid,"If unit initiates combat from a space a foe cannot enter, grants Spd+5 during combat.",Wyvern Knight
+,Pass,Foes do not block this unit’s movement.,Thief
+,Special Dance,"If unit uses Dance, grants Dex/Spd/Lck+3 to target for 1 turn.",Dancer
+,Let Fly,"Use to perform a guaranteed-hit, area-of-effect attack at the start of the next player phase. Unit loses equipped weapon.",Mage Cannoneer
+,Convoy,Use to deposit or retrieve weapons and items.,Enchanter
+,Miasma Domain,"At start of turn, applies miasma to terrain within 2 spaces of unit.",Corrupted Wyvern
+,Frost Domain,"At start of turn, applies frost to terrain within 2 spaces of unit.",Phantom Wyvern
+,Pack Hunter,Allies of the same class as unit within 3 spaces participate in chain attacks.,"Corrupted Wolf, Phantom Wolf"
+,Resist Emblems,"When attacked with an engage attack, prevents 20% of damage.",Fell Child (Nel)
+,Spur Emblems,"At start of player phase, fills adjacent allies’ engage meters by 1.","Fell Child (Nil, Rafal)"

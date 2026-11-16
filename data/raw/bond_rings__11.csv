@@ -1,0 +1,41 @@
+﻿Name,Rank,Stat Boost,Skill
+Seth,C,HP +2,—
+B,"HP +2, Str +1",—
+A,"HP +2, Str +1, Def +1",—
+S,"HP +5, Str +1, Def +1",—
+Ross,C,HP +2,—
+B,"HP +2, Str +1",—
+A,"HP +2, Str +1, Lck +1",—
+S,"HP +5, Str +1, Lck +1",—
+Lute,C,Mag +1,—
+B,"Mag +1, Lck +1",—
+A,"Mag +1, Res +1, Lck +1",—
+S,"Mag +2, Res +1, Lck +1",—
+Joshua,C,Spd +1,—
+B,"Dex +1, Spd +1",—
+A,"HP +2, Dex +1, Spd +1",—
+S,"HP +2, Dex +1, Spd +2",—
+Tana,C,Spd +1,—
+B,"Spd +1, Lck +1",—
+A,"Str +1, Spd +1, Lck +1",—
+S,"Str +1, Spd +2, Lck +1",—
+Amelia,C,HP +2,—
+B,"HP +2, Lck +1",—
+A,"HP +2, Str +1, Lck +1",—
+S,"HP +5, Str +1, Lck +1",—
+Innes,C,Spd +1,—
+B,"Spd +1, Lck +1",—
+A,"Dex +1, Spd +1, Lck +1",—
+S,"Dex +1, Spd +2, Lck +1","Sure Strike [If unit initiates combat, attacks are guaranteed to hit. Trigger %=Dex]"
+Gerik,C,HP +2,—
+B,"HP +2, Str +1",—
+A,"HP +2, Str +1, Dex +1",—
+S,"HP +5, Str +1, Dex +1",—
+Marisa,C,Spd +1,—
+B,"Dex +1, Spd +1",—
+A,"Dex +1, Spd +1, Lck +1",—
+S,"Dex +1, Spd +2, Lck +1","Lethality [When landing a critical hit, instantly kills foe. Trigger %=30. (Excludes certain powerful foes.)]"
+L’Arachel,C,Spd +1,—
+B,"Spd +1, Lck +1",—
+A,"Mag +1, Spd +1, Lck +1",—
+S,"Mag +1, Spd +2, Lck +1",—

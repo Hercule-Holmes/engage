@@ -1,0 +1,30 @@
+﻿Bond,Name,Description,Type,SP
+1,Starsphere,Grants unit enhanced stat growth when leveling up. [Adds +15% to final growth rates.],Sync Skill (Can Inherit),1500
+1,Draconic Form,Unit transforms into and fights as a dragon while engaged. Grants +10 to max HP and +5 to Bld and all basic stats. [Armored] Negates terrain damage. [Mystical] Grants an extra Res+5.,Engage Skill,—
+1,Divine Blessing,Use to grant 1 ally a Revival Stone. [Dragon] Restore 20 HP to ally. [Qi Adept] Heal their status effects.,Engage Attack,—
+1,Divine Blessing+,"Use to grant 1 ally a Revival Stone. If ally is not synced, fully restore HP. If ally is synced, +3 to engage meter. If ally is engaged, restore engage turns. [Dragon] Restore 20 HP to ally. [Qi Adept] Heal their status effects.",Engage Attack (Requires adjacent Marth),—
+1,Eternal Claw,Claw attack used by Emblem Tiki. Easily inflicts fatal wounds.,Engage Weapon,—
+1,Tail Smash,"Smash attack used by Emblem Tiki. Smashes foes. Cannot follow up, or strike first if initiating combat.",Engage Weapon,—
+1,Fire Breath,A scorching breath attack. Ignores foe’s Def/Res.,"Engage Weapon (Backup, Cavalry, Covert and Qi Adept)",—
+1,Ice Breath,"Strikes foes in area at half Def. Freezes foes. Cannot follow up, or strike first if initiating combat.",Engage Weapon (Armor),—
+1,Flame Breath,"Sets area on fire. Strikes foes at 70% damage and half Def. Cannot follow up, or strike first if initiating combat.",Engage Weapon (Flying),—
+1,Dark Breath,"Magically strikes foes in area at half Res. Cannot follow up, or strike first if initiating combat.",Engage Weapon (Mystical),—
+1,Fog Breath,"Strikes foes in area at half Def. Eff: Dragon. Creates fog. Cannot follow up, or strike first if initiating combat.",Engage Weapon (Dragon),—
+2,HP/Lck +2,Grants HP+2 and Lck+2.,Inheritable Skill,200
+3,Geosphere,"At start of player phase, if there are allies adjacent to unit, grants Def/Res+3 to unit and those allies for 1 turn.",Sync Skill (Can Inherit),500
+4,Special Guard 1,"If foe is equipped with a special attack, unit takes 1 less damage during combat.",Inheritable Skill,200
+5,Skill Inheritance,Unit can inherit this Emblem’s skills.,Unlock,—
+6,Arts Prof.,Proficiency with arts. Required for promotion to certain classes.,Unlock,—
+7,HP/Lck +4,Grants HP+4 and Lck+4.,Inheritable Skill,600
+8,Lifesphere,"If unit uses Wait without attacking or using items, restores 20 HP and heals status effects.",Sync Skill (Can Inherit),1000
+9,Special Guard 2,"If foe is equipped with a special attack, unit takes 2 less damage during combat.",Inheritable Skill,400
+10,Lightsphere,"If unit initiates combat, halves chance of receiving critical hit from foe.",Sync Skill (Can Inherit),900
+12,HP/Lck +6,Grants HP+6 and Lck+6.,Inheritable Skill,1100
+13,Special Guard 3,"If foe is equipped with a special attack, unit takes 3 less damage during combat.",Inheritable Skill,600
+14,Lifesphere+,"If unit uses Wait without attacking or using items, restores 30 HP and heals status effects.",Sync Skill (Can Inherit),2000
+15,HP/Lck +8,Grants HP+8 and Lck+8.,Inheritable Skill,1900
+16,Geosphere+,"At start of player phase, if there are allies adjacent to unit, grants Def/Res+5 to unit and those allies for 1 turn.",Sync Skill (Can Inherit),1000
+17,Special Guard 4,"If foe is equipped with a special attack, unit takes 4 less damage during combat.",Inheritable Skill,800
+18,HP/Lck +10,Grants HP+10 and Lck+10.,Inheritable Skill,3600
+19,Lifesphere++,"If unit uses Wait without attacking or using items, restores 40 HP and heals status effects.",Sync Skill (Can Inherit),3000
+19,Special Guard 5,"If foe is equipped with a special attack, unit takes 5 less damage during combat.",Inheritable Skill,1000

@@ -1,0 +1,24 @@
+﻿Bond,Name,Description,Type,SP
+1,Magic +2,Grants Mag+2.,Inheritable Skill,1000
+1,Holy Stance,"If a Corrupted attacks unit, deals 10% of damage taken back to foe.",Sync Skill (Can Inherit),100
+1,Echo,Use to attack with magic at 50% damage. Use a second time to launch another 50% attack. [Dragon] Range +1. [Mystical] +10% damage.,Engage Skill,—
+1,Warp Ragnarok,Use to warp up to 10 spaces and make a powerful magic attack. [Dragon] Attack range +1. [Cavalry] Warp distance +2. [Flying] Warp distance +5. [Mystical] +20% damage.,Engage Attack,—
+1,Seraphim,Holy tome wielded by Emblem Celica. Effective: Corrupted.,Engage Weapon,—
+2,Magic +3,Grants Mag+3.,Inheritable Skill,3000
+3,Resonance,"When equipped with a tome, if unit’s HP is 2 or more, unit loses 1 HP at start of combat and deals +2 damage during combat.",Sync Skill (Can Inherit),2000
+4,Tome Precision 1,Grants Hit/Avo+3 when using a tome.,Inheritable Skill,100
+5,Skill Inheritance,Unit can inherit this Emblem’s skills.,Unlock,—
+6,Tome Prof.,Proficiency with tomes. Required for promotion to certain classes.,Unlock,—
+7,Tome Precision 2,Grants Hit/Avo+5 when using a tome.,Inheritable Skill,300
+8,Favorite Food,"When unit eats a packed lunch, its engage meter is maxed out.",Sync Skill (Can Inherit),200
+9,Tome Precision 3,Grants Hit/Avo+7 when using a tome.,Inheritable Skill,700
+9,Sword Prof.,Proficiency with swords. Required for promotion to certain classes.,Unlock,—
+10,Recover,A staff imbued with healing magic. Recovers vast amounts of an ally’s HP.,Engage Weapon,—
+12,Holy Stance+,"If a Corrupted attacks unit, deals 30% of damage taken back to foe.",Sync Skill (Can Inherit),500
+13,Magic +4,Grants Mag+4.,Inheritable Skill,4000
+14,Tome Precision 4,Grants Hit/Avo+10 when using a tome.,Inheritable Skill,1000
+15,Ragnarok,Mighty fire tome wielded by Emblem Celica.,Engage Weapon,—
+16,Resonance+,"When equipped with a tome, if unit’s HP is 2 or more, unit loses 1 HP at start of combat and deals +3 damage during combat.",Sync Skill (Can Inherit),3000
+17,Tome Precision 5,Grants Hit/Avo+15 when using a tome.,Inheritable Skill,2000
+18,Holy Stance++,"If a Corrupted attacks unit, deals 50% of damage taken back to foe.",Sync Skill (Can Inherit),1000
+19,Magic +5,Grants Mag+5.,Inheritable Skill,5000

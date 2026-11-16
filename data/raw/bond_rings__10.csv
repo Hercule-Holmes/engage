@@ -1,0 +1,41 @@
+﻿Name,Rank,Stat Boost,Skill
+Azura,C,Spd +1,—
+B,"Dex +1, Spd +1",—
+A,"Dex +1, Spd +1, Lck +1",—
+S,"Dex +1, Spd +2, Lck +1",—
+Ryoma,C,Spd +1,—
+B,"Str +1, Spd +1",—
+A,"Str +1, Spd +1, Lck +1",—
+S,"Str +1, Spd +2, Lck +1","Bushido [If unit’s level is higher than foe’s, grants Crit+10 during combat, and unit deals +2 damage and takes 2 less damage.]"
+Hinoka,C,Spd +1,—
+B,"Spd +1, Res +1",—
+A,"HP +2, Spd +1, Res +1",—
+S,"HP +2, Spd +2, Res +1",—
+Takumi,C,Str +1,—
+B,"Str +1, Dex +1",—
+A,"HP +2, Str +1, Dex +1",—
+S,"HP +2, Str +2, Dex +1",—
+Sakura,C,Lck +1,—
+B,"Mag +1, Lck +1",—
+A,"HP +2, Mag +1, Lck +1",—
+S,"HP +2, Mag +1, Lck +2",—
+Xander,C,Def +1,—
+B,"Def +1, Lck +1",—
+A,"Str +1, Def +1, Lck +1",—
+S,"Str +1, Def +2, Lck +1","Chivalry [If unit initiates combat while foe’s HP=100%, unit deals +2 damage and takes 2 less damage.]"
+Camilla,C,Spd +1,—
+B,"Str +1, Spd +1",—
+A,"Str +1, Spd +1, Def +1",—
+S,"Str +1, Spd +2, Def +1",—
+Leo,C,Mag +1,—
+B,"Mag +1, Res +1",—
+A,"HP +2, Mag +1, Res +1",—
+S,"HP +2, Mag +2, Res +1",—
+Elise,C,Lck +1,—
+B,"Mag +1, Lck +1",—
+A,"Mag +1, Spd +1, Lck +1",—
+S,"Mag +1, Spd +1, Lck +2",—
+Jakob,C,HP +2,—
+B,"HP +2, Lck +1",—
+A,"HP +2, Dex +1, Lck +1",—
+S,"HP +5, Dex +1, Lck +1",—

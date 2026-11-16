@@ -1,0 +1,20 @@
+﻿Icon,Name,Rng,Lvl,Uses,Price,EXP,Notes/Description
+,Recover,1,D,—,100,40,"Pow: 40, Staff wielded by Emblem Celica. Recovers a great deal of HP."
+,Recover (Normal),1,D,—,100,40,"Pow: 40, Staff wielded by Emblem Celica. Recovers a great deal of HP."
+,Sacrifice,Inf,–,—,100,25,"Pow: 255, (Used during Micaiah’s Engage attack)"
+,Sacrifice (Armor),Inf,–,—,100,25,"Pow: 255, (Used during Micaiah’s Engage attack)"
+,Sacrifice (Qi Adept),Inf,–,—,100,25,"Pow: 255, (Used during Micaiah’s Engage attack)"
+,Goddess Dance,1,–,—,100,30,(Used during Byleth’s Engage attack)
+,Diabolical Dance,1~2,–,—,100,30,(Used during Dark Byleth’s Engage attack)
+,Divine Blessing,1,D,—,100,40,(Used during Tiki’s Engage attack)
+,Divine Blessing (Dragon),1,D,—,100,40,"Pow: 20, (Used during Tiki’s Engage attack)"
+,Divine Blessing (Qi Adept),1,D,—,100,40,(Used during Tiki’s Engage attack)
+,Divine Blessing+,1,D,—,100,45,(Used during Tiki’s Linked Engage attack)
+,Divine Blessing+ (Dragon),1,D,—,100,45,"Pow: 20, (Used during Tiki’s Linked Engage attack)"
+Icon,Name,Rng,Lvl,Uses,Price,EXP,Notes/Description
+,Divine Blessing+ (Qi Adept),1,D,—,100,45,(Used during Tiki’s Linked Engage attack)
+,Divine Blessing (FX1),1,D,—,100,40,(Used during Tiki’s Engage attack)
+,Fortify+,1~7,D,—,100,25,"Pow: 10, A staff wielded by Emblem Veronica. Heals HP and status effects for all allies within a 7-space radius."
+,Fortify+ (Normal),1~7,D,—,100,25,"Pow: 10, A staff wielded by Emblem Veronica. Heals HP and status effects for all allies within a 7-space radius."
+,Reflect,1~2,D,—,100,25,Staff of Emblem Soren. Allies within 2 spaces gain “deals 50% of magic damage taken back to foe” for 1 turn.
+,Reflect (Normal),1~2,D,—,100,25,Staff of Emblem Soren. Allies within 2 spaces gain “deals 50% of magic damage taken back to foe” for 1 turn.

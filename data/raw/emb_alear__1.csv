@@ -1,0 +1,14 @@
+﻿Bond,Name,Description,Type
+1,Holy Aura,Unit is Effective: Fell Dragon. Allies within 2 spaces with Effective: Dragon gain Effective: Fell Dragon. [Might multiplier of 2.],Sync Skill (Cannot Inherit)
+1,Attuned,"If unit initiates combat and defeats foe, grants engage partner +4 to all seven basic stats while engaged. [Dragon] Extra +1 to all stats. [Backup] Extra +2 to Str. [Cavalry] Extra +2 to Dex. [Covert] Extra +2 to Spd. [Armored] Extra +2 to Def. [Flying] Extra +2 to Res. [Mystical] Extra +2 to Mag. [Qi Adept] Extra +2 to Lck.",Engage Skill
+1,Dragon Blast,Use to make two attacks against an adjacent foe with a sword and powerful magic beam. [Dragon] +20% damage. [Backup] Adds 20% of Str to sword attack. [Mystical] Adds 20% of Mag to beam attack. [Qi Adept] Breaks foe.,Engage Attack
+1,Bond Blast,Use to make a sword attack from the unit and engage partner followed by a magic beam attack against an adjacent foe. [Dragon] +20% damage. [Backup] +20% of Str to sword. [Mystical] +20% of Mag to beam. [Qi Adept] Breaks foe.,Engage Attack (Emblem Alear is adjacent to Engage partner or vice versa)
+1,Lyrátion,"Sword of Emblem Alear. If user defeats foe in player phase, fills adjacent allies’ engage meters by 1.",Engage Weapon
+5,Bond Forger,Grants Hit/Avo+20 to unit and allies within 2 spaces that are synced or engaged with an Emblem.,Sync Skill (Cannot Inherit)
+10,Dragon’s Fist,"Magical attack wielded by Emblem Alear. If user initiates combat, attacks twice. (Uses Mag.)",Engage Weapon
+10,Sword Prof.,Proficiency with swords. Required for promotion to certain classes.,Unlock
+10,Arts Prof.,Proficiency with arts. Required for promotion to certain classes.,Unlock
+20,Bond Forger+,Grants Hit/Avo+30 to unit and allies within 2 spaces that are synced or engaged with an Emblem.,Sync Skill (Cannot Inherit)
+20,Holy Shield,Neutralizes Effective against this unit.,Sync Skill (Cannot Inherit)
+20,Oligoludia,Sword wielded by Emblem Alear. Effective: Corrupted.,Engage Weapon
+21,Boon of Elyos,"If unit initiates combat, grants bonus to Crit and Ddg equal to 2× the number of allies who have acted this turn.",Sync Skill (Cannot Inherit)

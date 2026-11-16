@@ -1,0 +1,4 @@
+﻿Rarity,Type of unit,Level,Rate
+3-star,Base class Fabrication,User’s Level -2,30%
+4-star,Advanced class Fabrication,User’s Level,40%
+5-star,Emblem,User’s Level +2,30%

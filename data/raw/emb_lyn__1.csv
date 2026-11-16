@@ -1,0 +1,23 @@
+﻿Bond,Name,Description,Type,SP
+1,Speed +1,Grants Spd+1.,Inheritable Skill,100
+1,Alacrity,"If unit initiates combat with a Spd advantage of 9 or more, unit’s follow-up (if possible) occurs before foe can counterattack.",Sync Skill (Can Inherit),1000
+1,Call Doubles,Creates four illusory doubles that can make chain attacks with unit. [Dragon] +1 double created. [Flying] Doubles have +10 Avo,Engage Skill,—
+1,Astra Storm,"Use to launch 5 bow attacks at 30% damage, up to range 10. [Dragon] Range +5. [Covert] Range +10. [Qi Adept] Breaks the target.",Engage Attack,—
+1,Killer Bow (Lyn),Bow wielded by Emblem Lyn. Easily inflicts fatal wounds. Effective: Flying.,Engage Weapon,—
+2,Speed +2,Grants Spd+2.,Inheritable Skill,300
+3,Speedtaker,Grants a stacking Spd+2 each time unit initiates combat and defeats a foe. Bonus lasts for the rest of the battle. (Max +10),Sync Skill (Can Inherit),2000
+4,Bow Focus 1,Grants Hit+10 at a cost of Ddg-10 when using a bow.,Inheritable Skill,100
+5,Skill Inheritance,Unit can inherit this Emblem’s skills.,Unlock,—
+6,Bow Prof.,Proficiency with bows. Required for promotion to certain classes.,Unlock,—
+7,Bow Focus 2,Grants Hit+15 at a cost of Ddg-10 when using a bow.,Inheritable Skill,300
+8,Sword Prof.,Proficiency with swords. Required for promotion to certain classes.,Unlock,—
+9,Speed +3,Grants Spd+3.,Inheritable Skill,500
+10,Mani Katti,"Divine sword wielded by Emblem Lyn. Effective: Cavalry, Armored.",Engage Weapon,—
+12,Bow Focus 3,Grants Hit+20 at a cost of Ddg-10 when using a bow.,Inheritable Skill,500
+13,Alacrity+,"If unit initiates combat with a Spd advantage of 7 or more, unit’s follow-up (if possible) occurs before foe can counterattack.",Sync Skill (Can Inherit),2000
+14,Bow Focus 4,Grants Hit+25 at a cost of Ddg-10 when using a bow.,Inheritable Skill,700
+15,Mulagir,"Mighty bow wielded by Emblem Lyn. Grants Spd+5. Effective: Flying, Dragon.",Engage Weapon,—
+16,Speed +4,Grants Spd+4.,Inheritable Skill,1000
+17,Bow Focus 5,Grants Hit+30 at a cost of Ddg-10 when using a bow.,Inheritable Skill,1000
+18,Alacrity++,"If unit initiates combat with a Spd advantage of 5 or more, unit’s follow-up (if possible) occurs before foe can counterattack.",Sync Skill (Can Inherit),3000
+19,Speed +5,Grants Spd+5.,Inheritable Skill,2000

@@ -1,0 +1,53 @@
+﻿Icon,Name,Mt,Hit,Crit,Wt,Rng,Lvl,Price,Notes/Description
+,Seraphim,6,90,0,4,1~2,D,100,Holy tome wielded by Emblem Celica. Effective: Corrupted.
+,Seraphim (Normal),6,90,0,4,1~2,D,100,Holy tome wielded by Emblem Celica. Effective: Corrupted.
+,Ragnarok,15,95,10,12,1~2,D,100,Mighty fire tome wielded by Emblem Celica.
+,Ragnarok (Normal),15,95,10,12,1~2,D,100,Mighty fire tome wielded by Emblem Celica.
+,Shine,7,90,10,5,1~2,D,100,Light tome wielded by Emblem Micaiah. Illuminates a 5-space radius (shrinks one space per turn).
+,Shine (Normal),7,90,10,5,1~2,D,100,Light tome wielded by Emblem Micaiah. Illuminates a 5-space radius (shrinks one space per turn).
+,Nosferatu,9,85,0,7,1~2,D,100,Light tome wielded by Emblem Micaiah. User recovers HP equal to 50% of damage dealt.
+,Nosferatu (Normal),9,85,0,7,1~2,D,100,Light tome wielded by Emblem Micaiah. User recovers HP equal to 50% of damage dealt.
+,Thani,11,100,0,6,1~2,D,100,"Mighty light tome wielded by Emblem Micaiah. Effective: Cavalry, Armored."
+,Thani (Normal),11,100,0,6,1~2,D,100,"Mighty light tome wielded by Emblem Micaiah. Effective: Cavalry, Armored."
+,Hliðskjálf,13,70,0,7,1~2,D,100,"A staff wielded by Emblem Veronica. If user initiates combat, foe cannot counterattack."
+,Hliðskjálf (Normal),13,70,0,7,1~2,D,100,"A staff wielded by Emblem Veronica. If user initiates combat, foe cannot counterattack."
+Icon,Name,Mt,Hit,Crit,Wt,Rng,Lvl,Price,Notes/Description
+,Hliðskjálf (DP3 Weakest),2,70,0,7,1~2,D,100,"A staff wielded by Emblem Veronica. If user initiates combat, foe cannot counterattack."
+,Hliðskjálf (DP3 Weak),5,70,0,7,1~2,D,100,"A staff wielded by Emblem Veronica. If user initiates combat, foe cannot counterattack."
+,Hliðskjálf (DP3 Weakish),9,70,0,7,1~2,D,100,"A staff wielded by Emblem Veronica. If user initiates combat, foe cannot counterattack."
+,Hliðskjálf (DP3 Strong),16,70,0,7,1~2,D,100,"A staff wielded by Emblem Veronica. If user initiates combat, foe cannot counterattack."
+,Élivágar,18,85,0,10,1~2,D,100,Powerful magic wielded by Emblem Veronica. Nullifies basic stat bonuses on target for 1 turn after combat.
+,Élivágar (Normal),18,85,0,10,1~2,D,100,Powerful magic wielded by Emblem Veronica. Nullifies basic stat bonuses on target for 1 turn after combat.
+,Élivágar (DP3 Weakest),4,85,0,10,1~2,D,100,Powerful magic wielded by Emblem Veronica. Nullifies basic stat bonuses on target for 1 turn after combat.
+,Élivágar (DP3 Weak),10,85,0,10,1~2,D,100,Powerful magic wielded by Emblem Veronica. Nullifies basic stat bonuses on target for 1 turn after combat.
+,Élivágar (DP3 Weakish),14,85,0,10,1~2,D,100,Powerful magic wielded by Emblem Veronica. Nullifies basic stat bonuses on target for 1 turn after combat.
+,Élivágar (DP3 Strongish),21,85,0,9,1~2,D,100,Powerful magic wielded by Emblem Veronica. Nullifies basic stat bonuses on target for 1 turn after combat.
+,Élivágar (DP3 Strong),24,85,0,8,1~2,D,100,Powerful magic wielded by Emblem Veronica. Nullifies basic stat bonuses on target for 1 turn after combat.
+,Bolting,2,50,0,15,3~10,D,100,Long-range thunder magic wielded by Emblem Soren. Cannot follow up.
+Icon,Name,Mt,Hit,Crit,Wt,Rng,Lvl,Price,Notes/Description
+,Bolting (Normal),2,50,0,15,3~10,D,100,Long-range thunder magic wielded by Emblem Soren. Cannot follow up.
+,Bolting (DP4 Weak),2,50,0,15,3~10,D,100,Long-range thunder magic wielded by Emblem Soren. Cannot follow up.
+,Bolting (DP4 Weakest),1,50,0,15,3~10,D,100,Long-range thunder magic wielded by Emblem Soren. Cannot follow up.
+,Bolting (Dark),10,65,0,8,3~5,D,100,Long-range thunder magic wielded by Emblem Soren. Cannot follow up.
+,Rexcalibur,16,105,10,12,1~2,D,100,Powerful wind magic wielded by Emblem Soren. Effective: Flying.
+,Rexcalibur (Normal),16,105,10,12,1~2,D,100,Powerful wind magic wielded by Emblem Soren. Effective: Flying.
+,Rexcalibur (DP4 Weakish),13,105,10,12,1~2,D,100,Powerful wind magic wielded by Emblem Soren. Effective: Flying.
+,Rexcalibur (DP4 Weak),10,105,10,12,1~2,D,100,Powerful wind magic wielded by Emblem Soren. Effective: Flying.
+,Rexcalibur (DP4 Weakest),6,105,10,12,1~2,D,100,Powerful wind magic wielded by Emblem Soren. Effective: Flying.
+,Cataclysm (Wind),4,100,0,10,1~3,D,100,"Magic wielded by Emblem Soren. Fire, thunder, & wind attacks at 40% damage. Wind is effective: Flying."
+,Cataclysm (Fire),4,100,0,10,1~3,D,100,"Magic wielded by Emblem Soren. Fire, thunder, & wind attacks at 40% damage. Wind is effective: Flying."
+,Cataclysm (Thunder),4,100,0,10,1~3,D,100,"Magic wielded by Emblem Soren. Fire, thunder, & wind attacks at 40% damage. Wind is effective: Flying."
+Icon,Name,Mt,Hit,Crit,Wt,Rng,Lvl,Price,Notes/Description
+,Cataclysm (Wind Dark),1,100,0,10,1~3,D,100,"Magic wielded by Emblem Soren. Fire, thunder, & wind attacks at 40% damage. Wind is effective: Flying."
+,Cataclysm (Fire Dark),1,100,0,10,1~3,D,100,"Magic wielded by Emblem Soren. Fire, thunder, & wind attacks at 40% damage. Wind is effective: Flying."
+,Cataclysm (Thunder Dark),1,100,0,10,1~3,D,100,"Magic wielded by Emblem Soren. Fire, thunder, & wind attacks at 40% damage. Wind is effective: Flying."
+,Lightning,3,75,0,10,1~2,D,100,"Magic wielded by Emblem Camilla. If user initiates combat, attacks twice."
+,Lightning (Normal),3,75,0,10,1~2,D,100,"Magic wielded by Emblem Camilla. If user initiates combat, attacks twice."
+,Lightning (DP5 Weak),1,75,0,10,1~2,D,100,"Magic wielded by Emblem Camilla. If user initiates combat, attacks twice."
+,Thoron,14,65,10,7,1~2,D,100,Powerful lightning magic wielded by Emblem Robin.
+,Thoron (Normal),14,65,10,7,1~2,D,100,Powerful lightning magic wielded by Emblem Robin.
+,Thoron (DP6 Weakish),11,65,10,6,1~2,D,100,Powerful lightning magic wielded by Emblem Robin.
+,Thoron (DP6 Weak),8,65,5,5,1~2,D,100,Powerful lightning magic wielded by Emblem Robin.
+,Thoron (DP6 Weakest),8,65,5,11,1~2,D,100,Powerful lightning magic wielded by Emblem Robin.
+,Lightning (+),6,80,5,10,1~2,D,100,"Magic wielded by Emblem Camilla. If user initiates combat, attacks twice."
+,Thoron (+),17,70,15,7,1~2,D,100,Powerful lightning magic wielded by Emblem Robin.

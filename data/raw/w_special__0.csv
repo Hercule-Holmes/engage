@@ -1,0 +1,9 @@
+﻿Icon,Name,Mt,Hit,Crit,Wt,Rng,Lvl,Price,Notes/Description
+,Fell Stone,10,100,0,9,1,B,1000,A dragonstone that holds the Fell Dragon’s power. Halves foe Def/Res.
+,Fell Ruinstone,6,80,0,12,1~2,S,5000,A dragonstone that holds a Fell Dragon’s power. Halves foe Def/Res. Can strike close or at range.
+,Fell Magicstone,6,85,0,10,1,A,3000,A dragonstone that holds a Fell Dragon’s power. Magic attack using physical power. Halves foe Def/Res.
+,Fell Slaystone,6,90,0,10,1,A,3000,A dragonstone that holds a Fell Dragon’s special power. Halves foe Def/Res. Effective: Cavalry.
+,Fell Weightstone,6,95,0,9,1,A,3000,A dragonstone that holds a Fell Dragon’s special power. Halves foe Def/Res. Effective: Flying.
+,Fell Spark,10,100,0,9,1,B,100,An attack using the power of a Fell dragonstone. Halves foe Def/Res.
+,Fell Spark (FX5),5,50,0,15,1,B,100,An attack using the power of a Fell dragonstone. Halves foe Def/Res.
+,Fell Arcana,6,85,0,10,1,A,100,An attack using the power of a Fell dragonstone. Magic attack using physical power. Halves foe Def/Res.

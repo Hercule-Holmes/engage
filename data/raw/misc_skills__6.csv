@@ -1,0 +1,46 @@
+﻿Icon,Name,Description,Obtain
+,Poison Strike,"If unit initiates combat, deals damage to foe equal to 20% of their max HP after combat.",Enemy Wolf Knight
+,Savage Blow,"If unit initiates combat, deals damage to foes within 2 spaces equal to 20% of their max HP after combat.",Enemy Thief
+,Swordbreaker,"If unit’s HP is 50% or higher at start of combat and foe has a sword equipped, unit can follow up and foe cannot follow up.",Enemy Paladin
+,Lancebreaker,"If unit’s HP is 50% or higher at start of combat and foe has a lance equipped, unit can follow up and foe cannot follow up.",Enemy Paladin
+,Axebreaker,"If unit’s HP is 50% or higher at start of combat and foe has an axe equipped, unit can follow up and foe cannot follow up.",Enemy Paladin
+,Tomebreaker,"If unit’s HP is 50% or higher at start of combat and foe has a tome equipped, unit can follow up and foe cannot follow up.",Enemy Paladin
+,Bowbreaker,"If unit’s HP is 50% or higher at start of combat and foe has a bow equipped, unit can follow up and foe cannot follow up.",Enemy Paladin
+,Knifebreaker,"If unit’s HP is 50% or higher at start of combat and foe has a knife equipped, unit can follow up and foe cannot follow up.",Enemy Paladin
+,Artbreaker,"If unit’s HP is 50% or higher at start of combat and foe has an art equipped, unit can follow up and foe cannot follow up.",Enemy Paladin
+,Seal Strength,"If unit initiates combat, inflicts Str-6 on foe after combat. (Penalty shrinks by 1 each turn.)",Enemy Bow Knight
+,Seal Magic,"If unit initiates combat, inflicts Mag-6 on foe after combat. (Penalty shrinks by 1 each turn.)",Enemy Mage Knight
+,Seal Defense,"If unit initiates combat, inflicts Def-6 on foe after combat. (Penalty shrinks by 1 each turn.)",Enemy Sniper
+,Seal Speed,"If unit initiates combat, inflicts Spd-6 on foe after combat. (Penalty shrinks by 1 each turn.)",Enemy Halberdier
+,Seal Resistance,"If unit initiates combat, inflicts Res-6 on foe after combat. (Penalty shrinks by 1 each turn.)",Enemy Sage
+,Fierce Stance,"If foe initiates combat, grants Str+6 during combat.",Enemy Warrior
+,Steady Stance,"If foe initiates combat, grants Def+6 during combat.","Enemy General, Mage Cannoneer"
+,Darting Stance,"If foe initiates combat, grants Spd+6 during combat.",Enemy Royal Knight
+,Warding Stance,"If foe initiates combat, grants Res+6 during combat.",Enemy Great Knight
+,Life and Death,Unit deals +10 damage and takes +10 damage during combat.,Enemy Barbarian
+,Triangle Adept,"When unit has weapon advantage, always follows up. When unit has disadvantage, foe always follows up.",Enemy Hero
+,Cornered Beast,"If unit’s HP is 50% or less at start of combat, grants Crit+30 during combat.",Enemy Berserker
+,Self-Destruct,"If unit’s HP is 50% or less at the start of player phase, unit dies and deals 50% of its max HP to foes within 2 spaces.","Enemy Martial Master, Enchanter"
+,Duelist’s Blow,"When unit initiates combat, grants Avo+30 during combat.",Enemy Corrupted/Phantom Wolf
+,Darting Blow,"When unit initiates combat, grants Spd+5 during combat.",Enemy Griffin Knight
+,Death Blow,"When unit initiates combat, grants Crit+20 during combat.",Enemy Swordmaster
+,Certain Blow,"When unit initiates combat, grants Hit+40 during combat.",Enemy Wyvern Knight
+,Armored Blow,"When unit initiates combat, unit takes 10 less physical damage during combat.",—
+,Warding Blow,"When unit initiates combat, unit takes 20 less magical damage during combat.",Enemy High Priest
+,Spirit Strike,"When unit hits with an attack, inflicts -5 to foe’s engage meter.",Enemy  Corrupted/Phantom Wyrm & Wyvern
+,Unbreakable,Prevents unit from being broken.,—
+,Stalwart,Reduces damage from effectiveness. [Might multiplier decreased from 3 to 2.],—
+,Unwavering,Negates damage from effectiveness.,—
+,Anchor,"Unit cannot be moved by skills, smash weapons, etc.",—
+,Veteran,Prevents unit from being broken. Reduces damage from effectiveness. [Might multiplier decreased from 3 to 2.],—
+,Veteran+,Prevents unit from being broken. Negates damage from effectiveness.,—
+,Void Curse,Foes do not earn EXP fighting this unit.,—
+,Fell Barrier,A barrier created by Dark Emblems. Nullifies Effective: Fell Dragon and prevents 50% of damage to unit.,—
+,Fell Barrier+,A barrier created by Dark Emblems. Nullifies Effective: Fell Dragon and prevents 70% of damage to unit.,—
+,Fell Barrier++,A barrier created by Dark Emblems. Nullifies Effective: Fell Dragon and prevents 85% of damage to unit.,—
+,Fell Barrier+++,A barrier created by Dark Emblems. Nullifies Effective: Fell Dragon and prevents all damage to unit.,—
+,Dark Barrier,A barrier created by Dark Emblems. Prevents 20% of damage to unit.,—
+,Dark Barrier+,A barrier created by Dark Emblems. Prevents 40% of damage to unit.,—
+,Dark Barrier++,A barrier created by Dark Emblems. Prevents 60% of damage to unit.,—
+,Dark Barrier+++,A barrier created by Dark Emblems. Prevents 80% of damage to unit.,—
+,Bond Breaker,Makes enemy chain attack accuracy always 30%. Reduces damage taken. [Prevents 80% of damage.],—

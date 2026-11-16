@@ -1,0 +1,32 @@
+﻿Bond,Name,Description,Type,SP
+1,Lunar Brace,"If unit initiates combat with a physical attack, deals extra damage=20% of foe’s Def.",Sync Skill (Can Inherit),3000
+1,Solar Brace,"If unit initiates combat, unit recovers HP=30% of damage dealt.",Sync Skill (Ephraim),—
+1,Eclipse Brace,"If unit initiates combat, unit deals extra damage=20% of foe’s Def with physical attacks and recovers HP=30% of damage dealt.",Sync Skill (Engaged),—
+1,Dodge +10,Grants Ddg+10.,Inheritable Skill,500
+1,Night and Day,Use to switch Emblems and swap between Lunar Brace/Gentility and Solar Brace/Bravery for all allies.,Sync Skill (Cannot Inherit),—
+1,Sacred Twins,"While engaged with Eirika, changes Lunar Brace to Eclipse Brace and Gentility to Blue Skies for all allies.",Engage Skill,—
+1,Twin Strike,Use to make a sword attack followed by a lance attack from Ephraim on adjacent foe. Effective: Corrupted. [Dragon] +20% damage. [Cavalry] Ephraim deals +50% damage.,Engage Attack,—
+1,Rapier,"Sword wielded by Emblem Marth. Effective: Cavalry, Armored.",Engage Weapon,—
+2,Lance Agility 1,Grants Avo+10 at a cost of Crit-10 when using a lance.,Inheritable Skill,500
+3,Gentility,Unit takes 3 less damage.,Sync Skill (Can Inherit),2000
+3,Bravery,Unit deals +3 damage.,Sync Skill (Ephraim),—
+3,Blue Skies,Unit takes 3 less damage and deals +3 damage.,Sync Skill (Engaged),—
+4,Dodge +15,Grants Ddg+15.,Inheritable Skill,1000
+5,Skill Inheritance,Unit can inherit this Emblem’s skills.,Unlock,—
+6,Lance Prof.,Proficiency with lances. Required for promotion to certain classes.,Unlock,—
+7,Lance Agility 2,Grants Avo+15 at a cost of Crit-10 when using a lance.,Inheritable Skill,1000
+8,Dodge +20,Grants Ddg+20.,Inheritable Skill,1500
+9,Sword Prof.,Proficiency with swords. Required for promotion to certain classes.,Unlock,—
+10,Wind Sword,Magical sword wielded by Emblem Eirika. Can strike close or at range. Effective: Flying.,Engage Weapon,—
+12,Lance Agility 3,Grants Avo+20 at a cost of Crit-10 when using a lance.,Inheritable Skill,2000
+13,Lunar Brace+,"If unit initiates combat with a physical attack, deals extra damage=30% of foe’s Def.",Sync Skill (Can Inherit),5000
+13,Solar Brace+,"If unit initiates combat, unit recovers HP=50% of damage dealt.",Sync Skill (Ephraim),—
+13,Eclipse Brace+,"If unit initiates combat, unit deals extra damage=30% of foe’s Def with physical attacks and recovers HP=50% of damage dealt.",Sync Skill (Engaged),—
+14,Dodge +25,Grants Ddg+25.,Inheritable Skill,2000
+15,Sieglinde,Paired sword wielded by Emblem Eirika. Effective: Corrupted.,Engage Weapon,—
+16,Lance Agility 4,Grants Avo+25 at a cost of Crit-10 when using a lance.,Inheritable Skill,3000
+17,Lance Agility 5,Grants Avo+30 at a cost of Crit-10 when using a lance.,Inheritable Skill,4000
+18,Gentility+,Unit takes 5 less damage.,Sync Skill (Can Inherit),3000
+18,Bravery+,Unit deals +5 damage.,Sync Skill (Ephraim),—
+18,Blue Skies+,Unit takes 5 less damage and deals +5 damage.,Sync Skill (Engaged),—
+19,Dodge +30,Grants Ddg+30.,Inheritable Skill,2500

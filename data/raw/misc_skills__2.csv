@@ -1,0 +1,108 @@
+﻿Icon,Name,Description,SP,Obtain
+,Perceptive,"If the unit initiates combat, grants Avo+15 during combat. Avo increases with high Spd. [+1 Avoid for every 4 Speed.]",250,Marth Bond Lv 1
+,Perceptive+,"If the unit initiates combat, grants Avo+30 during combat. Avo increases with high Spd. [+1 Avoid for every 4 Speed.]",500,Marth Bond Lv 16
+,Break Defenses,"If unit’s attack breaks foe, unit makes an extra attack at 50% damage.",2000,Marth Bond Lv 3
+,Unyielding,"At start of player phase, if HP is 20% or less, restores 20% of unit’s max HP.",100,Marth Bond Lv 7
+,Unyielding+,"At start of player phase, if HP is 30% or less, restores 30% of unit’s max HP.",200,Marth Bond Lv 12
+,Unyielding++,"At start of player phase, if HP is 40% or less, restores 40% of unit’s max HP.",300,Marth Bond Lv 18
+,Divine Speed,"Unit performs an extra attack at 50% damage in combat. [Covert] If extra attack hits, poisons foe. [Dragon] Unit recovers HP equal to damage dealt by extra attack.",—,Marth Bond Lv 1
+,Lodestar Rush,Use to launch 7 consecutive sword attacks at 30% damage. Adjacent foe only. [Dragon] +2 attacks. [Backup] +1 attack. [Mystical] Damage based on Mag.,—,Marth Bond Lv 1
+,Canter,Unit can move 2 spaces after acting.,1000,Sigurd Bond Lv 1
+,Canter+,Unit can move 3 spaces after acting.,2000,Sigurd Bond Lv 13
+,Momentum,Grants Atk+1 to first attack during combat for each space unit moved before attacking. (Max +10),1000,Sigurd Bond Lv 3
+,Momentum+,Grants Atk+1 to first attack during combat for each space unit moved before attacking.,2000,Sigurd Bond Lv 17
+,Headlong Rush,Grants immunity to freeze.,200,Sigurd Bond Lv 7
+,Gallop,Grants Mov+5. [Dragon] Grants another Mov+1. [Cavalry] Grants another Mov+2. [Covert] Unit does not pay extra movement cost on any terrain.,—,Sigurd Bond Lv 1
+,Dark Gallop,Grants Mov+3.,—,Enemy
+,Override,Use to attack and move through a line of adjacent foes. Sword/lance only. [Dragon] +20% damage. [Armored] 10% chance of breaking target. [Mystical] Deals extra damage=25% of Mag. [Qi Adept] 20% chance of breaking target.,—,Sigurd Bond Lv 1
+,Holy Stance,"If a Corrupted attacks unit, deals 10% of damage taken back to foe.",100,Celica Bond Lv 1
+,Holy Stance+,"If a Corrupted attacks unit, deals 30% of damage taken back to foe.",500,Celica Bond Lv 12
+,Holy Stance++,"If a Corrupted attacks unit, deals 50% of damage taken back to foe.",1000,Celica Bond Lv 18
+,Unholy Stance,"If a non-Corrupted foe attacks unit, deals 50% of damage taken back to foe.",—,Enemy
+,Resonance,"When equipped with a tome, if unit’s HP is 2 or more, unit loses 1 HP at start of combat and deals +2 damage during combat.",2000,Celica Bond Lv 3
+,Resonance+,"When equipped with a tome, if unit’s HP is 2 or more, unit loses 1 HP at start of combat and deals +3 damage during combat.",3000,Celica Bond Lv 16
+,Favorite Food,"When unit eats a packed lunch, its engage meter is maxed out.",200,Celica Bond Lv 8
+,Echo,Use to attack with magic at 50% damage. Use a second time to launch another 50% attack. [Dragon] Range +1. [Mystical] +10% damage.,—,Celica Bond Lv 1
+,Warp Ragnarok,Use to warp up to 10 spaces and make a powerful magic attack. [Dragon] Attack range +1. [Cavalry] Warp distance +2. [Flying] Warp distance +5. [Mystical] +20% damage.,—,Celica Bond Lv 1
+,Dark Warp,Use to warp up to 5 spaces and make a powerful magic attack.,—,Enemy
+,Ragnarok Warp,"Use to make a powerful magic attack, then warp somewhere else on the map.",—,Enemy (Chapter 20)
+,Cleric,Unit can equip staves up to level C.,—,Micaiah Bond Lv 1
+,Cleric+,Unit can equip staves up to level B.,—,Micaiah Bond Lv 13
+,Cleric++,Unit can equip staves up to level A.,—,Micaiah Bond Lv 18
+,Silence Ward,Grants immunity to silence.,200,Micaiah Bond Lv 7
+,Healing Light,"When unit heals an ally with a staff, unit also recovers HP=50% of the amount healed.",200,Micaiah Bond Lv 3
+,Augment,Grants staff range +5 and area of effect +1. [Dragon] Additional staff range +1. [Qi Adept] +20% to HP healed by staves.,—,Micaiah Bond Lv 1
+,Dark Augment,Grants staff range +3 and area of effect +1.,—,Enemy
+,Great Sacrifice,"Use to restore full HP to all allies, even those not under the player’s control. After use, unit’s HP=1. [Dragon] Unit’s HP=30% current. [Armored] Grants Def+1 to all healed during their next combat. [Qi Adept] Also cures status.",—,Micaiah Bond Lv 1
+,Hold Out,"If unit had 30% HP or more at start of combat, unit always survives combat with at least 1 HP.",2000,Roy Bond Lv 1
+,Hold Out+,"If unit had 20% HP or more at start of combat, unit always survives combat with at least 1 HP.",3000,Roy Bond Lv 8
+,Hold Out++,"If unit had 10% HP or more at start of combat, unit always survives combat with at least 1 HP.",4000,Roy Bond Lv 13
+,Hold Out+++,"If unit had 2 HP or more at start of combat, unit always survives combat with at least 1 HP.",5000,Roy Bond Lv 18
+,Advance,Use to move 1 space toward a foe that is 2 spaces away and attack.,500,Roy Bond Lv 3
+,Rise Above,Grants Lvl+5. [Dragon] Additional Lvl+1. [Cavalry] Mov+1. [Armored] Max HP+5.,—,Roy Bond Lv 1
+,Sink Below,Grants Lvl+3.,—,Enemy
+,Blazing Lion,Use to attack adjacent foe and an area 3 spaces wide. Target area and the 2 rows beyond it are set on fire. Sword only. [Dragon] Expands attack area. [Mystical] Expands flame area.,—,Roy Bond Lv 1
+,Arms Shield,"When unit has weapon advantage, unit takes 3 less damage.",200,Leif Bond Lv 1
+,Arms Shield+,"When unit has weapon advantage, unit takes 5 less damage.",400,Leif Bond Lv 7
+,Arms Shield++,"When unit has weapon advantage, unit takes 7 less damage.",600,Leif Bond Lv 16
+,Vantage,"If unit’s HP is 25% or less and foe initiates combat, unit can counter before foe’s first attack.",500,Leif Bond Lv 3
+,Vantage+,"If unit’s HP is 50% or less and foe initiates combat, unit can counter before foe’s first attack.",1000,Leif Bond Lv 12
+,Vantage++,"If unit’s HP is 75% or less and foe initiates combat, unit can counter before foe’s first attack.",2000,Leif Bond Lv 18
+,Adaptable,"If foe initiates combat, unit counters with the best weapon available (in terms of range, weapon advantage, effective bonus, etc.). [Dragon] Hit+30 during combat. [Backup] Crit+10 during combat. [Covert] Avo+20 during combat. [Armored] Def+5 during combat. [Flying] Res+5 during combat.",—,Leif Bond Lv 1
+,Quadruple Hit,"Use to attack once each with sword, lance, axe, and bow. [Dragon] +20% damage. [Covert] Foes may drop 1,000G. Trigger %=Lck. [Qi Adept] Breaks foe.",—,Leif Bond Lv 1
+,Dual Strike,Unit participates in chain attacks as if it were a backup unit.,—,Lucina Bond Lv 1
+,Dual Assist,"If unit is able to chain attack, unit will do so when allies attack foes unit could reach by moving. Trigger %=35.",1000,Lucina Bond Lv 3
+,Dual Assist+,"If unit is able to chain attack, unit will do so when allies attack foes unit could reach by moving. Trigger %=70.",2000,Lucina Bond Lv 18
+,Dual Support,"Grants a bonus to Avo that increases with unit’s support level with adjacent allies. (Max +90) [+5 Avoid for each support level. None = 1, C = 2, B = 3, A = 4, S = 6.]",2000,Lucina Bond Lv 13
+,Bonded Shield,Use to prevent first attacks on adjacent allies until your next turn. Trigger %=80. [Dragon] +10% to trigger rate. [Cavalry] Trigger %=100 for cavalry allies. [Armored] Trigger %=100 for armored allies. [Flying] Trigger %=100 for flying allies. [Qi Adept] Trigger %=100.,—,Lucina Bond Lv 1
+,All for One,Use to make a sword attack against an adjacent foe. All allies within 2 spaces chain attack. [Dragon] Ally chain attacks are guaranteed to hit. [Backup] Range +1.,—,Lucina Bond Lv 1
+,Alacrity,"If unit initiates combat with a Spd advantage of 9 or more, unit’s follow-up (if possible) occurs before foe can counterattack.",1000,Lyn Bond Lv 1
+,Alacrity+,"If unit initiates combat with a Spd advantage of 7 or more, unit’s follow-up (if possible) occurs before foe can counterattack.",2000,Lyn Bond Lv 13
+,Alacrity++,"If unit initiates combat with a Spd advantage of 5 or more, unit’s follow-up (if possible) occurs before foe can counterattack.",3000,Lyn Bond Lv 18
+,Speedtaker,Grants a stacking Spd+2 each time unit initiates combat and defeats a foe. Bonus lasts for the rest of the battle. (Max +10),2000,Lyn Bond Lv 3
+,Call Doubles,Creates four illusory doubles that can make chain attacks with unit. [Dragon] +1 double created. [Flying] Doubles have +10 Avo,—,Lyn Bond Lv 1
+,Astra Storm,"Use to launch 5 bow attacks at 30% damage, up to range 10. [Dragon] Range +5. [Covert] Range +10. [Qi Adept] Breaks the target.",—,Lyn Bond Lv 1
+,Demolish,Break destructible terrain in a single blow when using Destroy.,200,Ike Bond Lv 1
+,Reposition,Use to move an adjacent ally to the opposite side of unit.,200,Ike Bond Lv 3
+,Wrath,"At start of combat, for each HP the unit has lost, grants Crit+1 during combat. (Max +30)",2000,Ike Bond Lv 13
+,Resolve,"If unit’s HP is 75% or less after combat, grants Def/Res+5 as long as unit’s HP stays below 75%.",1000,Ike Bond Lv 1
+,Resolve+,"If unit’s HP is 75% or less after combat, grants Def/Res+7 as long as unit’s HP stays below 75%.",2000,Ike Bond Lv 18
+,Laguz Friend,"Unit takes 50% less damage, but sets unit’s Avo to 0. [Dragon] Extra -10% to damage.",—,Ike Bond Lv 1
+,Great Aether,"Use to grant Def/Res+5, but unit can’t counter for 1 turn. Next turn, attack a 2-space area, heal HP=30% of damage dealt. Sword/axe only. [Dragon] +1 damage per hit taken. [Armored] Grants an extra Def+5. [Flying] Grants an extra Res+5.",—,Ike Bond Lv 1
+,Divine Pulse,May turn a missed attack into a hit. Trigger %=30. Chance increases with high Lck. [+1% for every 1 Luck.],250,Byleth Bond Lv 1
+,Divine Pulse+,May turn a missed attack into a hit. Trigger %=50. Chance increases with high Lck. [+1% for every 1 Luck.],500,Byleth Bond Lv 18
+,Mentorship,Grants 1.2× EXP modifier to unit and adjacent allies.,250,Byleth Bond Lv 3
+,Lost & Found,"If unit finishes an action or waits next to an ally, may find an item and increase support with that ally. Trigger %=Lck.",250,Byleth Bond Lv 13
+,Instruct,Use to grant allies within 2 spaces a stat bonus based on user’s type. Bonus lasts for 1 turn. [Dragon] All seven basic stats +3. [Backup] Str+4. [Cavalry] Dex+10. [Covert] Spd+5. [Armored] Def+5. [Flying] Res+5. [Mystical] Mag+4. [Qi Adept] Lck+10.,—,Byleth Bond Lv 1
+,Goddess Dance,Use to grant another action to all adjacent allies. [Dragon] Grants +3 to all targets’ basic stats for 1 turn. [Backup] Grants Str+4 to targets for 1 turn. [Cavalry] Grants Dex+10 to targets for 1 turn. [Covert] Grants Spd+5 to targets for 1 turn. [Armored] Grants Def+5 to targets for 1 turn. [Flying] Grants Res+5 to targets for 1 turn. [Mystical] Grants Mag+4 to targets for 1 turn. [Qi Adept] Grants Lck+10 to targets for 1 turn.,—,Byleth Bond Lv 1
+,Diabolical Dance,Use to grant another action to allies within 2 spaces.,—,Enemy
+,Dragon Vein,Use to add a special effect to certain spaces. [Dragon] Choose any Vein effect. [Backup] Creates stone pillars that increase Def/Res. [Cavalry] Creates water that decreases Avo. [Covert] Creates fog that increases Avo. [Armored] Creates vines that grant immunity to break. [Flying] Creates healing glow that restores HP. [Mystical] Creates flames that inflict damage. [Qi Adept] Creates ice pillars that hinder movement.,—,Corrin Bond Lv 1
+,Draconic Hex,"If unit initiates combat, inflicts -4 to all of foe’s basic stats after combat. (Penalties shrink by 1 each turn.)",2000,Corrin Bond Lv 8
+,Pair Up,Prevents damage from foes’ chain attacks against unit.,2000,Corrin Bond Lv 13
+,Quality Time,"After unit acts or waits, restores 5 HP to adjacent allies and slightly increases support with them.",250,Corrin Bond Lv 3
+,Quality Time+,"After unit acts or waits, restores 10 HP to adjacent allies and slightly increases support with them.",500,Corrin Bond Lv 18
+,Dreadful Aura,"If unit initiates combat, target foe and all foes within 1 space of it cannot move for 1 turn after combat. [Covert] Also Avo-20 on target.",—,Corrin Bond Lv 1
+,Torrential Roar,"Use to attack 3 spaces in a line, turning those spaces into water terrain. [Dragon] Range +1",—,Corrin Bond Lv 1
+,Sacred Twins,"While engaged with Eirika, changes Lunar Brace to Eclipse Brace and Gentility to Blue Skies for all allies.",—,Eirika Bond Lv 1
+,Night and Day,Use to switch Emblems and swap between Lunar Brace/Gentility and Solar Brace/Bravery for all allies.,—,Eirika Bond Lv 1
+,Lunar Brace,"If unit initiates combat with a physical attack, deals extra damage=20% of foe’s Def.",3000,Eirika Bond Lv 1
+,Solar Brace,"If unit initiates combat, unit recovers HP=30% of damage dealt.",—,Lunar Brace when swapped to Ephraim
+,Eclipse Brace,"If unit initiates combat, unit deals extra damage=20% of foe’s Def with physical attacks and recovers HP=30% of damage dealt.",—,Lunar Brace when Engaged
+,Lunar Brace+,"If unit initiates combat with a physical attack, deals extra damage=30% of foe’s Def.",5000,Eirika Bond Lv 13
+,Solar Brace+,"If unit initiates combat, unit recovers HP=50% of damage dealt.",—,Lunar Brace+ when swapped to Ephraim
+,Eclipse Brace+,"If unit initiates combat, unit deals extra damage=30% of foe’s Def with physical attacks and recovers HP=50% of damage dealt.",—,Lunar Brace+ when Engaged
+,Gentility,Unit takes 3 less damage.,2000,Eirika Bond Lv 3
+,Bravery,Unit deals +3 damage.,—,Gentility when swapped to Ephraim
+,Blue Skies,Unit takes 3 less damage and deals +3 damage.,—,Gentility when Engaged
+,Gentility+,Unit takes 5 less damage.,3000,Eirika Bond Lv 18
+,Bravery+,Unit deals +5 damage.,—,Gentility+ when swapped to Ephraim
+,Blue Skies+,Unit takes 5 less damage and deals +5 damage.,—,Gentility+ when Engaged
+,Twin Strike,Use to make a sword attack followed by a lance attack from Ephraim on adjacent foe. Effective: Corrupted. [Dragon] +20% damage. [Cavalry] Ephraim deals +50% damage.,—,Eirika Bond Lv 1
+,Holy Aura,Unit is Effective: Fell Dragon. Allies within 2 spaces with Effective: Dragon gain Effective: Fell Dragon. [Might multiplier of 2.],—,Alear Bond Lv 1
+,Holy Shield,Neutralizes Effective against this unit.,—,Alear Bond Lv 20
+,Bond Forger,Grants Hit/Avo+20 to unit and allies within 2 spaces that are synced or engaged with an Emblem.,—,Alear Bond Lv 5
+,Bond Forger+,Grants Hit/Avo+30 to unit and allies within 2 spaces that are synced or engaged with an Emblem.,—,Alear Bond Lv 20
+,Boon of Elyos,"If unit initiates combat, grants bonus to Crit and Ddg equal to 2× the number of allies who have acted this turn.",—,Alear Bond Lv 21
+,Attuned,"If unit initiates combat and defeats foe, grants engage partner +4 to all seven basic stats while engaged. [Dragon] Extra +1 to all stats. [Backup] Extra +2 to Str. [Cavalry] Extra +2 to Dex. [Covert] Extra +2 to Spd. [Armored] Extra +2 to Def. [Flying] Extra +2 to Res. [Mystical] Extra +2 to Mag. [Qi Adept] Extra +2 to Lck.",—,Alear Bond Lv 1
+,Dragon Blast,Use to make two attacks against an adjacent foe with a sword and powerful magic beam. [Dragon] +20% damage. [Backup] Adds 20% of Str to sword attack. [Mystical] Adds 20% of Mag to beam attack. [Qi Adept] Breaks foe.,—,Alear Bond Lv 1
+,Bond Blast,Use to make a sword attack from the unit and engage partner followed by a magic beam attack against an adjacent foe. [Dragon] +20% damage. [Backup] +20% of Str to sword. [Mystical] +20% of Mag to beam. [Qi Adept] Breaks foe.,—,Dragon Blast when Alear and engage partner are adjacent

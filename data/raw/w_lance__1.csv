@@ -1,0 +1,18 @@
+﻿Icon,Name,Mt,Hit,Crit,Wt,Rng,Lvl,Price,Notes/Description
+,Ridersbane,10,75,0,6,1,D,100,Lance wielded by Emblem Sigurd. Effective: Cavalry.
+,Ridersbane (Normal),10,75,0,6,1,D,100,Lance wielded by Emblem Sigurd. Effective: Cavalry.
+,Brave Lance,7,60,0,12,1,D,100,"Lance wielded by Emblem Sigurd. If user initiates combat, attacks twice."
+,Brave Lance (Normal),7,60,0,12,1,D,100,"Lance wielded by Emblem Sigurd. If user initiates combat, attacks twice."
+,Master Lance,7,55,0,16,1~2,D,100,"Lance wielded by Emblem Leif. If user initiates combat, attacks twice. Can strike close or at range."
+,Master Lance (Normal),7,55,0,16,1~2,D,100,"Lance wielded by Emblem Leif. If user initiates combat, attacks twice. Can strike close or at range."
+,Master Lance (Chapter 8),7,55,0,16,1~2,D,100,"An Emblem’s lance that can strike from a distance. If user initiates combat, attacks twice."
+,Lúin,11,90,10,9,1,D,100,Lance wielded by Emblem Byleth. Raises damage based on user’s Spd. Effective: Dragon. [+1 damage for every 3 Spd.]
+,Lúin (Chapter 10),11,90,10,9,1,D,100,An Emblem’s lance. Raises damage based on user’s Spd. Effective: Dragon. [+1 damage for every 3 Spd.]
+,Areadbhar,14,75,10,9,1,D,100,"Lance wielded by Emblem Byleth. If user initiates combat, grants Mt+50%."
+,Siegmund,13,80,0,11,1,D,100,Paired lance wielded by Emblem Ephraim. Effective: Corrupted.
+,Areadbhar,14,75,10,9,1,D,100,"Lance wielded by Emblem Dimitri. If user initiates combat, grants Mt+50%."
+Icon,Name,Mt,Hit,Crit,Wt,Rng,Lvl,Price,Notes/Description
+,Areadbhar (Normal),14,75,10,9,1,D,100,"Lance wielded by Emblem Dimitri. If user initiates combat, grants Mt+50%."
+,Brave Lance (+),9,70,0,12,1,D,100,"Lance wielded by Emblem Sigurd. If user initiates combat, attacks twice."
+,Master Lance (+),9,60,0,16,1~2,D,100,"Lance wielded by Emblem Leif. If user initiates combat, attacks twice. Can strike close or at range."
+,Master Lance (++),11,65,0,16,1~2,D,100,"Lance wielded by Emblem Leif. If user initiates combat, attacks twice. Can strike close or at range."

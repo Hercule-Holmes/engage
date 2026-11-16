@@ -1,0 +1,20 @@
+﻿Name,HP,Str,Mag,Dex,Spd,Def,Res,Lck,Bld,Mov
+Fell Child  (Alear),24,8,1,4,8,6,5,3,7,5
+Fell Monarch,22,4,10,5,6,3,9,4,5,5*
+Great Fell Dragon,30,10,10,10,2,10,10,8,10,0
+Barbarian,26,9,0,0,5,2,0,0,9,4
+Corrupted Wyrm,30,0,7,0,0,9,9,0,10,2
+Phantom Wyrm,30,0,7,0,0,9,9,0,10,2
+Villager,18,1,0,6,5,2,2,3,4,4
+Corrupted Wolf,23,6,2,9,11,4,4,2,4,6
+Phantom Wolf,23,6,2,9,11,4,4,2,4,6
+Corrupted Wyvern,30,2,5,4,5,8,10,3,8,3
+Phantom Wyvern,30,2,5,4,5,8,10,3,8,5
+Royal (Alfred),25,8,4,7,6,8,6,6,7,6
+Royal (Céline),21,6,9,6,9,4,6,5,5,5
+Warden (Diamant),25,10,2,8,9,6,3,4,8,5
+Warden (Alcryst),22,8,1,12,8,6,4,4,6,5
+Trainer (Ivy),22,2,10,5,5,8,9,1,6,6
+Trainer (Hortensia),18,1,7,10,10,2,13,8,5,6
+Watcher (Timerra),25,9,2,6,9,10,3,4,5,5
+Watcher (Fogado),23,6,3,10,8,5,5,3,7,6

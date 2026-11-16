@@ -1,0 +1,22 @@
+﻿Icon,Name,Mt,Hit,Crit,Wt,Rng,Lvl,Price,Notes/Description
+,Compact Axe,6,90,0,7,1,D,500,"Ddg+20, A light, unusually accurate axe."
+,Iron Axe,9,80,0,10,1,D,1000,"A standard axe made of iron─simple, but effective."
+,Steel Axe,13,65,5,12,1,C,2000,An axe made of steel.
+,Silver Axe,16,70,0,15,1,B,4000,An exceptional axe of rare metals.
+,Hand Axe,7,70,0,12,1~2,D,1800,A light throwing axe that can strike close or at range.
+,Hammer,9,60,0,15,1,D,2500,A war hammer made to crack through heavy armor. Effective: Armored.
+,Poleaxe,8,60,0,14,1,D,2500,An axe whose long handle helps reach mounted foes. Effective: Cavalry.
+,Killer Axe,11,65,30,12,1,C,3000,An axe especially well-suited to inflicting deadly wounds.
+,Tomahawk,14,60,0,16,1~2,B,4500,A powerful throwing axe that can strike close or at range.
+,Brave Axe,6,70,0,16,1,A,8000,"An axe built for expert wielders. If user initiates combat, attacks twice."
+,Fragarach,19,80,0,16,1,S,10000,A legendary axe.
+,Iron Greataxe,18,70,0,12,1,C,1500,"A massive axe that smashes foes. Cannot follow up, or strike first if initiating combat."
+Icon,Name,Mt,Hit,Crit,Wt,Rng,Lvl,Price,Notes/Description
+,Steel Greataxe,26,55,5,14,1,B,3000,"A massive axe of steel that smashes foes. Cannot follow up, or strike first if initiating combat."
+,Silver Greataxe,32,60,0,17,1,A,6000,"A massive axe of rare metals that smashes foes. Cannot follow up, or strike first if initiating combat."
+,Hurricane Axe,20,70,0,15,1,B,3000,"A magical axe that smashes foes. Cannot follow up, or strike first if initiating combat. Effective: Flying."
+,Ukonvasara,38,70,0,24,1,S,10000,"A huge, legendary axe that smashes foes. Cannot follow up, or strike first if initiating combat."
+,Revanche,10,70,20,12,1,A,4000,Battle axe that exudes an otherworldly air.
+,Revanche (FX5),10,70,0,12,1,A,4000,Battle axe that exudes an otherworldly air.
+,Nóatún,14,75,0,10,1,D,4000,"Axe of Anna, a commander in Askr. Grants Mov+1 for 1 turn when user has 40% HP or less at start of turn."
+,Lollichop,11,80,0,11,1,D,500,"Ddg+10, An axe with a sweet scent. Disappears when consumed as an item, but recovers user’s HP."

@@ -1,0 +1,41 @@
+﻿Name,Rank,Stat Boost,Skill
+Deirdre,C,Res +1,—
+B,"Mag +1, Res +1",—
+A,"Mag +1, Dex +1, Res +1",—
+S,"Mag +1, Dex +1, Res +2",Renewal [Unit recovers 5 HP each turn.]
+Arden,C,Str +1,—
+B,"Str +1, Def +1",—
+A,"HP +2, Str +1, Def +1",—
+S,"HP +2, Str +2, Def +1",—
+Azelle,C,Mag +1,—
+B,"Mag +1, Spd +1",—
+A,"Mag +1, Spd +1, Def +1",—
+S,"Mag +2, Spd +1, Def +1",—
+Quan,C,Str +1,—
+B,"Str +1, Def +1",—
+A,"Str +1, Spd +1, Def +1",—
+S,"Str +2, Spd +1, Def +1",—
+Ethlyn,C,HP +2,—
+B,"HP +2, Spd +1",—
+A,"HP +2, Dex +1, Spd +1",—
+S,"HP +4, Dex +1, Spd +1",—
+Ayra,C,Dex +1,—
+B,"Dex +1, Spd +1",—
+A,"Str +1, Dex +1, Spd +1",—
+S,"Str +1, Dex +2, Spd +1",—
+Lachesis,C,Str +1,—
+B,"Str +1, Spd +1",—
+A,"Str +1, Dex +1, Spd +1",—
+S,"Str +2, Dex +1, Spd +1",—
+Lewyn,C,Spd +1,—
+B,"Mag +1, Spd +1",—
+A,"Mag +1, Dex +1, Spd +1",—
+S,"Mag +1, Dex +1, Spd +2",—
+Erinys,C,Dex +1,—
+B,"Str +1, Dex +1",—
+A,"Str +1, Mag +1, Dex +1",—
+S,"Str +1, Mag +1, Dex +2",—
+Seliph,C,Str +1,—
+B,"Str +1, Dex +1",—
+A,"Str +1, Dex +1, Def +1",—
+S,"Str +2, Dex +1, Def +1",Battlewise [Grants a stacking Crit+1 each time unit initiates combat and defeats a foe. Bonus lasts for the rest of the battle. (Max +10)]

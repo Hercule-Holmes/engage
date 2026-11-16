@@ -1,0 +1,24 @@
+﻿Bond,Name,Description,Type,SP
+1,Perceptive,"If the unit initiates combat, grants Avo+15 during combat. Avo increases with high Spd. [+1 Avoid for every 4 Speed.]",Sync Skill (Can Inherit),250
+1,Avoid +10,Grants Avo+10.,Inheritable Skill,500
+1,Divine Speed,"Unit performs an extra attack at 50% damage in combat. [Covert] If extra attack hits, poisons foe. [Dragon] Unit recovers HP equal to damage dealt by extra attack.",Engage Skill,—
+1,Lodestar Rush,Use to launch 7 consecutive sword attacks at 30% damage. Adjacent foe only. [Dragon] +2 attacks. [Backup] +1 attack. [Mystical] Damage based on Mag.,Engage Attack,—
+1,Rapier,"Sword wielded by Emblem Marth. Effective: Cavalry, Armored.",Engage Weapon,—
+2,Sword Agility 1,Grants Avo+10 at a cost of Crit-10 when using a sword.,Inheritable Skill,500
+3,Break Defenses,"If unit’s attack breaks foe, unit makes an extra attack at 50% damage.",Sync Skill (Can Inherit),2000
+4,Avoid +15,Grants Avo+15.,Inheritable Skill,1500
+5,Skill Inheritance,Unit can inherit this Emblem’s skills.,Unlock,—
+6,Sword Agility 2,Grants Avo+15 at a cost of Crit-10 when using a sword.,Inheritable Skill,1000
+7,Unyielding,"At start of player phase, if HP is 20% or less, restores 20% of unit’s max HP.",Sync Skill (Can Inherit),100
+8,Sword Agility 3,Grants Avo+20 at a cost of Crit-10 when using a sword.,Inheritable Skill,2000
+8,Sword Prof.,Proficiency with swords. Required for promotion to certain classes.,Unlock,—
+9,Avoid +20,Grants Avo+20.,Inheritable Skill,2500
+10,Mercurius,Sword wielded by Emblem Marth. Doubles user’s earned experience.,Engage Weapon,—
+12,Unyielding+,"At start of player phase, if HP is 30% or less, restores 30% of unit’s max HP.",Sync Skill (Can Inherit),200
+13,Sword Agility 4,Grants Avo+25 at a cost of Crit-10 when using a sword.,Inheritable Skill,3000
+14,Avoid +25,Grants Avo+25.,Inheritable Skill,3500
+15,Falchion,Sacred sword wielded by Emblem Marth. Effective: Dragon.,Engage Weapon,—
+16,Perceptive+,"If the unit initiates combat, grants Avo+30 during combat. Avo increases with high Spd. [+1 Avoid for every 4 Speed.]",Sync Skill (Can Inherit),500
+17,Sword Agility 5,Grants Avo+30 at a cost of Crit-10 when using a sword.,Inheritable Skill,4000
+18,Unyielding++,"At start of player phase, if HP is 40% or less, restores 40% of unit’s max HP.",Sync Skill (Can Inherit),300
+19,Avoid +30,Grants Avo+30.,Inheritable Skill,4500

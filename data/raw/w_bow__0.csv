@@ -1,0 +1,11 @@
+﻿Icon,Name,Mt,Hit,Crit,Wt,Rng,Lvl,Price,Notes/Description
+,Mini Bow,3,100,0,4,1,D,500,"Ddg+20, An easy-to-use, short-range bow. Effective: Flying."
+,Iron Bow,6,90,0,5,2,D,1000,A standard bow made of iron. Effective: Flying.
+,Steel Bow,10,80,5,7,2,C,2000,A bow made of steel. Effective: Flying.
+,Silver Bow,13,85,0,10,2,B,4000,An exceptional bow of rare metals. Effective: Flying.
+,Longbow,7,70,0,10,2~3,C,2000,A bow made to fire at longer ranges. Effective: Flying.
+,Killer Bow,7,75,30,7,2,C,3000,A bow especially well-suited to inflicting deadly wounds. Effective: Flying.
+,Radiant Bow,19,75,0,12,2,C,3000,A magical bow whose arrows pierce with light. Effective: Flying.
+,Brave Bow,4,75,0,11,2,A,8000,"A bow built for expert wielders. If user initiates combat, attacks twice. Effective: Flying."
+,Lendabair,16,80,0,11,2,S,10000,A bow wielded by legends. Effective: Flying.
+,Croissbow,8,90,0,6,2,D,500,"Ddg+10, A bow with a sweet scent. Disappears when consumed as an item, but recovers user’s HP."

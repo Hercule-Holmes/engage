@@ -1,0 +1,41 @@
+﻿Name,Rank,Stat Boost,Skill
+Mist,C,Spd +1,—
+B,"Spd +1, Res +1",—
+A,"Spd +1, Res +1, Lck +1",—
+S,"Spd +2, Res +1, Lck +1",—
+Titania,C,Spd +1,—
+B,"Dex +1, Spd +1",—
+A,"Str +1, Dex +1, Spd +1",—
+S,"Str +1, Dex +1, Spd +2",—
+Shinon,C,Dex +1,—
+B,"Dex +1, Def +1",—
+A,"Str +1, Dex +1, Def +1",—
+S,"Str +1, Dex +2, Def +1",—
+Gatrie,C,Def +1,—
+B,"Str +1, Def +1",—
+A,"Str +1, Dex +1, Def +1",—
+S,"Str +1, Dex +1, Def +2",—
+Soren,C,Dex +1,—
+B,"Dex +1, Res +1",—
+A,"Mag +1, Dex +1, Res +1",—
+S,"Mag +1, Dex +2, Res +1","Wind Adept [If unit initiates combat with Wind equipped, unit may attack twice. Trigger %=Dex. (Excludes Elwind and Excalibur.)]"
+Mia,C,Spd +1,—
+B,"Dex +1, Spd +1",—
+A,"Dex +1, Spd +1, Lck +1",—
+S,"Dex +1, Spd +2, Lck +1",Shove [Use to push an adjacent ally with less Bld 1 space away.]
+Ilyana,C,Res +1,—
+B,"Res +1, Lck +1",—
+A,"Dex +1, Res +1, Lck +1",—
+S,"Dex +1, Res +2, Lck +1",—
+Lethe,C,HP +2,—
+B,"HP +2, Spd +1",—
+A,"HP +2, Dex +1, Spd +1",—
+S,"HP +5, Dex +1, Spd +1",—
+Ranulf,C,HP +2,—
+B,"HP +2, Str +1",—
+A,"HP +2, Str +1, Def +1",—
+S,"HP +5, Str +1, Def +1",—
+Greil,C,Str +1,—
+B,"Str +1, Def +1",—
+A,"Str +1, Def +1, Bld +1",—
+S,"Str +2, Def +1, Bld +1",—

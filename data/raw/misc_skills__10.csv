@@ -1,0 +1,8 @@
+﻿Icon,Name,Description,Obtain
+,Let Fly,"Use to perform a guaranteed-hit, area-of-effect attack at the start of the next player phase. Unit loses equipped weapon.",Mage Cannoneer
+,Convoy,Use to deposit or retrieve weapons and items.,Enchanter
+,Miasma Domain,"At start of turn, applies miasma to terrain within 2 spaces of unit.",Corrupted Wyvern
+,Frost Domain,"At start of turn, applies frost to terrain within 2 spaces of unit.",Phantom Wyvern
+,Pack Hunter,Allies of the same class as unit within 3 spaces participate in chain attacks.,"Corrupted Wolf, Phantom Wolf"
+,Resist Emblems,"When attacked with an engage attack, prevents 20% of damage.",Fell Child (Nel)
+,Spur Emblems,"At start of player phase, fills adjacent allies’ engage meters by 1.","Fell Child (Nil, Rafal)"

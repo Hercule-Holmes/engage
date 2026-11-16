@@ -1,0 +1,6 @@
+﻿Icon,Name,Mt,Hit,Crit,Wt,Rng,Lvl,Price,Notes/Description
+,Vajra-Mushti,5,90,10,7,1,D,100,"Gauntlets wielded by Emblem Byleth. If user initiates combat, attacks twice. Uses lowest of foe’s Def/Res."
+,Vajra-Mushti (Normal),5,90,10,7,1,D,100,"Gauntlets wielded by Emblem Byleth. If user initiates combat, attacks twice. Uses lowest of foe’s Def/Res."
+,Dragon’s Fist,10,85,0,9,1,D,100,"Magical attack wielded by Emblem Alear . If user initiates combat, attacks twice. (Uses Mag.)"
+,Dragon’s Fist (Normal),10,85,0,9,1,D,100,"Magical attack wielded by Emblem Alear . If user initiates combat, attacks twice. (Uses Mag.)"
+,Vajra-Mushti (+),8,95,15,7,1,D,100,"Gauntlets wielded by Emblem Byleth. If user initiates combat, attacks twice. Uses lowest of foe’s Def/Res."

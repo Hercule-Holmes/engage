@@ -1,0 +1,20 @@
+﻿Icon,Name,Mt,Hit,Crit,Wt,Rng,Lvl,Price,Notes/Description
+,Slim Lance,5,95,0,5,1,D,500,"Ddg+20, A light, unusually accurate lance."
+,Iron Lance,7,85,0,7,1,D,1000,"A standard lance made of iron─simple, but effective."
+,Steel Lance,11,75,5,10,1,C,2000,A lance made of steel.
+,Silver Lance,14,80,0,13,1,B,4000,An exceptional lance of rare metals.
+,Javelin,6,80,0,9,1~2,D,1800,A light throwing lance that can strike close or at range.
+,Ridersbane,8,70,0,13,1,D,2500,A lance designed for foes on horseback. Effective: Cavalry.
+,Killer Lance,7,75,30,9,1,C,3000,A lance especially well-suited to inflicting deadly wounds.
+,Flame Lance,10,75,0,16,1~2,C,3000,A magical lance that can strike close or at range.
+,Spear,12,70,0,15,1~2,B,4500,A powerful throwing lance that can strike close or at range.
+,Brave Lance,5,75,0,14,1,A,8000,"A lance built for expert wielders. If user initiates combat, attacks twice."
+,Brionac,17,70,0,17,1~2,S,10000,A powerful lance of legend. Can strike close or at range.
+,Iron Greatlance,14,75,0,9,1,C,1500,"A massive lance that smashes foes. Cannot follow up, or strike first if initiating combat."
+Icon,Name,Mt,Hit,Crit,Wt,Rng,Lvl,Price,Notes/Description
+,Steel Greatlance,22,65,5,12,1,B,3000,"A massive lance of steel that smashes foes. Cannot follow up, or strike first if initiating combat."
+,Silver Greatlance,28,70,0,15,1,A,6000,"A massive lance of rare metals that smashes foes. Cannot follow up, or strike first if initiating combat."
+,Venomous,34,80,10,20,1,S,10000,"A lance of legend that smashes and poisons hit foes. Cannot follow up, or strike first if initiating combat."
+,Représailles,13,80,0,9,1,A,4000,"Ddg+20, Battle lance that exudes an otherworldly air."
+,Fensalir,12,80,0,8,1,D,4000,"Lance of Sharena, princess of Askr. Inflicts Atk-2 for 1 turn on adjacent foes at the start of player phase."
+,Swirlance,9,85,0,8,1,D,500,"Ddg+10, A lance with a sweet scent. Disappears when consumed as an item, but recovers user’s HP."

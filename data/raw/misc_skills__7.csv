@@ -1,0 +1,71 @@
+﻿Icon,Name,Description,SP,Obtain
+,Friendly Rivalry,"At start of player phase, the Emblem will randomly switch to Edelgard, Dimitri, or Claude.",—,Edelgard Bond Lv 1
+,Gambit,"Effects change based on synced Emblem. Flame Gambit: Use when synced with Edelgard to attack a foe, then set the target foe’s space and nearby spaces on fire. Shield Gambit: Use when synced with Dimitri to negate damage from first attacks of ranged foes targeting unit in next enemy phase. Poison Gambit: Use when synced with Claude to attack a foe, then poison target and all foes adjacent to it after combat.",—,Edelgard Bond Lv 1
+,Assembly Gambit,"Use to attack an adjacent foe, then move 1 space away after combat. Target foe moves to unit’s previous space.",1500,Edelgard Bond Lv 1
+,Weapon Sync,"If unit initiates combat using same weapon type as the synced Emblem, grants Atk+5. If engaged, grants Atk+5 regardless of weapon type. [See note above.]",3000,Edelgard Bond Lv 12
+,Weapon Sync+,"If unit initiates combat using same weapon type as the synced Emblem, grants Atk+7. If engaged, grants Atk+7 regardless of weapon type. [See note above.]",5000,Edelgard Bond Lv 17
+,Lineage,Increases unit’s earned experience by 20%.,150,Edelgard Bond Lv 3
+,Combat Arts,"Enables use of Edelgard, Dimitri, or Claude’s Combat Art. Spends some remaining engage turns. [Dragon] +10% damage. [Covert] Avo+20. Raging Storm: After combat, take another action. (Spend 3 turns.) Atrocity: Attack at double weapon’s Mt. (Spend 1 turn.) Fallen Star: Avoid foe’s attacks during next combat. (Spend 1 turn.)",—,Edelgard Bond Lv 1
+,Houses Unite,"Use to attack with Aymr, Areadbhar, and Failnaught at 50% damage. [Dragon] +10% damage. [Cavalry] +10% damage with Areadbhar. [Covert] +10% damage with Failnaught. [Armored] +10% damage with Aymr. [Qi Adept] Breaks foe.",—,Edelgard Bond Lv 1
+,Houses Unite+,"Use to attack with Aymr, Areadbhar, and Failnaught at 50% damage. After combat, take another action. [Dragon] +10% damage. [Cavalry] +10% damage with Areadbhar. [Covert] +10% damage with Failnaught. [Armored] +10% damage with Aymr. [Qi Adept] Breaks foe.",—,Houses Unite when adjacent to Emblem Byleth
+,Lightsphere,"If unit initiates combat, halves chance of receiving critical hit from foe.",900,Tiki Bond Lv 10
+,Starsphere,Grants unit enhanced stat growth when leveling up. [Adds +15% to final growth rates.],1500,Tiki Bond Lv 1
+,Lifesphere,"If unit uses Wait without attacking or using items, restores 20 HP and heals status effects.",1000,Tiki Bond Lv 8
+,Lifesphere+,"If unit uses Wait without attacking or using items, restores 30 HP and heals status effects.",2000,Tiki Bond Lv 14
+,Lifesphere++,"If unit uses Wait without attacking or using items, restores 40 HP and heals status effects.",3000,Tiki Bond Lv 19
+,Geosphere,"At start of player phase, if there are allies adjacent to unit, grants Def/Res+3 to unit and those allies for 1 turn.",500,Tiki Bond Lv 3
+,Geosphere+,"At start of player phase, if there are allies adjacent to unit, grants Def/Res+5 to unit and those allies for 1 turn.",1000,Tiki Bond Lv 16
+,Draconic Form,Unit transforms into and fights as a dragon while engaged. Grants +10 to max HP and +5 to Bld and all basic stats. [Armored] Negates terrain damage. [Mystical] Grants an extra Res+5.,—,Tiki Bond Lv 1
+,Draconic Form (Null),Unit transforms into and fights as a dragon while engaged. Grants +10 to max HP and +5 to Bld and all basic stats.,—,Enemy
+,Divine Blessing,Use to grant 1 ally a Revival Stone. [Dragon] Restore 20 HP to ally. [Qi Adept] Heal their status effects.,—,Tiki Bond Lv 1
+,Divine Blessing (Null),Use to grant 1 ally a Revival Stone. [Dragon] Restore 20 HP to ally.,—,Enemy
+,Divine Blessing+,"Use to grant 1 ally a Revival Stone. If ally is not synced, fully restore HP. If ally is synced, +3 to engage meter. If ally is engaged, restore engage turns. [Dragon] Restore 20 HP to ally. [Qi Adept] Heal their status effects.",—,Divine Blessing when adjacent to Emblem Marth
+,Quick Riposte,"If unit’s HP is 80% or more and foe initiates combat, unit will always follow up (if weapon allows).",2000,Hector Bond Lv 1
+,Quick Riposte+,"If unit’s HP is 60% or more and foe initiates combat, unit will always follow up (if weapon allows).",3000,Hector Bond Lv 16
+,Heavy Attack,"When making a physical attack, if an equipped weapon’s Wt exceeds unit’s Bld, adds excess as damage. (Max +5)",3000,Hector Bond Lv 8
+,Piercing Glare,Use when HP is full to consume 20% of max HP and prevent foes from entering the 4 spaces diagonally adjacent to unit for 1 turn.,—,Hector Bond Lv 12
+,Adaptability,"When hit by a foe’s attack, grants Def+2 for a physical attack or Res+2 for a magical attack after combat. Lasts until end of battle, or until activated again.",350,Hector Bond Lv 3
+,Adaptability+,"When hit by a foe’s attack, grants Def+3 for a physical attack or Res+3 for a magical attack after combat. Lasts until end of battle, or until activated again.",700,Hector Bond Lv 19
+,Impenetrable,"If foe initiates combat, grants Def/Res+30% during combat. [Dragon] Ddg+50%. [Cavalry] Grants immunity to freeze. [Armored] Grants Def+50% instead of +30%. [Flying] Grants Res+50% instead of +30%.",—,Hector Bond Lv 1
+,Storm’s Eye,Grants immunity to break. Foe cannot follow up. Unit follows up. Lasts 1 turn. Sword/axe only. [Dragon] Prevent one critical hit. [Backup] Crit+20. [Covert] Avo+30.,—,Hector Bond Lv 1
+,Storm’s Eye+,Grants immunity to break. Foe cannot follow up. Unit counters before foe’s first attack and follows up. Lasts 1 turn. Sword/axe only. [Dragon] Prevent one critical hit. [Backup] Crit+20. [Covert] Avo+30.,—,Storm’s Eye when adjacent to Emblem Lyn
+,SP Conversion,Grants +20 SP for each defeated foe. Triggers even without a ring or bracelet equipped.,300,Veronica Bond Lv 13
+,Reprisal,"If unit’s HP is not full, adds 30% of lost HP to Atk.",5000,Veronica Bond Lv 1
+,Reprisal+,"If unit’s HP is not full, adds 50% of lost HP to Atk.",6000,Veronica Bond Lv 18
+,Level Boost,"When unit defeats a foe of a higher level, grants Lvl+1 until the end of battle. (Max +3)",300,Veronica Bond Lv 8
+,Book of Worlds,Book of Worlds advances 1 stage (to max 5) for each consecutive round that unit uses Wait. Reverts to base stage if unit triggers the effect.,300,Veronica Bond Lv 3
+,Book I: Seal,"If unit initiates combat, freezes foe after combat.",—,Book of Worlds after waiting 1 turn
+,Book II: Flame,"If unit initiates combat, freezes foe and sets foe’s space on fire after combat.",—,Book of Worlds after waiting 2 turns
+,Book III: Death,"If unit initiates combat, deals 10 damage, freezes foe, and sets foe’s space on fire after combat.",—,Book of Worlds after waiting 3 turns
+,Book IV: Dream,"If unit initiates combat, restores HP equal to damage dealt during combat, then deals 10 damage, freezes foe, and sets foe’s space on fire after combat.",—,Book of Worlds after waiting 4 turns
+,Book V: Science,"If unit initiates combat, restores HP to self and adjacent allies equal to damage dealt during combat, then deals 10 damage, freezes foe, and sets foe’s space on fire after combat.",—,Book of Worlds after waiting 5 turns
+,Contract,Use to grant another action to an adjacent ally who has already acted. (Ally cannot move.) [Dragon] Grants Str/Mag/Def/Res+2 to ally during action. [Backup] Unit participates in chain attack during ally action. [Covert] Grants Hit/Avo+30 to ally during action.,—,Veronica Bond Lv 1
+,Summon Hero,Use to summon a random unit . [Dragon] Summons a powerful unit. [Removes 3-stars from pool. The 3-star rate is added to 4-star rate.] [Backup] Summoned unit has the “Dual Strike” skill. [Cavalry] Summoned unit gets Mov+1.,—,Veronica Bond Lv 1
+,Anima Focus,"When using tomes, unit inflicts Def-3 with fire, Hit-20 with thunder, or Mov-2 with wind magic for 1 turn.",800,Soren Bond Lv 4
+,Keen Insight,"When unit deals Effective damage, deal +5 damage.",1500,Soren Bond Lv 9
+,Keen Insight+,"When unit deals Effective damage, deal +7 damage.",3000,Soren Bond Lv 18
+,Assign Decoy,Use to make one chosen ally more likely to be targeted by enemies for 1 turn. Effect is removed after ally is targeted by or otherwise damaged by foes 3 times.,1500,Soren Bond Lv 1
+,Block Recovery,"When attacking a broken foe with a tome, grants a chance the foe will remain broken. Chance increases with high Spd. [Trigger% = (Spd – foe’s Spd) x 5, max 50]",1500,Soren Bond Lv 13
+,Flare,"When attacking with tomes, inflicts Res-20% on foe, and unit recovers 50% of damage dealt. [Dragon] Critical rate is doubled. [Mystical] Extra -10% to foe’s Res. [Qi Adept] Unit recovers 100% of damage dealt instead.",—,Soren Bond Lv 1
+,Flare (Dark),"When attacking with tomes, unit recovers 50% of damage dealt.",—,Enemy
+,Cataclysm,"Use to attack foes in an area with fire, thunder and wind magic at 40% damage. Wind is effective: Flying. [Dragon] Sets terrain on fire. [Mystical] +10% damage. [Qi Adept] 20% chance of breaking target.",—,Soren Bond Lv 1
+,Cataclysm+,"Use to attack foes in an area with fire, thunder and wind magic at 40% damage. Wind is effective: Flying. [Dragon] Sets terrain on fire. [Mystical] +10% damage. [Qi Adept] 20% chance of breaking target.",—,Cataclysm when adjacent to Emblem Ike
+,Cataclysm (DP4),"Use to attack foes in an area with fire, thunder and wind magic at 30% damage. Wind is effective: Flying.",—,Enemy
+,Cataclysm (Dark),"Use to attack with fire, thunder and wind magic to foes in an area. Wind is effective: Flying.",—,Enemy
+,Dragon Vein,Use to add a special effect to certain spaces. [Dragon] Choose any Vein effect. [Backup] Creates stone pillars that increase Def/Res. [Cavalry] Creates water that decreases Avo. [Covert] Creates smoke that decreases Def/Avo. [Armored] Creates vines that grant immunity to break. [Flying] Creates healing glow that restores HP. [Mystical] Creates flames that inflict damage. [Qi Adept] Creates ice floor that increases movement.,—,Camilla Bond Lv 1
+,Groundswell,"After unit acts or waits in flames, miasma, or similar terrain effect, unit clears effect and recovers 10 HP.",500,Camilla Bond Lv 12
+,Detoxify,Cures poison at start of turn.,250,Camilla Bond Lv 8
+,Decisive Strike,"If unit initiates combat and lands a critical, deals 5 damage to foe after combat.",500,Camilla Bond Lv 4
+,Decisive Strike+,"If unit initiates combat and lands a critical, deals 10 damage to foe after combat.",1000,Camilla Bond Lv 18
+,Soar,"Grants Mov+2. Unit can cross terrain as if flying. [Dragon] If unit initiates combat, deals damage to foes within 2 spaces equal to 10% of their max HP after combat. [Cavalry] Grants an extra Mov+2. [Flying] Grants an extra Mov+1.",—,Camilla Bond Lv 1
+,Dark Inferno,Use to deal damage to foes on certain spaces near unit and set those spaces on fire. [Dragon] Increases area of effect. [Mystical] +20% damage. [Qi Adept] Adds Glow to adjacent spaces.,—,Camilla Bond Lv 1
+,Dark Inferno+,Use to deal damage to foes on certain spaces near unit and set those spaces on fire. [Dragon] Increases area of effect. [Mystical] +20% damage. [Qi Adept] Adds Glow to adjacent spaces.,—,Dark Inferno when adjacent to Emblem Corrin
+,Brute Force,"While making a physical attack, critical hits deal increased damage. [Damage increased by one third.]",1500,Chrom Bond Lv 1
+,Charm,"If unit’s attack triggers a chain attack, increases chain attack accuracy to 90%.",800,Chrom Bond Lv 13
+,Surprise Attack,"If unit initiates combat from terrain that provides an Avo bonus, foe cannot counterattack.",3000,Chrom Bond Lv 1
+,Rally Spectrum,Use to grant adjacent allies +3 to all seven basic stats for 1 turn.,1500,Chrom Bond Lv 4
+,Rally Spectrum+,Use to grant allies within 2 spaces +3 to all seven basic stats for 1 turn.,2000,Chrom Bond Lv 18
+,Other Half,"If unit initiates combat, Robin chain attacks. Grants Mag+10 while engaged. [Dragon] Robin chain attacks 2 times. [Backup] Guaranteed hit with chain attack. [Covert] Grants Mov+1 while engaged.",—,Chrom Bond Lv 1
+,Other Half (Solo),Chain attacks triggered by this unit are guaranteed to hit. Grants Str+5 and Mag+10.,—,Arena
+,Giga Levin Sword,Use to attack with a magic sword. Magic attack that uses physical attack power. Swords only. [Dragon] Deals extra damage = half of Str. [Flying] Deals extra damage = Bld. [Mystical] Deals extra damage = half of Mag.,—,Chrom Bond Lv 1
+,Giga Levin Sword+,Use to attack with a magic sword. Magic attack that uses physical attack power. Swords only. Adjacent allies chain attack. [Dragon] Deals extra damage = half of Str. [Flying] Deals extra damage = Bld. [Mystical] Deals extra damage = half of Mag.,—,Giga Levin Sword when adjacent to Emblem Lucina

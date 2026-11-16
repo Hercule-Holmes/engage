@@ -1,0 +1,24 @@
+﻿Icon,Name,Mt,Hit,Crit,Wt,Rng,Lvl,Price,Notes/Description
+,Slim Sword,3,100,0,2,1,D,500,"Ddg+30, A light, unusually accurate sword."
+,Iron Sword,5,90,0,5,1,D,1000,"A standard sword made of iron─simple, but effective."
+,Steel Sword,9,85,5,8,1,C,2000,A sword made of steel.
+,Silver Sword,12,90,0,11,1,B,4000,An exceptional sword of rare metals.
+,Armorslayer,9,75,0,13,1,C,2500,A sword made to penetrate heavy armor. Effective: Armored.
+,Killing Edge,9,75,30,10,1,C,2500,A sword especially well-suited to inflicting deadly wounds.
+,Levin Sword,13,85,0,11,1~2,C,3000,A magical sword that can strike close or at range.
+,Wo Dao,6,90,20,7,1,B,2500,A sword honed to a razor edge.
+,Wyrmslayer,8,80,0,12,1,B,2500,A sword crafted specifically to fight dragons. Effective: Dragon.
+,Brave Sword,4,80,0,13,1,A,8000,"A sword built for expert wielders. If user initiates combat, attacks twice."
+,Libération,6,90,0,4,1,D,1000,Divine Dragon only. Fills engage meter by 1 when user attacks and defeats a foe in a single turn.
+,Libération (Prologue),10,90,0,4,1,D,100,The Divine Dragon’s personal sword.
+Icon,Name,Mt,Hit,Crit,Wt,Rng,Lvl,Price,Notes/Description
+,Wille Glanz,12,70,0,10,1~2,D,8000,Divine Dragon only. A powerful sword that can strike close or at range.
+,Caladbolg,15,95,0,12,1,S,10000,"A legendary sword, famous for its great power."
+,Iron Blade,10,80,0,7,1,C,1500,"A massive sword that smashes foes. Cannot follow up, or strike first if initiating combat."
+,Steel Blade,18,75,5,10,1,B,3000,"A massive sword of steel that smashes foes. Cannot follow up, or strike first if initiating combat."
+,Silver Blade,24,80,0,13,1,A,6000,"A massive sword of rare metals that smashes foes. Cannot follow up, or strike first if initiating combat."
+,Georgios,32,90,0,18,1,S,10000,"A legendary blade that smashes foes. Cannot follow up, or strike first if initiating combat."
+,Fólkvangr,10,90,0,6,1,D,4000,"Sword of Alfonse, prince of Askr. Grants Atk+3 for 1 turn if user has 50% HP or less at start of turn."
+,Biting Blade,7,90,0,6,1,D,500,"Ddg+10, A sword with a sweet scent. Disappears when consumed as an item, but recovers user’s HP."
+,Libération (FX),14,90,0,2,1,D,1000,Divine Dragon only. Grants Atk+15 against Fell Nil .
+,Libération (FX Normal),18,90,0,2,1,D,1000,Divine Dragon only. Grants Atk+30 against Fell Nil .

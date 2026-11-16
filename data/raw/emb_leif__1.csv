@@ -1,0 +1,27 @@
+﻿Bond,Name,Description,Type,SP
+1,Build +3,Grants Bld+3.,Inheritable Skill,500
+1,Arms Shield,"When unit has weapon advantage, unit takes 3 less damage.",Sync Skill (Can Inherit),200
+1,Adaptable,"If foe initiates combat, unit counters with the best weapon available (in terms of range, weapon advantage, effective bonus, etc.). [Dragon] Hit+30 during combat. [Backup] Crit+10 during combat. [Covert] Avo+20 during combat. [Armored] Def+5 during combat. [Flying] Res+5 during combat.",Engage Skill,—
+1,Quadruple Hit,"Use to attack once each with sword, lance, axe, and bow. [Dragon] +20% damage. [Covert] Foes may drop 1,000G. Trigger %=Lck. [Qi Adept] Breaks foe.",Engage Attack,—
+1,Killer Axe (Leif),Axe wielded by Emblem Leif. Easily inflicts fatal wounds.,Engage Weapon,—
+2,Axe Prof.,Proficiency with axes. Required for promotion to certain classes.,Unlock,—
+3,Vantage,"If unit’s HP is 25% or less and foe initiates combat, unit can counter before foe’s first attack.",Sync Skill (Can Inherit),500
+3,Bow Prof.,Proficiency with bows. Required for promotion to certain classes.,Unlock,—
+4,Knife Precision 1,Grants Hit/Avo+3 when using a knife.,Inheritable Skill,100
+4,Knife Prof.,Proficiency with knives. Required for promotion to certain classes.,Unlock,—
+5,Skill Inheritance,Unit can inherit this Emblem’s skills.,Unlock,—
+6,Build +4,Grants Bld+4.,Inheritable Skill,1000
+6,Staff Prof.,Proficiency with staves. Required for promotion to certain classes.,Unlock,—
+7,Arms Shield+,"When unit has weapon advantage, unit takes 5 less damage.",Sync Skill (Can Inherit),400
+7,Lance Prof.,Proficiency with lances. Required for promotion to certain classes.,Unlock,—
+8,Sword Prof.,Proficiency with swords. Required for promotion to certain classes.,Unlock,—
+9,Knife Precision 2,Grants Hit/Avo+5 when using a knife.,Inheritable Skill,300
+10,Master Lance,"Lance wielded by Emblem Leif. If user initiates combat, attacks twice. Can strike close or at range.",Engage Weapon,—
+12,Vantage+,"If unit’s HP is 50% or less and foe initiates combat, unit can counter before foe’s first attack.",Sync Skill (Can Inherit),1000
+13,Knife Precision 3,Grants Hit/Avo+7 when using a knife.,Inheritable Skill,700
+14,Build +5,Grants Bld+5.,Inheritable Skill,2000
+15,Light Brand,Magical sword wielded by Emblem Leif. Grants Lck+10. Can strike close or at range.,Engage Weapon,—
+16,Arms Shield++,"When unit has weapon advantage, unit takes 7 less damage.",Sync Skill (Can Inherit),600
+17,Knife Precision 4,Grants Hit/Avo+10 when using a knife.,Inheritable Skill,1000
+18,Vantage++,"If unit’s HP is 75% or less and foe initiates combat, unit can counter before foe’s first attack.",Sync Skill (Can Inherit),2000
+19,Knife Precision 5,Grants Hit/Avo+15 when using a knife.,Inheritable Skill,2000

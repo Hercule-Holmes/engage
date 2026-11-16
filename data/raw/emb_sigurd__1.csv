@@ -1,0 +1,24 @@
+﻿Bond,Name,Description,Type,SP
+1,Canter,Unit can move 2 spaces after acting.,Sync Skill (Can Inherit),1000
+1,Hit +10,Grants Hit+10.,Inheritable Skill,500
+1,Gallop,Grants Mov+5. [Dragon] Grants another Mov+1. [Cavalry] Grants another Mov+2. [Covert] Unit does not pay extra movement cost on any terrain.,Engage Skill,—
+1,Override,Use to attack and move through a line of adjacent foes. Sword/lance only. [Dragon] +20% damage. [Armored] 10% chance of breaking target. [Mystical] Deals extra damage=25% of Mag. [Qi Adept] 20% chance of breaking target.,Engage Attack,—
+1,Ridersbane (Sigurd),Lance wielded by Emblem Sigurd. Effective: Cavalry.,Engage Weapon,—
+2,Lance Power 1,Grants Atk+2 at a cost of Avo-10 when using a lance.,Inheritable Skill,1000
+3,Momentum,Grants Atk+1 to first attack during combat for each space unit moved before attacking. (Max +10),Sync Skill (Can Inherit),1000
+4,Hit +15,Grants Hit+15.,Inheritable Skill,1000
+5,Skill Inheritance,Unit can inherit this Emblem’s skills.,Unlock,—
+6,Lance Power 2,Grants Atk+4 at a cost of Avo-10 when using a lance.,Inheritable Skill,2000
+6,Lance Prof.,Proficiency with lances. Required for promotion to certain classes.,Unlock,—
+7,Headlong Rush,Grants immunity to freeze.,Sync Skill (Can Inherit),200
+8,Lance Power 3,Grants Atk+6 at a cost of Avo-10 when using a lance.,Inheritable Skill,3000
+9,Sword Prof.,Proficiency with swords. Required for promotion to certain classes.,Unlock,—
+10,Brave Lance (Sigurd),"Lance wielded by Emblem Sigurd. If user initiates combat, attacks twice.",Engage Weapon,—
+12,Hit +20,Grants Hit+20.,Inheritable Skill,1500
+13,Canter+,Unit can move 3 spaces after acting.,Sync Skill (Can Inherit),2000
+14,Lance Power 4,Grants Atk+8 at a cost of Avo-10 when using a lance.,Inheritable Skill,4000
+15,Tyrfing,Sword wielded by Emblem Sigurd. Grants Res+5.,Engage Weapon,—
+16,Hit +25,Grants Hit+25.,Inheritable Skill,2000
+17,Momentum+,Grants Atk+1 to first attack during combat for each space unit moved before attacking.,Sync Skill (Can Inherit),2000
+18,Lance Power 5,Grants Atk+10 at a cost of Avo-10 when using a lance.,Inheritable Skill,5000
+19,Hit +30,Grants Hit+30.,Inheritable Skill,2500

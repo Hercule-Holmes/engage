@@ -1,0 +1,24 @@
+﻿Bond,Name,Description,Type,SP
+1,Resistance +2,Grants Res+2.,Inheritable Skill,300
+1,Cleric,Unit can equip staves up to level C.,Sync Skill (Cannot Inherit),—
+1,Augment,Grants staff range +5 and area of effect +1. [Dragon] Additional staff range +1. [Qi Adept] +20% to HP healed by staves.,Engage Skill,—
+1,Great Sacrifice,"Use to restore full HP to all allies, even those not under the player’s control. After use, unit’s HP=1. [Dragon] Unit’s HP=30% current. [Armored] Grants Def+1 to all healed during their next combat. [Qi Adept] Also cures status.",Engage Attack,—
+1,Shine,Light tome wielded by Emblem Micaiah. Illuminates a 5-space radius (shrinks one space per turn).,Engage Weapon,—
+2,Staff Mastery 1,Grants Hit+10 when using a staff. Staves also heal an additional 3 HP.,Inheritable Skill,100
+3,Healing Light,"When unit heals an ally with a staff, unit also recovers HP=50% of the amount healed.",Sync Skill (Can Inherit),200
+3,Staff Prof.,Proficiency with staves. Required for promotion to certain classes.,Unlock,—
+4,Resistance +3,Grants Res+3.,Inheritable Skill,500
+5,Skill Inheritance,Unit can inherit this Emblem’s skills.,Unlock,—
+6,Knife Prof.,Proficiency with knives. Required for promotion to certain classes.,Unlock,—
+7,Silence Ward,Grants immunity to silence.,Sync Skill (Can Inherit),200
+8,Staff Mastery 2,Grants Hit+15 when using a staff. Staves also heal an additional 5 HP.,Inheritable Skill,300
+9,Tome Prof.,Proficiency with tomes. Required for promotion to certain classes.,Unlock,—
+10,Nosferatu,Light tome wielded by Emblem Micaiah. User recovers HP equal to 50% of damage dealt.,Engage Weapon,—
+12,Staff Mastery 3,Grants Hit+20 when using a staff. Staves also heal an additional 7 HP.,Inheritable Skill,500
+13,Cleric+,Unit can equip staves up to level B.,Sync Skill (Cannot Inherit),—
+14,Resistance +4,Grants Res+4.,Inheritable Skill,1000
+15,Thani,"Mighty light tome wielded by Emblem Micaiah. Effective: Cavalry, Armored.",Engage Weapon,—
+16,Staff Mastery 4,Grants Hit+25 when using a staff. Staves also heal an additional 10 HP.,Inheritable Skill,700
+17,Staff Mastery 5,Grants Hit+30 when using a staff. Staves also heal an additional 15 HP.,Inheritable Skill,1000
+18,Cleric++,Unit can equip staves up to level A.,Sync Skill (Cannot Inherit),—
+19,Resistance +5,Grants Res+5.,Inheritable Skill,2000

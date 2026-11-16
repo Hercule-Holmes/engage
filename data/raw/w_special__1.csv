@@ -1,0 +1,16 @@
+﻿Icon,Name,Mt,Hit,Crit,Wt,Rng,Lvl,Price,Notes/Description
+,Standard Blast,5,75,-80,13,3~8,C,250,Standard cannonball. Cannot follow up. Reduced Hit for distant targets.
+,Magic Blast,5,70,-80,15,3~8,B,250,Cannonball infused with magic. Cannot follow up. Reduced Hit for distant targets.
+,Freeze Blast,3,75,-80,10,3~8,B,500,Magic cannonball with a 50% chance to freeze target. Cannot follow up. Reduced Hit for distant targets.
+,Silence Blast,3,75,-80,10,3~8,B,500,Magic cannonball with a 50% chance to silence target. Cannot follow up. Reduced Hit for distant targets.
+,Break Blast,3,75,-80,10,3~8,B,300,Magic cannonball with 50% chance of breaking target. Cannot follow up. Reduced Hit for distant targets.
+,Venom Blast,3,75,-80,10,3~8,C,300,Magic cannonball that inflicts deadly poison on hit. Cannot follow up. Reduced Hit for distant targets.
+,Tornado Blast,6,70,-80,15,3~8,B,500,Wind magic cannonball. Cannot follow up. Reduced Hit for distant targets. Effective: Flying.
+,Armor Blast,6,70,-80,15,3~8,B,500,Cannonball for armored foes. Cannot follow up. Reduced Hit for distant targets. Effective: Armored.
+,Rider Blast,6,70,-80,15,3~8,A,600,Cannonball for cavalry foes. Cannot follow up. Reduced Hit for distant targets. Effective: Cavalry.
+,Wyrm Blast,6,70,-80,15,3~8,A,600,Cannonball for dragon foes. Cannot follow up. Reduced Hit for distant targets. Effective: Dragon.
+,Holy Blast,6,70,-80,15,3~8,A,600,Cannonball for the Corrupted. Cannot follow up. Reduced Hit for distant targets. Effective: Corrupted.
+,Mighty Blast,10,65,-80,18,3~8,A,500,High-powered cannonball. Cannot follow up. Reduced Hit for distant targets.
+Icon,Name,Mt,Hit,Crit,Wt,Rng,Lvl,Price,Notes/Description
+,Eldritch Blast,10,60,-80,20,3~8,A,500,Cannonball infused with powerful magic. Cannot follow up. Reduced Hit for distant targets.
+,Piercing Blast,20,65,-80,17,3~8,S,700,Cannonball that ignores Def/Res. Cannot follow up. Reduced Hit for distant targets.

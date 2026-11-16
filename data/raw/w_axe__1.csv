@@ -1,0 +1,44 @@
+﻿Icon,Name,Mt,Hit,Crit,Wt,Rng,Lvl,Price,Notes/Description
+,Killer Axe,11,65,30,11,1,D,100,Axe wielded by Emblem Leif. Easily inflicts fatal wounds.
+,Killer Axe (Normal),11,65,30,11,1,D,100,Axe wielded by Emblem Leif. Easily inflicts fatal wounds.
+,Killer Axe (Ch 8),11,65,30,11,1,D,100,An Emblem’s axe. Easy to inflict a fatal wound with.
+,Killer Axe (Ch 11),11,65,10,11,1,D,100,Axe wielded by Emblem Leif. Easily inflicts fatal wounds.
+,Hammer,18,55,0,15,1,D,100,"Hammer of Emblem Ike. Smashes foes. Cannot follow up, or strike first if initiating combat. Eff: Armored."
+,Hammer (Normal),18,55,0,15,1,D,100,"Hammer of Emblem Ike. Smashes foes. Cannot follow up, or strike first if initiating combat. Eff: Armored."
+,Urvan,21,90,5,19,1,D,100,Heirloom axe wielded by Emblem Ike. Grants Res+3.
+,Urvan (Normal),21,90,5,19,1,D,100,Heirloom axe wielded by Emblem Ike. Grants Res+3.
+,Aymr,24,60,20,11,1,D,100,"Axe of Emblem Byleth. Smashes foes. Cannot follow up, or strike first if initiating combat. Eff: Dragon."
+,Aymr,24,60,20,11,1,D,100,"Axe of Emblem Edelgard. Smashes foes. Cannot follow up, or strike first if initiating combat. Eff: Dragon."
+,Aymr (Normal),24,60,20,11,1,D,100,"Axe of Emblem Edelgard. Smashes foes. Cannot follow up, or strike first if initiating combat. Eff: Dragon."
+,Wolf Beil,10,75,5,10,1,D,100,"Axe wielded by Emblem Hector. Effective: Cavalry, Armored."
+Icon,Name,Mt,Hit,Crit,Wt,Rng,Lvl,Price,Notes/Description
+,Wolf Beil (Normal),10,70,5,10,1,D,100,"Axe wielded by Emblem Hector. Effective: Cavalry, Armored."
+,Wolf Beil (DP2 Low Hit),10,70,5,10,1,D,100,"Axe wielded by Emblem Hector. Effective: Cavalry, Armored."
+,Wolf Beil (DP2 Weakest Low Hit),5,70,5,10,1,D,100,"Axe wielded by Emblem Hector. Effective: Cavalry, Armored."
+,Wolf Beil (DP2 Weakest),5,75,5,10,1,D,100,"Axe wielded by Emblem Hector. Effective: Cavalry, Armored."
+,Wolf Beil (DP2 Weak Low Hit),8,70,5,10,1,D,100,"Axe wielded by Emblem Hector. Effective: Cavalry, Armored."
+,Wolf Beil (DP2 Weak),8,75,5,10,1,D,100,"Axe wielded by Emblem Hector. Effective: Cavalry, Armored."
+,Wolf Beil (DP2 Strong),13,75,5,10,1,D,100,"Axe wielded by Emblem Hector. Effective: Cavalry, Armored."
+,Wolf Beil (DP2 Strongest),16,75,5,10,1,D,100,"Axe wielded by Emblem Hector. Effective: Cavalry, Armored."
+,Armads,22,85,0,18,1,D,100,Lightning-charged axe wielded by Emblem Hector. Grants Def+5. Effective: Dragon.
+,Armads (Normal),22,85,0,18,1,D,100,Lightning-charged axe wielded by Emblem Hector. Grants Def+5. Effective: Dragon.
+,Armads (DP2 Weakest Low Hit),13,75,0,18,1,D,100,Lightning-charged axe wielded by Emblem Hector. Grants Def+5. Effective: Dragon.
+,Armads (DP2 Weakest),13,85,0,18,1,D,100,Lightning-charged axe wielded by Emblem Hector. Grants Def+5. Effective: Dragon.
+Icon,Name,Mt,Hit,Crit,Wt,Rng,Lvl,Price,Notes/Description
+,Armads (DP2 Weak Low Hit),16,75,0,18,1,D,100,Lightning-charged axe wielded by Emblem Hector. Grants Def+5. Effective: Dragon.
+,Armads (DP2 Weak),16,85,0,18,1,D,100,Lightning-charged axe wielded by Emblem Hector. Grants Def+5. Effective: Dragon.
+,Armads (DP2 Weakish Low Hit),19,75,0,18,1,D,100,Lightning-charged axe wielded by Emblem Hector. Grants Def+5. Effective: Dragon.
+,Armads (DP2 Weakish),19,85,0,18,1,D,100,Lightning-charged axe wielded by Emblem Hector. Grants Def+5. Effective: Dragon.
+,Bolt Axe,14,65,0,9,1~2,D,100,"Avo-20, Magic axe wielded by Emblem Camilla. Can strike close or at range."
+,Bolt Axe (Normal),14,65,0,9,1~2,D,100,"Avo-20, Magic axe wielded by Emblem Camilla. Can strike close or at range."
+,Bolt Axe (DP5),12,65,0,9,1~2,D,100,"Avo-20, Magic axe wielded by Emblem Camilla. Can strike close or at range."
+,Bolt Axe (DP5 Weak),7,65,0,17,1~2,D,100,"Avo-20, Magic axe wielded by Emblem Camilla. Can strike close or at range."
+,Camilla’s Axe,19,80,0,11,1,D,100,Axe wielded by Emblem Camilla. Grants Res+10 and deals extra damage = foe’s Res-Def.
+,Camilla’s Axe (Normal),19,80,0,11,1,D,100,Axe wielded by Emblem Camilla. Grants Res+10 and deals extra damage = foe’s Res-Def.
+,Camilla’s Axe (DP5 Weakish),16,80,0,11,1,D,100,Axe wielded by Emblem Camilla. Grants Res+10 and deals extra damage = foe’s Res-Def.
+,Camilla’s Axe (DP5 Weak),13,80,0,11,1,D,100,Axe wielded by Emblem Camilla. Grants Res+10 and deals extra damage = foe’s Res-Def.
+Icon,Name,Mt,Hit,Crit,Wt,Rng,Lvl,Price,Notes/Description
+,Camilla’s Axe (DP5 Weakest),11,80,0,18,1,D,100,Axe wielded by Emblem Camilla. Grants Res+10 and deals extra damage = foe’s Res-Def.
+,Killer Axe (+),11,65,30,11,1,D,100,Axe wielded by Emblem Leif. Easily inflicts fatal wounds.
+,Killer Axe (++),11,65,30,11,1,D,100,Axe wielded by Emblem Leif. Easily inflicts fatal wounds.
+,Wolf Beil (+),14,75,10,10,1,D,100,"Axe wielded by Emblem Hector. Effective: Cavalry, Armored."

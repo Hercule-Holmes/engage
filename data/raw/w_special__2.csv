@@ -1,0 +1,22 @@
+﻿Icon,Name,Mt,Hit,Crit,Wt,Rng,Lvl,Price,Notes/Description
+,Fire Breath,12,100,0,5,1~3,D,100,A scorching breath attack. Ignores foe’s Def/Res.
+,Fireball,7,80,0,5,4,D,100,A long-range fire attack. Ignores foe’s Def/Res.
+,Fell Assault,20,80,0,20,1~3,S,100,A series of colossal ranged attacks.
+,Fell Surge,20,75,0,20,1~3,S,100,A powerful ranged strike of dark magic.
+,Whirling Death,13,90,0,16,1~3,S,100,A spin that brutally strikes an area. Attacks all foes within 3 spaces.
+,Howling Beam,17,150,0,23,—,S,100,A powerful beam of dark magic that leaves a foul miasma in its wake.
+,Disengage,0,0,0,0,—,S,100,Forces all foes to lose engaged status.
+,Fell Assault,15,80,0,20,1~3,S,100,A series of colossal ranged attacks.
+,Fell Beam,7,150,0,16,1~3,S,100,A beam of darkness that mows down foes over wide area. Guaranteed hit. Ignores Def/Res.
+,Devastation,17,150,0,23,—,S,100,"Destroys terrain around the unit, killing friend and foe alike. Channels life force of the slain into power."
+,Drain Essence,17,90,0,23,1~3,S,100,"Instantly kills all units in the area, friend and foe alike. Channels life force of the slain into power."
+,Summon Vortex,0,0,0,0,—,S,100,Creates vortexes that summon Corrupted.
+Icon,Name,Mt,Hit,Crit,Wt,Rng,Lvl,Price,Notes/Description
+,Flame Cannon,0,0,0,0,—,D,100,Use to attack all units within a 2-space radius of a target point and set the same area on fire.
+,Flame Cannon (Chapter 19),0,0,0,0,—,D,100,Use to attack all units within a 2-space radius of a target point and set the same area on fire.
+,Flame Cannon (Paralogue 13),0,80,0,0,—,D,100,Use to attack all units within a 2-space radius of a target point and set the same area on fire.
+,Fangs,7,95,0,3,1,B,100,"Sharp, cursed fangs. If user initiates combat and hits, inflicts max HP-5 on foe after combat. (Stacks to -20.)"
+,Freezing Breath,11,100,0,5,1~2,C,100,An icy breath attack. Ignores foe Def/Res. Freezes foe.
+,Miasma Breath,11,100,0,5,1~2,B,100,Miasma breath attack. Ignores foe Def/Res. Applies miasma to foe’s space.
+,Iceball,6,80,0,5,3,C,100,A long-range ice attack. Ignores foe Def/Res. Freezes foe.
+,Miasma Ball,6,80,0,5,3~5,B,100,Ranged miasma attack. Ignores foe Def/Res. Inflicts freeze and silence. Applies miasma to foe’s space.

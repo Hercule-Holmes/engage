@@ -1,0 +1,29 @@
+﻿Icon,Name,Description,Obtain
+,Sympathetic,"If foe initiates combat and if unit’s HP is 50% or less, unit takes 5 less damage.",Caeda S
+,Deadly Blade,"If unit initiates combat with a sword, grants Crit+10 during combat.",Navarre S
+,Battlewise,Grants a stacking Crit+1 each time unit initiates combat and defeats a foe. Bonus lasts for the rest of the battle. (Max +10),Seliph S
+,Renewal,Unit recovers 5 HP each turn.,Deirdre S
+,Windsweep,"If unit initiates combat with a sword, foe may not counterattack. Trigger %=Lck.",Alm S
+,Great Thunder,"If unit uses Thunder, Elthunder, or Thoron, deals +20% damage.",Mae S
+,Bane,May reduce foe’s HP to 1. Trigger %=half of Dex. (Certain foes are immune to this effect.),Sothe S
+,Mercy,"If dealing enough damage to defeat foe, instead leaves foe with 1 HP.",Elincia S
+,Raging Fire,"If unit uses Fire, Elfire, or Bolganone, deals +20% damage.",Lilina S
+,Strong Arm,Grants Hit+20 while unit is equipped with a smash weapon.,Dieck S
+,Miracle,Avoids foe’s attack when unit would be defeated. Trigger %=Lck. (Max 50%),Finn S
+,Dire Thunder,"When unit initiates combat with Thunder equipped, unit attacks twice. (Excludes Elthunder and Thoron.)",Olwen S
+,Rightful Ruler,Adds +5% to trigger rate for all skills with trigger rates.,Chrom S
+,Healtouch,"When unit heals an ally with a staff, restores +5 HP to target.",Lissa S
+,Draw Back,Use to move 1 space away from adjacent ally and pull the ally along.,Eliwood S
+,Giga Excalibur,"If unit initiates combat with Excalibur, deals +20% damage.",Nino S
+,Wind Adept,"If unit initiates combat with Wind equipped, unit may attack twice. Trigger %=Dex. (Excludes Elwind and Excalibur.)",Soren S
+,Shove,Use to push an adjacent ally with less Bld 1 space away.,Mia S
+,Flickering Flower,"If unit initiates combat, freezes foe. Trigger % = total damage dealt.",Edelgard S
+,Paraselene,"Use to make an attack against an adjacent foe, then move 1 space away from that foe after combat.",Dimitri S
+,Wind God,"If unit’s HP=100%, grants range +1 with bows.",Claude S
+,Chivalry,"If unit initiates combat while foe’s HP=100%, unit deals +2 damage and takes 2 less damage.",Xander S
+,Bushido,"If unit’s level is higher than foe’s, grants Crit+10 during combat, and unit deals +2 damage and takes 2 less damage.",Ryoma S
+,Lethality,"When landing a critical hit, instantly kills foe. Trigger %=30. (Excludes certain powerful foes.)",Marisa S
+,Sure Strike,"If unit initiates combat, attacks are guaranteed to hit. Trigger %=Dex",Innes S
+,Spur Attack,Grants Atk+2 to adjacent allies.,Alfonse S
+,Fortify Def,Grants Def+2 to adjacent allies for 1 turn at start of player phase.,Sharena S
+,Spur Res,Grants Res+2 to adjacent allies.,Anna S
