@@ -1,0 +1,5 @@
+# 缓存与本地环境(数据全量入库, 克隆后免重抓)
+__pycache__/
+.pytest_cache/
+*.pyc
+.env

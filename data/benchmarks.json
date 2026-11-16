@@ -1,0 +1,25 @@
+{
+  "_说明": "基准敌人与公式常量——gold层口径草稿，供作战证据表计算。所有数值待游戏内校准；修改后重跑build_silver即可生效。",
+  "enemies": {
+    "mob":  {"cn": "中期杂兵", "hp": 28, "def": 9,  "res": 6,  "spd": 10, "lck": 5, "rng": 1},
+    "boss": {"cn": "中期BOSS", "hp": 42, "def": 15, "res": 10, "spd": 8,  "lck": 5, "rng": 1},
+    "mage": {"cn": "中期法师", "hp": 30, "def": 6,  "res": 14, "spd": 12, "lck": 10, "rng": 2}
+  },
+  "constants": {
+    "avoid_formula": "avoid = 2*spd + lck//2",
+    "follow_gap": 5,
+    "_follow_gap说明": "追击所需攻击速度差: 系列传统值5(封印之剑~if), Engage待游戏内确认(有说法为4)",
+    "forge_per_level": {"mt": 1, "hit": 5},
+    "_forge说明": "锻造每+1: 威力+1 命中+5, 上限+5, 待确认"
+  },
+  "representative_weapons": {
+    "sword": {"base": "Iron Sword", "mid": "Steel Sword", "high": "Silver Sword", "crit": "Killing Edge"},
+    "lance": {"base": "Iron Lance", "mid": "Steel Lance", "high": "Silver Lance", "crit": "Killer Lance"},
+    "axe":   {"base": "Iron Axe", "mid": "Steel Axe", "high": "Silver Axe", "crit": "Killer Axe"},
+    "bow":   {"base": "Iron Bow", "mid": "Steel Bow", "high": "Silver Bow", "crit": "Killer Bow"},
+    "knife": {"base": "Iron Dagger", "mid": "Steel Dagger", "high": "Silver Dagger", "crit": null},
+    "tome":  {"base": "Fire", "mid": "Elfire", "high": "Bolganone", "crit": null},
+    "arts":  {"base": "Iron-Body Art", "mid": "Steel-Hand Art", "high": "Silver-Spirit Art", "crit": null},
+    "_说明": "作战证据表的代表武器(gold口径,可审阅)。base/mid/high各出+0与+5锻造版"
+  }
+}
