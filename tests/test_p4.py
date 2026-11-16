@@ -53,16 +53,21 @@ def test_tier_assessment_is_fact_only():
     assert "自行论证" in t["说明"]
 
 
-def test_emblem_fit_v2_components():
-    """emblem_fit v2: 组件拆开(精准匹配/额外重合/同步技协同), 无牵绊加值项"""
+def test_emblem_fit_v3_components():
+    """emblem_fit v3: 组件拆开(精准匹配/额外重合/同步技协同), 无牵绊加值项; band并列"""
     fit = engine.emblem_fit("chloe", "griffin_knight")
     for r in fit["ranking"]:
         assert "精准匹配" in r and "额外重合" in r and "同步技协同" in r
+        assert "排序参考" not in r
         assert "牵绊" not in json.dumps(r, default=str)
-    # 剑系路线: 精准匹配30的纹章士应出现在前排(玛尔斯/罗伊/艾克/琳等)
-    top_ids = [r["emblem_id"] for r in fit["ranking"]]
-    sword_emblems = {"marth", "roy", "ike", "lyn"}
-    assert any(e in top_ids for e in sword_emblems), f"剑系本命纹章未进前排: {top_ids}"
+    # 剑系本命纹章应完整出现在返回中(默认全量)
+    top_ids = {r["emblem_id"] for r in fit["ranking"]}
+    assert {"marth", "roy", "ike", "lyn"} <= top_ids, f"剑系本命纹章缺席: {sorted(top_ids)}"
+    # 组件口径下 marth(剑主武器精准30+飞行偏好spd同步命中)应居前2并列组
+    band_of = {r["emblem_id"]: r["band"] for r in fit["ranking"]}
+    assert band_of["marth"] <= 2, f"marth band={band_of['marth']} 跌出前2组"
+    # band组号连续无洞(1,2,3,...)
+    assert sorted(set(band_of.values())) == list(range(1, max(band_of.values()) + 1))
 
 
 def test_tier_calibration_regression():

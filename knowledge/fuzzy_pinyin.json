@@ -1,0 +1,15 @@
+{
+  "_说明": "拼音模糊音归并口径(语音容错层)。构建时据此生成 silver_pinyin_map 的 py_fuzzy 列; 引擎运行时只读预生成列, 零依赖。initials/finals 均为归并组: 组内成员一律映射到组的首元素。草案, 可校准后重跑 build_silver 生效。",
+  "initials": [
+    ["zh", "z"],
+    ["ch", "c"],
+    ["sh", "s"],
+    ["n", "l"],
+    ["f", "h"]
+  ],
+  "finals": [
+    ["ang", "an"],
+    ["eng", "en"],
+    ["ing", "in"]
+  ]
+}

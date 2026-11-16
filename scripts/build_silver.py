@@ -5,7 +5,8 @@
   silver_characters  角色事实表
   silver_classes     兵种事实表
   silver_class_skills 兵种技能表
-  silver_aliases     别名表(EN/CN/社区别名 → id)
+  silver_aliases     别名表(EN/CN/社区别名 → id; 含 alias_norm 规范化列)
+  silver_pinyin_map  汉字→拼音映射(语音容错层, 全CJK基本区; 引擎运行时零依赖)
   silver_meta        构建元信息(来源、假设、日期)
 """
 import csv
@@ -20,6 +21,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 RAW = ROOT / "data" / "raw"
 DB = ROOT / "data" / "engage.db"
+sys.path.insert(0, str(ROOT))
+from engage_core.textnorm import norm  # noqa: E402
 
 WEAPONS = {"sword": "剑", "lance": "枪", "axe": "斧", "bow": "弓",
            "knife": "匕首", "tome": "魔法书", "staff": "杖", "arts": "体术"}
@@ -53,6 +56,52 @@ def num(v: str, default=0) -> int:
 def family_key(name: str) -> str:
     """'Fell Child (Veyle)' → 'fell child'；用于跨表家族名回退匹配"""
     return re.sub(r"\(.*?\)", "", name).strip().lower()
+
+
+# ---------- 拼音容错层(build-time 依赖 pypinyin, 运行时零依赖) ----------
+
+def _load_fuzzy_config() -> tuple[dict, dict]:
+    cfg = json.load(open(ROOT / "knowledge" / "fuzzy_pinyin.json", encoding="utf-8"))
+    ini = {alt: grp[0] for grp in cfg["initials"] for alt in grp}
+    fin = []
+    for grp in cfg["finals"]:
+        fin += [(src, grp[0]) for src in grp[1:]]
+    return ini, fin
+
+
+def _syll_fuzzy(syllable: str, ini_map: dict, fin_map: list) -> str:
+    """单音节模糊音归并: 声母查 ini_map, 韵母尾查 fin_map(首个命中生效)。"""
+    s = syllable
+    ini = ""
+    for two in ("zh", "ch", "sh"):
+        if s.startswith(two):
+            ini, s = two, s[2:]
+            break
+    else:
+        if s and s[0] in "bpmfdtnlgkhjqxrzcsyw":
+            ini, s = s[0], s[1:]
+    ini = ini_map.get(ini, ini)
+    for src, dst in fin_map:
+        if s.endswith(src):
+            s = s[: -len(src)] + dst
+            break
+    return ini + s
+
+
+def build_pinyin_map(cur) -> int:
+    """全 CJK 基本区逐字生成 拼音/模糊音 映射表(引擎查询侧的运行时拼音来源)。"""
+    from pypinyin import Style, pinyin
+    ini_map, fin_map = _load_fuzzy_config()
+    rows = []
+    for cp in range(0x3400, 0xA000):  # 扩展A + 基本区
+        ch = chr(cp)
+        py = pinyin(ch, style=Style.NORMAL, errors="ignore")
+        if not py or not py[0]:
+            continue
+        syll = py[0][0]
+        rows.append((ch, syll, _syll_fuzzy(syll, ini_map, fin_map)))
+    cur.executemany("INSERT INTO silver_pinyin_map VALUES(?,?,?)", rows)
+    return len(rows)
 
 
 def find_row(rows_by_name: dict, en_name: str):
@@ -381,10 +430,10 @@ def main():
     aliases = []
     for en, meta in chars_meta.items():
         for a in meta.get("aliases", [meta["en"], meta["cn"]]):
-            aliases.append((a.lower(), "character", en))
+            aliases.append((a.lower(), norm(a), "character", en))
     for cid, meta in classes_meta.items():
         for a in [meta["en"], meta["cn"]]:
-            aliases.append((a.lower(), "class", cid))
+            aliases.append((a.lower(), norm(a), "class", cid))
 
     # ---- 写库 ----
     DB.parent.mkdir(parents=True, exist_ok=True)
@@ -418,7 +467,8 @@ def main():
       def_max INT, res_max INT, lck_max INT, bld_max INT,
       req_proficiency TEXT, lv5_skill TEXT, maddening_skill TEXT, weak TEXT);
     CREATE TABLE silver_class_skills(class_id TEXT, class_name TEXT, name TEXT, desc TEXT);
-    CREATE TABLE silver_aliases(alias TEXT PRIMARY KEY, kind TEXT, ref_id TEXT);
+    CREATE TABLE silver_aliases(alias TEXT PRIMARY KEY, alias_norm TEXT, kind TEXT, ref_id TEXT);
+    CREATE TABLE silver_pinyin_map(char TEXT PRIMARY KEY, py TEXT, py_fuzzy TEXT);
     CREATE TABLE silver_meta(key TEXT PRIMARY KEY, value TEXT);
     CREATE TABLE silver_weapons(
       id TEXT PRIMARY KEY, type TEXT, category TEXT, name_en TEXT,
@@ -447,19 +497,22 @@ def main():
     ph_k = ",".join("?" * 42)
     cur.executemany(f"INSERT INTO silver_classes VALUES({ph_k})", classes)
     cur.executemany("INSERT INTO silver_class_skills VALUES(?,?,?,?)", skills)
-    cur.executemany("INSERT OR IGNORE INTO silver_aliases VALUES(?,?,?)", aliases)
+    cur.executemany("INSERT OR IGNORE INTO silver_aliases VALUES(?,?,?,?)", aliases)
     build_p2(cur, cn)
+    n_py = build_pinyin_map(cur)
     cur.executemany("INSERT INTO silver_meta VALUES(?,?)", [
         ("built", date.today().isoformat()),
         ("source", "serenesforest.net/engage"),
         ("assumption_reclass", "近似规则:兵种主武器 ∈ 角色天资 → 可转。资质等级/牵绊获取未建模,待校准"),
         ("assumption_rank", "资质等级字母 C<B<A<S; '^'与'*'标记含义未定; 兵种需求表每武器归属未解码"),
         ("unmatched_classes", json.dumps(unmatched, ensure_ascii=False)),
+        ("aliases_fuzzy", "容错层: alias_norm(规范化)+silver_pinyin_map(拼音/模糊音, 口径knowledge/fuzzy_pinyin.json); 引擎运行时零依赖"),
     ])
     con.commit()
     n = lambda t: cur.execute(f"SELECT COUNT(*) FROM {t}").fetchone()[0]
     print(f"characters={n('silver_characters')} classes={n('silver_classes')} "
-          f"skills={n('silver_class_skills')} aliases={n('silver_aliases')}")
+          f"skills={n('silver_class_skills')} aliases={n('silver_aliases')} "
+          f"pinyin_map={n_py}")
     if unmatched:
         print("未匹配兵种:", unmatched)
     con.close()

@@ -81,3 +81,55 @@ def test_evidence_card_contract():
     for key in ("character", "query_class", "eligibility", "total_growth",
                 "projection", "rank_in_class", "_assumptions"):
         assert key in ev, f"缺字段: {key}"
+
+
+# ---------- 名称解析容错层(P6: 语音同音/规范化/多候选) ----------
+
+def test_resolve_voice_homophone():
+    """语音同音字: 拼音层兜底(花悦→花月, 优娜卡→尤娜卡)"""
+    r = engine.resolve_name("花悦")
+    assert r and r["id"] == "kagetsu" and r["matched_by"] == "pinyin"
+    r2 = engine.resolve_name("优娜卡")
+    assert r2 and r2["id"] == "yunaka" and r2["matched_by"] == "pinyin"
+
+
+def test_resolve_fuzzy_pinyin():
+    """方言模糊音: n/l 归并(尤娜卡 younaka ↔ 由拉卡 younaka 同为模糊口径)"""
+    r = engine.resolve_name("由拉卡")
+    assert r and r["id"] == "yunaka"
+
+
+def test_resolve_normalization():
+    """规范化: 空格/大小写/全角/重音折叠(é→e), chloé 与 chloe 双别名归同实体"""
+    assert engine.resolve_name("花 月")["id"] == "kagetsu"
+    r = engine.resolve_name("CHLOE")
+    assert r and r["id"] == "chloe" and r["matched_by"] == "exact"
+    assert engine.resolve_name("ｃｈｌｏé")["id"] == "chloe"
+
+
+def test_resolve_multi_candidates():
+    """同层多实体命中 → 返回 candidates 交调用方裁决, 不静默取第一个"""
+    r = engine.resolve_name("娜")
+    assert r and "candidates" in r
+    ids = {c["id"] for c in r["candidates"]}
+    assert {"anna", "yunaka"} <= ids
+    assert all("score" in c and "matched_by" in c for c in r["candidates"])
+
+
+def test_resolve_edge_inputs():
+    """空/None/无命中 → None; 原编辑距离用例保持"""
+    assert engine.resolve_name("不存在的名字xyz") is None
+    assert engine.resolve_name("") is None
+    assert engine.resolve_name(None) is None
+    assert engine.resolve_name("克劳艾")["id"] == "chloe"  # 原模糊匹配回归
+
+
+def test_pinyin_map_runtime_zero_dep():
+    """拼音全字表已入库且引擎查询零第三方依赖(只查表)"""
+    from engage_core import db as _db
+    con = _db.connect()
+    n = con.execute("SELECT COUNT(*) FROM silver_pinyin_map").fetchone()[0]
+    con.close()
+    assert n > 15000  # CJK 基本区+扩展A 全量映射
+    pm = engine._pinyin_map()
+    assert pm["花"] == ("hua", pm["花"][1])  # py 与 py_fuzzy 结构齐全
