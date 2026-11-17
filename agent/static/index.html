@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>火焰纹章Engage 培养助手</title>
+<style>
+  :root { --bg:#f5f6f8; --card:#fff; --accent:#2b6cb0; --user:#2b6cb0; --line:#e2e5ea; --txt:#1a202c; --dim:#6b7280; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--txt);
+         font-family:"Segoe UI","Microsoft YaHei",system-ui,sans-serif;
+         display:flex; flex-direction:column; height:100vh; }
+  header { background:var(--card); border-bottom:1px solid var(--line); padding:12px 20px;
+           display:flex; align-items:center; gap:12px; }
+  header h1 { font-size:16px; margin:0; }
+  header button { margin-left:auto; font-size:12px; padding:4px 12px; border:1px solid var(--line);
+                  background:#fff; border-radius:6px; cursor:pointer; color:var(--dim); }
+  #chat { flex:1; overflow-y:auto; padding:16px 20px; display:flex; flex-direction:column; gap:12px; }
+  .msg { max-width:820px; width:100%; margin:0 auto; border-radius:10px; padding:10px 14px; line-height:1.65; }
+  .msg.user { background:var(--user); color:#fff; align-self:flex-end; max-width:70%; }
+  .msg.bot { background:var(--card); border:1px solid var(--line); }
+  .msg.bot.error { border-color:#f56565; background:#fff5f5; }
+  .trace { margin-top:8px; border-top:1px dashed var(--line); padding-top:6px; }
+  details { margin:4px 0; font-size:12px; }
+  summary { cursor:pointer; color:var(--dim); user-select:none; }
+  summary b { color:var(--accent); }
+  pre { background:#0f172a; color:#d7e0ee; padding:8px 10px; border-radius:6px;
+        overflow-x:auto; font-size:11.5px; line-height:1.5; white-space:pre-wrap; }
+  table { border-collapse:collapse; margin:8px 0; font-size:13px; }
+  th, td { border:1px solid var(--line); padding:4px 10px; text-align:center; }
+  th { background:#eef1f5; }
+  h2 { font-size:16px; margin:10px 0 4px; }
+  code { background:#eef1f5; padding:1px 5px; border-radius:4px; font-size:13px; }
+  #inputbar { background:var(--card); border-top:1px solid var(--line); padding:12px 20px;
+              display:flex; gap:10px; }
+  #inputbar textarea { flex:1; resize:none; border:1px solid var(--line); border-radius:8px;
+                       padding:10px 12px; font:inherit; height:52px; }
+  #inputbar button { background:var(--accent); color:#fff; border:0; border-radius:8px;
+                     padding:0 22px; font-size:15px; cursor:pointer; }
+  #inputbar button:disabled { opacity:.5; }
+  .hint { color:var(--dim); font-size:12px; }
+  #statusbar { background:var(--card); border-bottom:1px solid var(--line); padding:6px 20px;
+               display:flex; gap:18px; font-size:12px; color:var(--dim); flex-wrap:wrap; }
+  #statusbar b { color:var(--txt); font-weight:600; }
+  .meta { margin-top:8px; border-top:1px dashed var(--line); padding-top:5px; font-size:12px; }
+  .meta summary { color:var(--dim); }
+  .meta summary:hover { color:var(--accent); }
+  .meta .row { padding:1px 0; }
+</style>
+</head>
+<body>
+<header>
+  <h1>⚔️ 火焰纹章Engage 培养助手</h1>
+  <span class="hint">数值来自本地证据卡引擎 · 无综合分 · 综合判断由模型论证</span>
+  <button onclick="reset()">重置会话</button>
+</header>
+
+<div id="statusbar">
+  <span>模型 <b id="sb-model">-</b></span>
+  <span>会话累计 <b id="sb-total">0</b> tok (↑<span id="sb-pt">0</span> ↓<span id="sb-ct">0</span>)</span>
+  <span>上下文占用 <b id="sb-ctx">-</b> tok <span class="hint">(上次请求 · 字符预算 <span id="sb-budget">-</span>)</span></span>
+  <span><b id="sb-turn">0</b> 轮 · 消息 <b id="sb-msg">0</b> 条 · LLM <b id="sb-llm">0</b> 次 · 工具 <b id="sb-tools">0</b> 次</span>
+</div>
+
+<div id="chat">
+  <div class="msg bot">你好！直接用中文提问：<br>
+  · 「克萝艾当剑士怎么样？」<br>· 「尤娜卡强不强？」<br>· 「花月配什么纹章士？」<br>
+  · 「详细」→ 展开完整数据表</div>
+</div>
+
+<div id="inputbar">
+  <textarea id="input" placeholder="输入问题… (Enter发送, Shift+Enter换行)"></textarea>
+  <button id="send" onclick="send()">发送</button>
+</div>
+
+<script>
+const chat = document.getElementById('chat');
+const input = document.getElementById('input');
+const sendBtn = document.getElementById('send');
+
+// ---- 迷你 markdown 渲染(标题/粗体/代码/表格/列表) ----
+function esc(s){return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');}
+function md(text){
+  const lines = esc(text).split('\n');
+  let html = '', i = 0;
+  while (i < lines.length){
+    const L = lines[i];
+    if (/^\s*\|/.test(L) && i+1 < lines.length && /^\s*\|[\s:|-]+\|\s*$/.test(lines[i+1])){
+      let tbl = ['<table>']; const cells = r => r.trim().replace(/^\||\|$/g,'').split('|').map(c=>c.trim());
+      tbl.push('<tr>'+cells(L).map(c=>'<th>'+c+'</th>').join('')+'</tr>'); i += 2;
+      while (i < lines.length && /^\s*\|/.test(lines[i])){
+        tbl.push('<tr>'+cells(lines[i]).map(c=>'<td>'+inline(c)+'</td>').join('')+'</tr>'); i++;
+      }
+      html += tbl.join('')+'</table>'; continue;
+    }
+    if (/^#{1,4}\s/.test(L)){ html += '<h2>'+inline(L.replace(/^#{1,4}\s/,''))+'</h2>'; i++; continue; }
+    if (/^[-*]\s/.test(L)){ html += '<div>• '+inline(L.replace(/^[-*]\s/,''))+'</div>'; i++; continue; }
+    if (L.trim()===''){ i++; continue; }
+    html += '<p>'+inline(L)+'</p>'; i++;
+  }
+  return html;
+}
+function inline(s){
+  return s.replace(/\*\*([^*]+)\*\*/g,'<b>$1</b>')
+          .replace(/`([^`]+)`/g,'<code>$1</code>');
+}
+
+function addMsg(cls, html){ const d=document.createElement('div'); d.className='msg '+cls;
+  d.innerHTML=html; chat.appendChild(d); chat.scrollTop=chat.scrollHeight; return d; }
+
+function renderTrace(trace){
+  if (!trace || !trace.length) return '';
+  let h = '<div class="trace"><div class="hint">🛠 工具调用链 ('+trace.length+')</div>';
+  trace.forEach((t,k)=>{
+    let args=t.args||'{}', res=t.result||'';
+    try{ args=JSON.stringify(JSON.parse(args),null,1);}catch(e){}
+    try{ const o=JSON.parse(res); res=JSON.stringify(o,null,1);}catch(e){}
+    h += `<details><summary>🔧 <b>${esc(t.name)}</b> ${esc(args.slice(0,70))}</summary>
+          <pre>${esc(res.slice(0,2000))}${res.length>2000?'\n…(截断)':''}</pre></details>`;
+  });
+  return h+'</div>';
+}
+
+// ---- 运行统计(状态条 + 每轮元信息行) ----
+function fmtTok(n){ n=n||0; return n>=1000 ? (n/1000).toFixed(1)+'k' : String(n); }
+function setText(id,v){ document.getElementById(id).textContent = v; }
+function updateStatus(s){
+  if(!s) return;
+  setText('sb-model', s.model||'-');
+  setText('sb-total', fmtTok(s.total_tokens));
+  setText('sb-pt', fmtTok(s.prompt_tokens));
+  setText('sb-ct', fmtTok(s.completion_tokens));
+  setText('sb-ctx', s.context_tokens_last==null ? '-' : fmtTok(s.context_tokens_last));
+  setText('sb-budget', s.budget_chars!=null ? fmtTok(s.budget_chars)+'字符' : '-');
+  setText('sb-turn', s.turns||0);
+  setText('sb-msg', s.messages||0);
+  setText('sb-llm', s.llm_calls||0);
+  setText('sb-tools', s.tool_calls||0);
+}
+function renderMeta(st){
+  if(!st || (!st.total_tokens && !st.elapsed_ms)) return '';
+  const secs = st.elapsed_ms!=null ? (st.elapsed_ms/1000).toFixed(1)+'s' : '-';
+  const line = `⚡ ↑${fmtTok(st.prompt_tokens)} ↓${fmtTok(st.completion_tokens)} tok · `
+    + `LLM×${st.llm_calls||0} 工具×${st.tool_calls||0}`
+    + (st.empty_retries ? ` 空响应重试×${st.empty_retries}` : '')
+    + ` · ${secs}`;
+  let inner = '';
+  if (st.context_tokens_last!=null)
+    inner += `<div class="row">最后一次请求上下文占用: ${st.context_tokens_last} tok`
+      + (st.context_chars_last!=null ? ` (约${fmtTok(st.context_chars_last)}字符)` : '') + '</div>';
+  (st.calls||[]).forEach((c,k)=>{
+    inner += `<div class="row">第${k+1}次LLM: ↑${c.prompt_tokens} ↓${c.completion_tokens} · finish=${esc(String(c.finish))}</div>`;
+  });
+  return `<details class="meta"><summary>${line}</summary>${inner}</details>`;
+}
+
+async function send(){
+  const msg = input.value.trim();
+  if (!msg) return;
+  input.value=''; sendBtn.disabled=true;
+  addMsg('user', esc(msg));
+  const wait = addMsg('bot hint','思考中…(工具调用可能需要数秒)');
+  try{
+    const r = await fetch('/api/chat',{method:'POST',
+      headers:{'Content-Type':'application/json'}, body:JSON.stringify({message:msg})});
+    const d = await r.json();
+    wait.remove();
+    if (d.error){ addMsg('bot error','❌ '+esc(d.error)+'<br><span class="hint">'+esc(d.hint||'')+'</span>'); }
+    else{
+      const body = d.answer ? md(d.answer) : '<span class="hint">(空响应)</span>';
+      addMsg('bot', body + renderTrace(d.trace) + renderMeta(d.stats));
+    }
+    updateStatus(d.session);
+  }catch(e){ wait.remove(); addMsg('bot error','❌ 连接失败: '+esc(String(e))); }
+  sendBtn.disabled=false; input.focus();
+}
+
+async function reset(){
+  const r = await fetch('/api/reset',{method:'POST'});
+  const d = await r.json();
+  chat.innerHTML='';
+  addMsg('bot','会话已重置。');
+  updateStatus(d.session);
+}
+
+input.addEventListener('keydown',e=>{
+  if (e.key==='Enter' && !e.shiftKey){ e.preventDefault(); send(); }
+});
+input.focus();
+</script>
+</body>
+</html>
