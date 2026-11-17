@@ -10,15 +10,27 @@ from engage_core import engine  # noqa: E402
 
 
 def test_combat_evidence_hand_math():
-    """克萝艾→狮鹫 Lv20: 力预测13(8+0.35×14=12.9→13); 铁剑mt5 vs 杂兵def9 → 伤害9;
-    命中=90−(2×10+5//2)=68; 锻造+5 → 伤害14/命中93"""
+    """克萝艾→狮鹫 Lv20(事件式立即转职): 投影值由引擎事件模型给出,
+    此测试验证公式应用链: 伤害=atk+mt−防; 命中=武器命中+技×2+幸/2−敌回避(钳制100)"""
     ev = engine.combat_evidence("chloe", "griffin_knight", 20)
-    assert ev["atk_projected"] == 13
+    atk, dex, lck = ev["atk_projected"], ev["dex_projected"], ev["lck_projected"]
     iron = next(w for w in ev["evidence"] if w["weapon"] == "Iron Sword")
-    assert iron["mob"]["单击伤害"] == 13 + 5 - 9
-    assert iron["mob"]["命中%"] == 90 - (2 * 10 + 5 // 2)
+    assert iron["mob"]["单击伤害"] == atk + 5 - 9
+    raw = 90 + dex * 2 + int(lck / 2) - (2 * 10 + 5 // 2)
+    assert iron["mob"]["命中%"] == min(100, max(0, raw))
     iron5 = next(w for w in ev["evidence"] if w["weapon"] == "Iron Sword+5")
     assert iron5["mt"] == iron["mt"] + 5 and iron5["hit"] == iron["hit"] + 25
+
+
+def test_survival_enemy_real_weapon():
+    """生存侧: 敌武器=真实数据。尤娜卡×盗贼: 基准mob=Iron Lance(mt7命中85)
+    被命中率=85−(2×速+幸/2); 承伤=基准atk11+mt7−我守"""
+    ev = engine.combat_evidence("yunaka", "thief", 20)
+    s = ev["生存与承伤"]["mob"]
+    assert "Iron Lance" in s["敌武器"]
+    expected_hit = min(100, max(0, 85 - (2 * ev["spd_projected"] + int(ev["lck_projected"] / 2))))
+    assert s["被命中率(基础)"] == expected_hit
+    assert s["承伤(基础)"] == max(0, 11 + 7 - ev["def_projected"])
 
 
 def test_representative_weapons_exclude_specials():
@@ -46,22 +58,29 @@ def test_pattern_bow_counter_safe():
 
 
 def test_emblem_fit_shape():
-    """v3契约: 无复合分, band并列分组, 默认全量; top_n按band整组截断"""
+    """v4契约: 纯组件事实, 无band/无排序参考/无复合分; 默认按id稳定全量返回"""
     fit = engine.emblem_fit("alear", "sword_fighter")
-    assert fit["ranking"]
-    assert all("排序参考" not in r for r in fit["ranking"])
-    assert all("精准匹配" in r and "同步技协同" in r and "band" in r for r in fit["ranking"])
-    bands = [r["band"] for r in fit["ranking"]]
-    assert bands[0] == 1 and bands == sorted(bands)
-    # 默认全量 + band1并列组完整(≥2家同band)
-    assert len([r for r in fit["ranking"] if r["band"] == 1]) >= 2
-    # top_n整组截断: 末band组与全量一致, 不出现同band一半在卷内
-    cut = engine.emblem_fit("alear", "sword_fighter", top_n=3)
-    assert 0 < len(cut["ranking"]) < len(fit["ranking"])
-    last_band = cut["ranking"][-1]["band"]
-    n_full_last = len([r for r in fit["ranking"] if r["band"] == last_band])
-    n_cut_last = len([r for r in cut["ranking"] if r["band"] == last_band])
-    assert n_full_last == n_cut_last
+    assert fit["count"] == len(fit["emblems"]) and fit["count"] >= 15
+    ids = [r["emblem_id"] for r in fit["emblems"]]
+    assert ids == sorted(ids)  # 默认id稳定序
+    for r in fit["emblems"]:
+        assert "排序参考" not in r and "band" not in r
+        assert "精准匹配" in r and "同步技协同" in r and "入手章节" in r
+    assert "不排序不分组不推荐" in fit["说明"]
+
+
+def test_emblem_fit_max_chapter_and_sort():
+    """效用过滤: max_chapter=3 只留第3章前可得且无DLC; sort_by='chapter'章节升序"""
+    full = engine.emblem_fit("alear", "sword_fighter")
+    early = engine.emblem_fit("alear", "sword_fighter", max_chapter=3)
+    assert all(not x["is_dlc"] and x["入手章节"] <= 3 for x in early["emblems"])
+    assert len(early["emblems"]) < len(full["emblems"])  # 过滤生效
+    by_ch = engine.emblem_fit("alear", "sword_fighter", sort_by="chapter")
+    chapters = [x["入手章节"] for x in by_ch["emblems"] if not x["is_dlc"]]
+    assert chapters == sorted(chapters)
+    by_precise = engine.emblem_fit("alear", "sword_fighter", sort_by="precise")
+    types = [x["精准匹配"]["类型"] for x in by_precise["emblems"]]
+    assert types.index("兵种主武器") < types.index("无")
 
 
 def test_weapons_real_values():

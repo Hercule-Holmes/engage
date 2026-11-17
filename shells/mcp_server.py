@@ -28,9 +28,14 @@ mcp = FastMCP("engage", instructions=(
     "综合强度判断(如'她是不是第一梯队')必须由你基于分项事实自行论证,"
     "并明确说明你的权衡逻辑(如'成长平庸但技能定义玩法,我更看重后者')。"
     "个人技价值的'机械估小计'只是换算参考,不代表技能真实价值;"
-    "(6)emblem_fit/recommend_builds 返回并列分组(band)的组件事实,无综合分;"
-    "band不构成推荐,组内顺序无含义;权衡由你基于组件完成,"
-    "并说明'未建模维度'字段所列维度(engage武器/专属特技/入手门槛等)对结论的影响;"
+    "(5b)个人技为条件触发效果: compute_build/combat证据里的技活数值是'条件成立时'的影响,"
+    "条件是否成立/多常成立/值多少权重由你结合玩法语境判断(get_knowledge('触发条件')有经验参考);"
+    "(6)emblem_fit 返回纯组件事实,不排序不分组不推荐;"
+    "先用定位引出(role_check的12定位词表: 开荒期→max_chapter过滤/长期成型/特定玩法),"
+    "再从组件论证2~3个候选并说明排除逻辑;"
+    "recommend_builds 的score是成长匹配启发式,非强度结论;"
+    "权衡由你基于组件完成,并说明'未建模维度'字段所列维度(engage武器/专属特技/入手门槛等)对结论的影响;"
+    "(6b)'她适合什么定位/玩法' → role_check 输出指标实际值与定位词表,归属判断由你论证;"
     "(7)强度判断依据 compute_build 的证据卡(combat字段:对基准敌的伤害/命中/追击/反击安全)"
     "与 patterns_hit 模式标签(如one_shot_ranged=可远程秒杀),综合解读而非照抄;"
     "(8)推荐类结论给出前自检: 候选集是否完整(band是否全组呈现)?"
@@ -70,15 +75,19 @@ def can_reclass(char_id: str, class_id: str) -> str:
 
 
 @mcp.tool()
-def compute_build(char_id: str, class_id: str, level: int = 20) -> str:
-    """路线评估证据卡: 转职资格+合计成长率(个人+兵种,含同兵种41人排名)+Lv预测值+假设声明。"""
-    return _j(engine.compute_build(char_id, class_id, level))
+def compute_build(char_id: str, class_id: str, level: int = 20,
+                  promote_at: int | None = None) -> str:
+    """路线评估证据卡: 转职资格+合计成长率(个人+兵种,含同兵种41人排名)+分段等级预测
+    (段1旧兵种→转职点→段2兵种基础差→段3新兵种)+作战证据表+假设声明。
+    promote_at=计划转职的当前兵种显示等级; null=最早可行时点(晋升按Lv10下限)。"""
+    return _j(engine.compute_build(char_id, class_id, level, promote_at))
 
 
 @mcp.tool()
-def compare_builds(char_id: str, class_ids: list, level: int = 20) -> str:
+def compare_builds(char_id: str, class_ids: list, level: int = 20,
+                   promote_at: int | None = None) -> str:
     """多兵种并排对比: 对同一角色返回多个 compute_build 证据卡列表。"""
-    return _j(engine.compare_builds(char_id, class_ids, level))
+    return _j(engine.compare_builds(char_id, class_ids, level, promote_at))
 
 
 @mcp.tool()
@@ -88,12 +97,14 @@ def recommend_builds(char_id: str, top_n: int = 5) -> str:
 
 
 @mcp.tool()
-def emblem_fit(char_id: str, class_id: str, top_n: int | None = None) -> str:
-    """纹章士适配: 返回全量候选的组件事实卡(精准匹配/额外重合/同步技协同), 按band并列分组。
-    band是组件合计相同的并列组, 不是推荐排序, 组内顺序无含义; 默认全量返回,
-    传入top_n时按band整组截断保证并列完整。
-    综合与权衡由调用方基于组件完成, 应结合'未建模维度'字段说明本工具未覆盖维度的影响。"""
-    return _j(engine.emblem_fit(char_id, class_id, top_n))
+def emblem_fit(char_id: str, class_id: str, max_chapter: int | None = None,
+               sort_by: str | None = None) -> str:
+    """纹章士适配(纯组件事实, 不排序不分组不推荐): 每个纹章士返回
+    精准匹配/额外重合/同步技协同/入手章节/engage技要点。
+    max_chapter=效用过滤(只看该章前可得, 解决开荒期推荐后期纹章的荒谬);
+    sort_by='chapter'|'precise' 为客观单一维度排序, 默认不排序。
+    哪个纹章士更适合须结合效用(开荒/长期/玩法)与未建模维度由 LLM 自行论证。"""
+    return _j(engine.emblem_fit(char_id, class_id, max_chapter, sort_by))
 
 
 @mcp.tool()
@@ -117,8 +128,17 @@ def tier_assessment(char_id: str) -> str:
 
 
 @mcp.tool()
+def role_check(char_id: str, class_id: str, level: int = 20,
+               promote_at: int | None = None) -> str:
+    """定位核查: 该路线在12个定位词表(回避坦/追击手/斩杀手/承伤坦/治疗位/泛用型...)下的
+    关键指标实际值+同兵种排名。引擎不判定定位归属——'算不算合格的X'由 LLM 按词表定义与
+    数据分布论证; 命中零定位属合法结果(泛用型/过渡型)。"""
+    return _j(engine.role_check(char_id, class_id, level, promote_at))
+
+
+@mcp.tool()
 def get_knowledge(query: str) -> str:
-    """机制公式/攻略知识检索(如'追击'/'伤害公式'/'锻造')。"""
+    """机制公式/攻略知识检索(如'追击'/'伤害公式'/'锻造'/'触发条件')。"""
     return _j(engine.get_knowledge(query))
 
 

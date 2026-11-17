@@ -11,12 +11,12 @@ from engage_core import engine  # noqa: E402
 
 
 def test_personal_skill_value_yunaka_no_double_count():
-    """P5修复后: 尤娜卡的+15只归属crit(最近关键词), 不再重复计入avoid
-    → 15×0.5×0.5(地形折扣) = 3.75"""
+    """P5修复+去折扣: +15只归属crit(最近关键词); 无触发折扣 → 15×0.5 = 7.5"""
     vc = engine._value_constants()
     v = engine.personal_skill_value("yunaka")
-    expect = 15 * vc["效果单价"]["crit"] * vc["触发折扣"]["特定地形"]
+    expect = 15 * vc["效果单价"]["crit"]
     assert abs(v["机械估小计"] - expect) < 0.01, f"got {v['机械估小计']} expect {expect}"
+    assert v["触发条件"] == "特定地形"  # 条件只作标签, 不参与计算
     types = [i["类型"] for i in v["明细"]]
     assert "crit" in types and "avoid" not in types  # 重复计价已消除
 
@@ -53,21 +53,20 @@ def test_tier_assessment_is_fact_only():
     assert "自行论证" in t["说明"]
 
 
-def test_emblem_fit_v3_components():
-    """emblem_fit v3: 组件拆开(精准匹配/额外重合/同步技协同), 无牵绊加值项; band并列"""
+def test_emblem_fit_v4_components():
+    """emblem_fit v4: 纯组件事实无band无排序; 剑系本命纹章齐备; 协同仅计Sync技"""
     fit = engine.emblem_fit("chloe", "griffin_knight")
-    for r in fit["ranking"]:
+    assert "band" not in json.dumps(fit, default=str)
+    assert "排序参考" not in json.dumps(fit, default=str)
+    for r in fit["emblems"]:
         assert "精准匹配" in r and "额外重合" in r and "同步技协同" in r
-        assert "排序参考" not in r
         assert "牵绊" not in json.dumps(r, default=str)
     # 剑系本命纹章应完整出现在返回中(默认全量)
-    top_ids = {r["emblem_id"] for r in fit["ranking"]}
-    assert {"marth", "roy", "ike", "lyn"} <= top_ids, f"剑系本命纹章缺席: {sorted(top_ids)}"
-    # 组件口径下 marth(剑主武器精准30+飞行偏好spd同步命中)应居前2并列组
-    band_of = {r["emblem_id"]: r["band"] for r in fit["ranking"]}
-    assert band_of["marth"] <= 2, f"marth band={band_of['marth']} 跌出前2组"
-    # band组号连续无洞(1,2,3,...)
-    assert sorted(set(band_of.values())) == list(range(1, max(band_of.values()) + 1))
+    ids = {r["emblem_id"] for r in fit["emblems"]}
+    assert {"marth", "roy", "ike", "lyn"} <= ids, f"剑系本命纹章缺席: {sorted(ids)}"
+    # 玛尔斯主武器=剑=狮鹫主武器 → 精准匹配类型应为兵种主武器
+    marth = next(r for r in fit["emblems"] if r["emblem_id"] == "marth")
+    assert marth["精准匹配"]["类型"] == "兵种主武器"
 
 
 def test_tier_calibration_regression():

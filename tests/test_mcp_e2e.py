@@ -23,7 +23,7 @@ async def main():
             tools = await session.list_tools()
             names = [t.name for t in tools.tools]
             print(f"[1] 握手成功, 工具数={len(names)}")
-            assert len(names) == 11, f"期望11个工具, 实得{names}"
+            assert len(names) == 13, f"期望13个工具, 实得{names}"
 
             # 模拟宿主LLM的完整工具链: 口语问题→resolve→compute→emblem_fit
             r1 = await session.call_tool("resolve_name", {"text": "克萝艾"})
@@ -35,15 +35,19 @@ async def main():
             print(f"[2] resolve_name(克萝艾) → {cid}")
 
             r2 = await session.call_tool(
-                "compute_build", {"char_id": "chloe", "class_id": "sword_fighter", "level": 20})
+                "compute_build", {"char_id": "chloe", "class_id": "sword_fighter",
+                                  "level": 20, "promote_at": 8})
             txt = "".join(c.text for c in r2.content if hasattr(c, "text"))
             assert '"spd"' in txt and "75" in txt, "compute_build 缺关键数据"
+            assert "转职点T" in txt, "compute_build 缺转职建模分段"
             print("[3] compute_build(克萝艾,剑士,20) → 含合计成长75 ✓")
 
             r3 = await session.call_tool(
                 "emblem_fit", {"char_id": "alear", "class_id": "sword_fighter"})
-            assert "ranking" in "".join(c.text for c in r3.content if hasattr(c, "text"))
-            print("[4] emblem_fit ✓")
+            fit_txt = "".join(c.text for c in r3.content if hasattr(c, "text"))
+            assert "精准匹配" in fit_txt and "排序参考" not in fit_txt, \
+                "emblem_fit 应输出v4纯组件事实(含精准匹配, 无排序参考)"
+            print("[4] emblem_fit ✓ (v4组件契约)")
 
             r4 = await session.call_tool("get_knowledge", {"query": "追击"})
             assert "formulas.md" in "".join(c.text for c in r4.content if hasattr(c, "text"))
