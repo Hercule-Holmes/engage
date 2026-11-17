@@ -50,12 +50,60 @@ def test_jean_expertise_doubles_class_growth():
 
 
 def test_projection_arithmetic():
-    """克萝艾 初始速13(Lv6) → 剑士(合计速成长75%) Lv20: 13+0.75*14=23.5→24"""
+    """P6事件式投影(F8社区逆向口径): 克萝艾(枪飞兵Lv6)立即转剑士→Lv20
+    段1(0次升级, T=加入等级) → 段2基础差(剑士基础−枪飞基础) → 段3合计成长×14(平转保级)"""
     ev = engine.compute_build("chloe", "sword_fighter", 20)
+    from engage_core import db
+    con = db.connect()
+    ch = db.query_one(con, "SELECT spd_base, level_start FROM silver_characters WHERE id='chloe'")
+    lf = db.query_one(con, "SELECT spd_base, spd_growth FROM silver_classes WHERE id='lance_flier'")
+    sw = db.query_one(con, "SELECT spd_base, spd_growth FROM silver_classes WHERE id='sword_fighter'")
+    con.close()
+    # 速度: 加入显示值 + 段1(0级) + 基础差(sw_base−lf_base) + (个人55+剑士)成长×(20−6)
+    g_new = 55 + sw["spd_growth"]
+    expect_spd = int(ch["spd_base"] + (sw["spd_base"] - lf["spd_base"]) + g_new / 100 * (20 - 6) + 0.5)
     p = ev["projection"]["values"]["速"]
-    assert p["预测"] == round(13 + 0.75 * (20 - 6))
+    assert p["预测"] == expect_spd, f"got {p['预测']} expect {expect_spd}"
+    # 转职规则: basic→basic = 平转, 等级保持(不重置)
+    assert ev["projection"]["转职规则"]["重置等级为1"] is False
+    assert ev["projection"]["转职点T"] == 6  # promote_at未传 → 立即转职(T=加入等级)
     # 克萝艾天资=枪(非剑), 近似规则下剑士不可转(牵绊资质未建模) → False
     assert ev["eligibility"]["eligible"] is False
+
+
+def test_projection_promotion_arithmetic():
+    """晋升口径: 克萝艾枪飞Lv10→狮鹫骑士(advanced)→Lv20。
+    段1=加入值+合计(个人55+枪飞)×4; 段2=基础差; 段3=19次×合计(个人55+狮鹫)"""
+    from engage_core import db
+    con = db.connect()
+    ch = db.query_one(con, "SELECT spd_base FROM silver_characters WHERE id='chloe'")
+    lf = db.query_one(con, "SELECT spd_base, spd_growth FROM silver_classes WHERE id='lance_flier'")
+    gb = db.query_one(con, "SELECT spd_base, spd_growth FROM silver_classes WHERE id='griffin_knight'")
+    con.close()
+    ev = engine.compute_build("chloe", "griffin_knight", 20, promote_at=10)
+    v1 = ch["spd_base"] + (55 + lf["spd_growth"]) / 100 * 4      # Lv6→Lv10
+    v2 = v1 + (gb["spd_base"] - lf["spd_base"])                  # 晋升瞬间
+    expect = int(v2 + (55 + gb["spd_growth"]) / 100 * 19 + 0.5)  # 重置1→20
+    got = ev["projection"]["values"]["速"]["预测"]
+    assert got == expect, f"got {got} expect {expect}"
+    assert ev["projection"]["转职规则"]["重置等级为1"] is True    # basic→advanced
+    assert ev["projection"]["段3升级次数"] == 19
+
+
+def test_projection_promote_at_comparison():
+    """promote_at 对比: Lv12转 vs 未传(晋升钳制到最早Lv10), 轨迹不同且均可用"""
+    ev_late = engine.compute_build("chloe", "griffin_knight", 20, promote_at=12)
+    ev_now = engine.compute_build("chloe", "griffin_knight", 20)
+    assert ev_late["projection"]["转职点T"] == 12
+    assert ev_now["projection"]["转职点T"] == 10  # 晋升未传promote_at → 钳制到Master Seal下限Lv10
+    # 段3升级次数: 晋升重置→都是 level−1=19, 但段1次数不同
+    assert ev_late["projection"]["段3升级次数"] == 19
+    # 晚转者段1多练2级(合计速成长65%×2=+1.3), 速度预测应更高
+    spd_late = ev_late["projection"]["values"]["速"]["预测"]
+    spd_now = ev_now["projection"]["values"]["速"]["预测"]
+    assert spd_late > spd_now
+    # 分段明细存在且可读
+    assert ev_late["projection"]["分段明细"][0]["属性"] == "HP"
 
 
 def test_can_reclass_logic():

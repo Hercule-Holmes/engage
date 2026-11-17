@@ -1,12 +1,20 @@
 {
-  "_说明": "基准敌人与公式常量——gold层口径草稿，供作战证据表计算。所有数值待游戏内校准；修改后重跑build_silver即可生效。",
+  "_说明": "基准敌人与公式常量——gold层口径草案。敌人武器与玩家同表(silver_weapons真实数据), 属性仍为口径草案待游戏内核准。修改后重跑build_silver并重跑测试。",
   "enemies": {
-    "mob":  {"cn": "中期杂兵", "hp": 28, "def": 9,  "res": 6,  "spd": 10, "lck": 5, "rng": 1},
-    "boss": {"cn": "中期BOSS", "hp": 42, "def": 15, "res": 10, "spd": 8,  "lck": 5, "rng": 1},
-    "mage": {"cn": "中期法师", "hp": 30, "def": 6,  "res": 14, "spd": 12, "lck": 10, "rng": 2}
+    "mob":  {"cn": "中期杂兵", "weapon": "Iron Lance",
+             "hp": 28, "atk": 11, "atk_type": "物理",
+             "def": 9, "res": 6, "spd": 10, "lck": 5, "rng": 1},
+    "boss": {"cn": "中期BOSS", "weapon": "Steel Lance",
+             "hp": 42, "atk": 15, "atk_type": "物理",
+             "def": 15, "res": 10, "spd": 8, "lck": 5, "rng": 1},
+    "mage": {"cn": "中期法师", "weapon": "Elfire",
+             "hp": 30, "atk": 14, "atk_type": "魔法",
+             "def": 6, "res": 14, "spd": 12, "lck": 10, "rng": 2}
   },
+  "_enemies说明": "atk为敌攻击属性基准值(物理=力/魔法=魔); weapon从silver_weapons按名称取真实mt/hit/wt; 三者数值均待校准",
   "constants": {
     "avoid_formula": "avoid = 2*spd + lck//2",
+    "hit_formula": "命中 = 武器命中(+锻造) + 攻方技×2 + 攻方幸/2 − 守方回避",
     "follow_gap": 5,
     "_follow_gap说明": "追击所需攻击速度差: 系列传统值5(封印之剑~if), Engage待游戏内确认(有说法为4)",
     "forge_per_level": {"mt": 1, "hit": 5},

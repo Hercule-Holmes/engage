@@ -102,20 +102,41 @@ def handle(parts: list[str]) -> str:
             return f"「{parts[2]}」不是兵种（解析为{r2['name_cn']}）"
         fit = engine.emblem_fit(r1["id"], r2["id"])
         lines = [f"## {fit['character']['cn']} · {fit['query_class']['cn']}"
-                 f" 纹章士适配({len(fit['ranking'])}个候选, band并列分组)",
+                 f" 纹章士适配({fit['count']}个候选, 无排序无推荐——结合效用自行判断)",
                  f"可用武器集: {', '.join(fit['可用武器集'])}",
                  f"路线偏好: {', '.join(fit['路线偏好']['效果'])} ({fit['路线偏好']['口径']})", ""]
-        for r in fit["ranking"]:
+        for r in fit["emblems"]:
             syn = "、".join(f"{h['技能']}({h['类型']})" for h in r["同步技协同"]["命中"])
             eg = "、".join(r["engage技"]) or "无"
             lines.append(
-                f"- **{r['cn']}**(band{r['band']}, {r['入手']}) 主武器:{r['主武器']} | "
-                f"精准匹配:{r['精准匹配']['分']}分({r['精准匹配']['依据']}) | "
-                f"额外重合:{'/'.join(r['额外重合']['武器']) or '无'}({r['额外重合']['分']}分) | "
-                f"同步技协同:{syn or '无'}({r['同步技协同']['分']}分) | "
+                f"- **{r['cn']}**({r['入手']}) 主武器:{r['主武器']} | "
+                f"精准匹配:{r['精准匹配']['类型']} | "
+                f"额外重合:{'/'.join(r['额外重合']['武器']) or '无'} | "
+                f"同步技协同:{syn or '无'} | "
                 f"engage技:{eg}")
-        lines += ["", f"*{fit['band说明']}*",
+        lines += ["", f"*{fit['说明']}*",
                   f"*未建模维度: {', '.join(fit['未建模维度'])}*"]
+        return "\n".join(lines)
+
+    if parts[0] == "定位":
+        if len(parts) < 3:
+            return "用法: 定位 <角色> <兵种>"
+        r1, r2 = engine.resolve_name(parts[1]), engine.resolve_name(parts[2])
+        if not r1 or r1["kind"] != "character":
+            return f"未识别角色「{parts[1]}」"
+        if not r2 or r2["kind"] != "class":
+            return f"未识别兵种「{parts[2]}」"
+        rc = engine.role_check(r1["id"], r2["id"])
+        if "error" in rc:
+            return f"❌ {rc['error']}"
+        lines = [f"## {rc['character']['cn']} · {rc['route']['cn']} 定位核查"
+                 f"(指标事实, 定位归属由你论证)", ""]
+        for mkey, mv in rc["指标"].items():
+            val = mv["值"]
+            val_s = json.dumps(val, ensure_ascii=False) if not isinstance(val, str) else val
+            rank = rc.get("同兵种排名", {}).get(mkey)
+            lines.append(f"- {mkey}: {val_s}" + (f"（{rank}）" if rank else ""))
+        lines += ["", f"*{rc['说明']}*"]
         return "\n".join(lines)
 
     if parts[0] == "强度":
